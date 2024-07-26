@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="vanilla_test_system-bitFile" value="${project_loc:vanilla_test}/_ide/bitstream/mcs_top_vanilla.bit"/>
+	<item key="vanilla_test_system-bmmFile" value="${project_loc:vanilla_test}/_ide/bitstream/mcs_top_vanilla.mmi"/>
+	<item key="vanilla_test_system-target" value="Local"/>
+	<item key="vanilla_test_system-device" value="Auto Detect"/>
+	<item key="vanilla_test_system-partial_bit" value="false"/>
+	<item key="vanilla_test_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="microblaze_test_system"/>
+	<item key="vanilla_test_system-microblaze_I-initElf" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\microblaze_test\Debug\microblaze_test.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7486A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7486A-0362d093-0&quot;}}]}"/>
+	<item key="microblaze_test_system-bitFile" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\mcs_top_vanilla\hw\mcs_top_vanilla.bit"/>
+	<item key="microblaze_test_system-bmmFile" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\mcs_top_vanilla\hw\mcs_top_vanilla.mmi"/>
+	<item key="microblaze_test_system-target" value="Local"/>
+	<item key="microblaze_test_system-device" value="Auto Detect"/>
+	<item key="microblaze_test_system-partial_bit" value="false"/>
+	<item key="microblaze_test_system-skip_rev_check" value="false"/>
+	<item key="microblaze_test_system-microblaze_I-initElf" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\microblaze_test\Debug\microblaze_test.elf"/>
+</section>

@@ -1,0 +1,41 @@
+07:13:35 **** Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -IC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -IC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main_vanilla_test.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -IC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+'Finished building: ../src/main_vanilla_test.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -IC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -IC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: vanilla_test.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_intro/microblaze_init/mcs_top_vanilla/export/mcs_top_vanilla/sw/mcs_top_vanilla/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vanilla_test.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main_vanilla_test.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: vanilla_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size vanilla_test.elf  |tee "vanilla_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10620	    284	   3144	  14048	   36e0	vanilla_test.elf
+'Finished building: vanilla_test.elf.size'
+' '
+
+07:13:39 Build Finished (took 3s.869ms)
+

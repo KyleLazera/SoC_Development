@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="fpga_elf_mem_selection" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\microblaze_test\Debug"/>
+	<item key="scw_hwspec" value="C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_10_Bare_Metal\example_project"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="C:\Users\klaze\Desktop\Vitis_intro\microblaze_init\mcs_top_vanilla\hw"/>
+</section>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;mcs_top_vanilla/hw/mcs_top_vanilla.bit&apos; to &apos;download.bit&apos;" description="Rename resource &apos;mcs_top_vanilla.bit&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="hw/mcs_top_vanilla.bit" name="download.bit" stamp="1720526155658" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;mcs_top_vanilla/hw/download.bit&apos; to &apos;mcs_top_vanilla.bit&apos;" description="Rename resource &apos;download.bit&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="hw/download.bit" name="mcs_top_vanilla.bit" stamp="1720526287815" updateReferences="true"/>
+</session>

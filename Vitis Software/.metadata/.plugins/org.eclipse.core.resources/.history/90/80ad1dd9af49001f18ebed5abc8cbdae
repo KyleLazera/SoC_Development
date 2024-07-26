@@ -1,0 +1,10 @@
+#include "fpro_init.h"
+#include "gpo_core.h"
+#include "gpi_core.h"
+
+
+
+int main()
+{
+	return 0;
+}

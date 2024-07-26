@@ -1,0 +1,11 @@
+#include "io_rw.h"
+#include "io_map.h"
+#include "timer.h"
+
+#define TIMER_SLOT		S0_SYS_TIMER
+
+//Timing Functions
+unsigned long now_us();
+unsigned long now_ms();
+void sleep_us(unsigned long int time_us);
+void sleep_ms(unsigned long int time_ms);

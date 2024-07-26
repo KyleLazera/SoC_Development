@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus"/>
+	<item key="fpga_elf_mem_selection" value="C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw"/>
+	<item key="scw_hwspec_file_selection" value="C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus"/>
+</section>

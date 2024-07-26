@@ -1,0 +1,26 @@
+#include "fpro_init.h"
+#include "gpo_core.h"
+#include "gpi_core.h"
+
+//Init GPO/GPI Core and Timer Core
+GPO_Handle_t gpo_core;
+GPI_Handle_t gpi_core;
+Timer_Handle_t timer_core;
+
+//Blinks all LED's on the Basys3 board at an interval of 500ms 10 times
+void blink_leds(Timer_Handle_t* timer, GPO_Handle_t* gpo)
+{
+	for(int i = 0; i < 10; i++)
+	{
+		//16 bits are set to high because Basys3 has 16 leds
+		GPO_Write(gpo, 0xffff);
+		sleep_ms(timer, 500);
+		GPO_Write(gpo, 0x0000);
+		sleep_ms(timer, 500);
+	}
+}
+
+int main()
+{
+	return 0;
+}

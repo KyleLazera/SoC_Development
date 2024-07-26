@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="Vanilla_FPro_Bus_system-bitFile" value="C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw\FPro_Vanilla.bit"/>
+	<item key="Vanilla_FPro_Bus_system-bmmFile" value="C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw\FPro_Vanilla.mmi"/>
+	<item key="Vanilla_FPro_Bus_system-target" value="Local"/>
+	<item key="Vanilla_FPro_Bus_system-device" value="Auto Detect"/>
+	<item key="Vanilla_FPro_Bus_system-partial_bit" value="false"/>
+	<item key="Vanilla_FPro_Bus_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="Vanilla_FPro_Bus_system"/>
+	<item key="Vanilla_FPro_Bus_system-microblaze_I-initElf" value="C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug\Vanilla_FPro_Bus.elf"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183BB7486A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183BB7486A-0362d093-0&quot;}}]}"/>
+</section>

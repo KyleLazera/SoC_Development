@@ -1,0 +1,6 @@
+
+void GPO_Init(GPO_Handle_t* self, uint32_t core_base_addr)
+{
+	self->base_addr = core_base_addr;
+	self->wr_data = 0;
+}

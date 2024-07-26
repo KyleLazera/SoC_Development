@@ -1,0 +1,12 @@
+#include "gpi_core.h"
+
+
+void GPI_Init(GPI_Handle_t* self, uint32_t base_core_addr)
+{
+	self->base_addr = base_core_addr;
+}
+
+uint32_t GPI_Read(GPI_Handle_t* self)
+{
+	return io_read(self->base_addr, DATA_REG);
+}

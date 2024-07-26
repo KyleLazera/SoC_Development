@@ -1,0 +1,7 @@
+#include "gpi_core.h"
+
+
+void GPI_Init(GPI_Handle_t* self, uint32_t base_core_addr)
+{
+	self->base_addr = base_core_addr;
+}
