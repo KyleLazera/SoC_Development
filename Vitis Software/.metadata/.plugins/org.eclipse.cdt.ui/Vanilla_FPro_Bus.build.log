@@ -1,4 +1,4 @@
-20:54:01 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+18:37:22 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Viti
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8104	    268	   3108	  11480	   2cd8	Vanilla_FPro_Bus.elf
+   9088	    268	   3108	  12464	   30b0	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '
 
-20:54:02 Build Finished (took 931ms)
+18:37:24 Build Finished (took 2s.448ms)
 

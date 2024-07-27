@@ -14,7 +14,8 @@ module FPro_Wrapper
     input logic [DATA_WIDTH-1:0] sw,
     output logic [DATA_WIDTH-1:0] LED,
     output logic [7:0] seg,
-    output logic [3:0] an
+    output logic [3:0] an,
+    output logic timer_complete
 );
 
 //Signal Declerations
@@ -72,7 +73,8 @@ MMIO_Wrapper #(.DATA_WIDTH(DATA_WIDTH)) mmio_unit(
     .sw(sw),
     .led(LED),
     .an(an),
-    .seg(seg)
+    .seg(seg),
+    .timer_complete(timer_complete)
 ); 
 
 endmodule

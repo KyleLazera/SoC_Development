@@ -20,7 +20,8 @@ module MMIO_Wrapper
     input logic [DATA_WIDTH-1:0] sw,
     output logic [DATA_WIDTH-1:0] led,
     output logic [3:0] an,
-    output logic [7:0] seg
+    output logic [7:0] seg,
+    output logic timer_complete
 );
 
 //Signal Declerations - These are used mainly for the initialization of the MMIO controller
@@ -58,7 +59,8 @@ Timer_Core timer_slot_0
  .write(slot_mem_wr[`S0_SYS_TIMER]),
  .reg_addr(slot_mem_addr[`S0_SYS_TIMER]),
  .wr_data(slot_wr_data[`S0_SYS_TIMER]),
- .rd_data(slot_rd_data[`S0_SYS_TIMER])
+ .rd_data(slot_rd_data[`S0_SYS_TIMER]),
+ .counter_done(timer_complete)
 );
 
 /*Slot 2: GPO

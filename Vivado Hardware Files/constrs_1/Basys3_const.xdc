@@ -105,3 +105,7 @@ set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
+	
+#Flag output for timer - used logic analyzer to test
+set_property PACKAGE_PIN A14 [get_ports timer_complete]					
+	set_property IOSTANDARD LVCMOS33 [get_ports timer_complete]

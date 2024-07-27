@@ -1,15 +1,21 @@
 `timescale 1ns / 1ps
 
 /*
-*This will be a 48 bit counter that will be used to reset the processor. It will take approximatley 32
-* days to reset, counting at 100MHz.
-* This counter module will have 3 registers, each 32 bits:
-* Register 0: lower 32 bits of the counter.
-* Register 1: Upper 16 bits of counter
-* Register 2: Control Register:
-*       Bit 0: Go -> When high counter increments
-*       Bit 1: clr -> When high the counter is reset
-*
+*This will be a 48 bit counter that allows the user to input a period (default is (2^48) - 1)) as well as contains 
+* one-shot and continous mode.
+* Architecture:
+* This counter module will have 6 registers, each with 32-bit width:
+* Control Register (Register 0): Will control the peripheral:
+*       Bit 0: go -> counter enable bit (when high counter begins counting)
+*       Bit 1: clr -> clears the counter value to 0
+*       Bit 2: mode -> when high counter is in one-shot mode and when low counter is in continous mode 
+* Lower Period Reg (Register 1): lower 32 bits of programmable period
+* Upper Period Reg (Period 2): upper 16 bits of programmable period
+* Lower Counter Reg (Period 3): lower 32 bits of counter
+* Upper Counter Reg (Period 4): upper 16 bits of counter
+* 
+* Note: When using this counter, all specs must be initialized BEFORE starting the timer (setting go bit)
+* Note: Default operation of the peripheral is a continous timer with period of (2^48) - 1
 */
 module Timer_Core
 #(parameter COUNTER_WIDTH = 48)
@@ -21,15 +27,22 @@ module Timer_Core
     input logic write,
     input logic [4:0] reg_addr,
     input logic [31:0] wr_data,
-    output logic [31:0] rd_data
+    output logic [31:0] rd_data,
+    //Peripheral Output Signals
+    output logic counter_done
 );
 
-//Signal Declerations
-logic [COUNTER_WIDTH-1:0] counter_reg;
-logic ctrl_reg;
-logic wr_en, clr, go;
+/****************** Signal Declerations ******************/
+//Registers
+logic [COUNTER_WIDTH-1:0] counter_reg, period_reg;
+logic ctrl_go, ctrl_mode;
+//Signals 
+logic wr_en;
+logic clr, go, mode;
 
-/********Counter Logic***********/
+assign wr_en = write & cs;
+
+/***************** Counter Logic ************************/
 always_ff @(posedge clk, posedge reset)
 begin
     if(reset)
@@ -38,29 +51,55 @@ begin
         if(clr)
             counter_reg <= 0;
         else if(go)
-            counter_reg <= counter_reg + 1;
+            if(mode)
+                counter_reg <= (counter_reg == period_reg) ? counter_reg : counter_reg + 1;
+            else
+                counter_reg <= (counter_reg == period_reg) ? 0 : counter_reg + 1;        
 end
 
-/********Control Circuit (for Control Register)***********/
+/****************** Period Register Logic ******************/
 always_ff @(posedge clk, posedge reset)
 begin
     if(reset)
-        ctrl_reg <= 0;
+        begin
+            period_reg <= 48'hFFFFFFFFFFFF;
+        end
     else
         if(wr_en)
-            ctrl_reg <= wr_data[0];
+            begin
+                case(reg_addr[1:0])
+                    2'b01: period_reg[31:0] <= wr_data;
+                    2'b10: period_reg[COUNTER_WIDTH-1:32] <= wr_data[15:0];
+                    default: ;
+                endcase
+            end  
 end
 
-//The write enable signal determine if the ctrl register can be written to
-//It can only be written to if the following conditions are met:
-//1) The chip select for the current module is high
-//2) The write bit is high from the CPU
-//3) The register address is 2 - this is for control register
-assign wr_en = cs && write && (reg_addr[1:0] == 2'b10);
-assign clr = wr_en && wr_data[1];
-assign go = ctrl_reg;
+/***************** Control Register Logic ****************/
+always_ff @(posedge clk, posedge reset)
+begin
+    if(reset)
+        begin
+            ctrl_go <= 0;
+            ctrl_mode <= 0;
+        end
+    else
+        if(wr_en && reg_addr == 5'b0)
+            begin
+                ctrl_go <= wr_data[0];
+                ctrl_mode <= wr_data[2];
+            end                             
+end
 
-//If the input address lsb is 0 read the lower bits of counter and if it is 1 read the upper bits
-assign rd_data = (reg_addr[0] == 0) ? counter_reg[31:0] : {16'h0000, counter_reg[COUNTER_WIDTH-1:32]};
+//Declare all signals for the control register
+assign clr = wr_en && wr_data[1] && (reg_addr == 5'b0);
+assign go = ctrl_go;
+assign mode = ctrl_mode;
+
+/**************** Output Logic *********************/
+assign counter_done = (counter_reg == period_reg);
+assign rd_data = (reg_addr == 5'b11) ? counter_reg[31:0] : 
+                 (reg_addr == 5'b100) ? {16'h0000, counter_reg[COUNTER_WIDTH-1:32]} : 0;
 
 endmodule
+
