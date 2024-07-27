@@ -1,6 +1,6 @@
-2024-07-26T07:19:01.678959100255-07:19:01 **** Incremental Build of project FPro_Bus_Hardware ****
-000-buildplatform.bat 63586 FPro_Bus_Hardware no_domain_build 
-000-XSDB Server Channel: tcfchan#19
+2024-07-26T20:53:57.972948900255-20:53:57 **** Incremental Build of project FPro_Bus_Hardware ****
+000-buildplatform.bat 54972 FPro_Bus_Hardware no_domain_build 
+000-XSDB Server Channel: tcfchan#6
 00255-
-07:19:04 Build Finished (took 2s.781ms)
+20:54:01 Build Finished (took 3s.68ms)
 

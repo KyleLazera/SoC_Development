@@ -12,7 +12,8 @@ typedef enum{
 	S1_UART,
 	S2_LED,
 	S3_SW,
-	S4_SEG
+	S4_SEG,
+	S5_GPIO
 }SLOT;
 
 #endif

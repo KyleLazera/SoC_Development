@@ -2,8 +2,80 @@
 #include "gpo_core.h"
 #include "gpi_core.h"
 #include "seg.h"
+#include "gpio_core.h"
+
+/******** Function Declarations **********/
+
+void gpio_blink(gpio_handle_t* gpio, Timer_Handle_t* timer);
+void gpio_read_sw(gpio_handle_t* gpio, Timer_Handle_t* timer);
+
+int main()
+{
+	/*****Init Peripherals ******/
+	Timer_Handle_t timer_core;
+	seg_handle_t seg;
+	gpio_handle_t gpio;
+
+	//Initialize the peripherals - This sets their address
+	gpio_init(&gpio, get_slot_addr(BRIDGE_BASE, S5_GPIO));
+	Timer_Init(&timer_core, get_slot_addr(BRIDGE_BASE, TIMER_SLOT));
+	seg_init(&seg, get_slot_addr(BRIDGE_BASE, S4_SEG));
+
+	//To show the board has been flashed successfully start by blinking all LEDs 10 times
+	gpio_blink(&gpio, &timer_core);
+
+
+	while(1)
+	{
+		//Loop that counts on seven segment display
+		//for(int i = 0; i < 30; i++)
+			//display_value(&seg, i);
+		gpio_read_sw(&gpio, &timer_core);
+	}
+
+	return 0;
+}
+
+/**************** Function Definitions *********************/
+
+//Blink all 16 LED's on the Basys 3 board
+void gpio_blink(gpio_handle_t* gpio, Timer_Handle_t* timer)
+{
+	//Turn gpio to output mode
+	gpio_set_mode(gpio, OUTPUT_MODE);
+	for(int i = 0; i < 10; i++)
+	{
+		gpio_write_word(gpio, 0xffff);
+		sleep_ms(timer, 500);
+		gpio_write_word(gpio, 0x0);
+		sleep_ms(timer, 500);
+	}
+}
+
+//Reads switch values and blinks corresponding LEDs 5 times
+void gpio_read_sw(gpio_handle_t* gpio, Timer_Handle_t* timer)
+{
+	gpio_set_mode(gpio, INPUT_MODE);
+	//Read the switches from the basys3 board
+	uint32_t switch_value = gpio_word_read(gpio);
+	gpio_set_mode(gpio, OUTPUT_MODE);
+	for(int i = 0; i < 5; i++)
+	{
+		//Turn on LED correlated to switch
+		gpio_write_word(gpio, switch_value);
+		sleep_ms(timer, 100);
+		//Turn off LED correlated to switch
+		gpio_write_word(gpio, 0);
+		sleep_ms(timer, 100);
+	}
+
+
+}
+
+/******************** Decprecated Functions ********************/
 
 //Blinks all LED's on the Basys3 board at an interval of 500ms 10 times
+//Deprecated due to use of GPO Peripheral
 void blink_leds(Timer_Handle_t* timer, GPO_Handle_t* gpo)
 {
 	for(int i = 0; i < 10; i++)
@@ -18,6 +90,7 @@ void blink_leds(Timer_Handle_t* timer, GPO_Handle_t* gpo)
 }
 
 //Sets each LED on the Basys3 board
+//Deprecated due to use of GPO core - Rewritten using GPIO peripheral
 void set_led(GPO_Handle_t* gpo_core, Timer_Handle_t* timer, int led_num)
 {
 	for(int i = 0; i < led_num; i++)
@@ -32,6 +105,7 @@ void set_led(GPO_Handle_t* gpo_core, Timer_Handle_t* timer, int led_num)
 }
 
 //Reads a switch value and turns on corresponding led
+//Deprecated due to use og GPO and GPI core
 void read_sw(GPO_Handle_t* gpo_core, Timer_Handle_t* timer, GPI_Handle_t* gpi_core)
 {
 	//Read the switches from the basys3 board
@@ -45,34 +119,4 @@ void read_sw(GPO_Handle_t* gpo_core, Timer_Handle_t* timer, GPI_Handle_t* gpi_co
 		GPO_Write(gpo_core, 0);
 		sleep_ms(timer, 100);
 	}
-}
-
-int main()
-{
-	//Init GPO/GPI Core and Timer Core
-	GPO_Handle_t led;
-	GPI_Handle_t sw;
-	Timer_Handle_t timer_core;
-	seg_handle_t seg;
-
-	//Initialize the peripherals - This sets their address
-	GPO_Init(&led, get_slot_addr(BRIDGE_BASE, S2_LED));
-	GPI_Init(&sw, get_slot_addr(BRIDGE_BASE, S3_SW));
-	Timer_Init(&timer_core, get_slot_addr(BRIDGE_BASE, TIMER_SLOT));
-	seg_init(&seg, get_slot_addr(BRIDGE_BASE, S4_SEG));
-
-	//To show the board has been flashed successfully start by blinking all LEDs
-	blink_leds(&timer_core, &led);
-
-	//Run all 16 LED's
-	set_led(&led, &timer_core, 16);
-
-	while(1)
-	{
-		//Loop that counts on seven segment display
-		for(int i = 0; i < 30; i++)
-			display_value(&seg, i);
-	}
-
-	return 0;
 }
