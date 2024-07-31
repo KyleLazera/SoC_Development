@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Vanilla_FPro_Bus/src/main_vanilla_test.cpp&apos;" deleteContents="false" description="Delete resource &apos;Vanilla_FPro_Bus/src/main_vanilla_test.cpp&apos;" element1="/Vanilla_FPro_Bus/src/main_vanilla_test.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722385364919"/>
+</session>

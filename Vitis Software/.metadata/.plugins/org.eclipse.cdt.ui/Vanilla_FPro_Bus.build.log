@@ -1,4 +1,4 @@
-18:37:22 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+17:05:11 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -7,15 +7,15 @@ mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bu
 ' '
 'Building target: Vanilla_FPro_Bus.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/timer.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/timer.o ./src/drivers/src_drivers/uart.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Vanilla_FPro_Bus.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   9088	    268	   3108	  12464	   30b0	Vanilla_FPro_Bus.elf
+  10032	    268	   3116	  13416	   3468	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '
 
-18:37:24 Build Finished (took 2s.448ms)
+17:05:12 Build Finished (took 848ms)
 

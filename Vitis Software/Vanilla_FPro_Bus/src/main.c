@@ -3,6 +3,7 @@
 #include "gpi_core.h"
 #include "seg.h"
 #include "gpio_core.h"
+#include "uart.h"
 
 /******** Macros ****************/
 #define SW1				0
@@ -13,6 +14,7 @@ void gpio_blink(gpio_handle_t* gpio, Timer_Handle_t* timer);
 void gpio_read_sw(gpio_handle_t* gpio, Timer_Handle_t* timer);
 void set_led_gpio(gpio_handle_t* gpio, Timer_Handle_t* timer, int led_num);
 void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio);
+void uart_test(uart_handle_t* uart);
 
 int main()
 {
@@ -20,11 +22,13 @@ int main()
 	Timer_Handle_t timer_core;
 	seg_handle_t seg;
 	gpio_handle_t gpio;
+	uart_handle_t uart;
 
 	//Initialize the peripherals - This sets their address
 	gpio_init(&gpio, get_slot_addr(BRIDGE_BASE, S5_GPIO));
 	Timer_Init(&timer_core, get_slot_addr(BRIDGE_BASE, TIMER_SLOT));
 	seg_init(&seg, get_slot_addr(BRIDGE_BASE, S4_SEG));
+	uart_init(&uart, get_slot_addr(BRIDGE_BASE, S1_UART));
 
 	//Set timer mode to continous
 	timer_set_mode(&timer_core, TIMER_CONT);
@@ -42,17 +46,12 @@ int main()
 	//Blink each LED
 	set_led_gpio(&gpio, &timer_core, 16);
 
-	//Reset the timer in one shot mode
-	Timer_Pause(&timer_core);
-	Timer_Clear(&timer_core);
-	timer_set_mode(&timer_core, TIMER_ONE_SHOT);
-	Timer_Go(&timer_core);
-
 	while(1)
 	{
-		//If switch 0 is high, reset the one shot timer
-		//The timer complete flag can be tested with an oscilloscope or logic analyzer (period of 5 sec)
-		timer_reset(&timer_core, &gpio);
+		//Blink each LED to indicate the start of the loop - This is also
+		//Used to prevent an overflow of the UART tx FIFO buffer due to the processor clock speed
+		set_led_gpio(&gpio, &timer_core, 16);
+		uart_test(&uart);
 	}
 
 	return 0;
@@ -76,12 +75,22 @@ void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio)
 	}
 }
 
+//Test function for the UART Module
+void uart_test(uart_handle_t* uart)
+{
+	static int counter = 0;
+	disp_str(uart, "Hello From UART #");
+	disp_num(uart, counter, 10);
+	disp_str(uart, "\n\r");
+	counter++;
+}
+
 //Blink all 16 LED's on the Basys 3 board
 void gpio_blink(gpio_handle_t* gpio, Timer_Handle_t* timer)
 {
 	//Turn gpio to output mode
 	gpio_set_mode(gpio, OUTPUT_MODE);
-	for(int i = 0; i < 10; i++)
+	for(int i = 0; i < 5; i++)
 	{
 		gpio_write_word(gpio, 0xffff);
 		sleep_ms(timer, 500);
@@ -122,7 +131,7 @@ void set_led_gpio(gpio_handle_t* gpio, Timer_Handle_t* timer, int led_num)
 	}
 }
 
-/******************** Decprecated Functions ********************/
+/******************** Deprecated Functions ********************/
 
 //Blinks all LED's on the Basys3 board at an interval of 500ms 10 times
 //Deprecated due to use of GPO Peripheral

@@ -552,3 +552,251 @@
 18:38:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 18:38:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
 18:38:25 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+18:29:20 DEBUG : Logs will be stored at 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/IDE.log'.
+18:29:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\temp_xsdb_launch_script.tcl
+18:29:36 INFO  : Registering command handlers for Vitis TCF services
+18:29:38 INFO  : XSCT server has started successfully.
+18:29:38 INFO  : plnx-install-location is set to ''
+18:29:43 INFO  : Platform repository initialization has completed.
+18:30:02 INFO  : Successfully done setting XSCT server connection channel  
+18:30:02 INFO  : Successfully done query RDI_DATADIR 
+18:30:02 INFO  : Successfully done setting workspace for the tool. 
+19:06:06 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+19:06:06 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:06:10 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:07:02 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:09:34 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:18:07 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:18:24 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:18:48 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:22:45 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:23:11 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+19:51:59 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:10:50 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:15:29 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:21:35 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:21:46 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:21:59 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:22:14 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:22:38 INFO  : Hardware specification for platform project 'FPro_Bus_Hardware' is updated.
+20:23:10 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:23:10 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:23:14 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:24:02 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:24:10 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:25:01 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:25:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:25:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:25:06 ERROR : couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory
+20:25:59 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:25:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:25:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:26:01 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:27:38 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:27:38 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:27:41 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:28:31 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:28:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:28:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:28:32 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:32:40 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:32:40 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:32:41 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:33:13 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:33:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:33:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:33:14 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:33:58 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:33:58 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:34:00 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:34:34 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:34:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:34:36 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:35:34 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:35:34 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:35:35 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:36:07 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:36:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:36:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:36:09 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:37:27 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:37:27 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:37:28 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:38:00 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:38:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:38:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:38:01 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:40:15 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:40:15 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:40:16 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:40:48 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:40:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:40:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:40:50 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:42:08 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:42:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:42:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:42:10 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:43:21 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:43:21 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:43:22 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+20:43:52 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:43:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:43:53 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:46:00 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+20:46:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:46:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+20:46:01 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+20:58:18 DEBUG : Logs will be stored at 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/IDE.log'.
+20:58:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\temp_xsdb_launch_script.tcl
+20:58:21 INFO  : XSCT server has started successfully.
+20:58:21 INFO  : Successfully done setting XSCT server connection channel  
+20:58:21 INFO  : plnx-install-location is set to ''
+20:58:21 INFO  : Successfully done setting workspace for the tool. 
+20:58:22 INFO  : Platform repository initialization has completed.
+20:58:48 INFO  : Successfully done query RDI_DATADIR 
+20:58:48 INFO  : Registering command handlers for Vitis TCF services
+20:59:49 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+20:59:49 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+20:59:50 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:00:27 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+21:00:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:00:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+21:00:31 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+21:03:57 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:04:21 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+21:04:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:04:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+21:04:22 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+21:08:57 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:09:13 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:09:40 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:15:42 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+21:16:05 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+21:16:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+21:16:06 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+15:36:37 DEBUG : Logs will be stored at 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/IDE.log'.
+15:36:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\temp_xsdb_launch_script.tcl
+15:36:53 INFO  : Platform repository initialization has completed.
+15:36:53 INFO  : XSCT server has started successfully.
+15:36:53 INFO  : Successfully done setting XSCT server connection channel  
+15:36:53 INFO  : plnx-install-location is set to ''
+15:36:53 INFO  : Successfully done setting workspace for the tool. 
+15:37:41 INFO  : Registering command handlers for Vitis TCF services
+15:38:02 INFO  : Successfully done query RDI_DATADIR 
+15:44:18 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:45:27 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+15:45:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+15:45:34 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+15:46:12 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:46:18 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:46:19 INFO  : The hardware specification used by project 'Vanilla_FPro_Bus' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:46:19 INFO  : The file 'C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\_ide\bitstream\FPro_Vanilla.bit' stored in project is removed.
+15:46:19 INFO  : The file 'C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\_ide\bitstream\FPro_Vanilla.mmi' stored in project is removed.
+15:46:19 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\_ide\bitstream' in project 'Vanilla_FPro_Bus'.
+15:46:59 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+15:46:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+15:47:01 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+15:48:01 INFO  : Hardware specification for platform project 'FPro_Bus_Hardware' is updated.
+15:48:59 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+15:48:59 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:49:03 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:50:05 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+15:50:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+15:50:06 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+15:51:35 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+15:51:35 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:51:37 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:52:21 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+15:52:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+15:52:23 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+15:53:23 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+15:53:23 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+15:53:25 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+15:54:03 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+15:54:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+15:54:04 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:02:36 DEBUG : Logs will be stored at 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/IDE.log'.
+16:02:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\temp_xsdb_launch_script.tcl
+16:02:39 INFO  : XSCT server has started successfully.
+16:02:39 INFO  : plnx-install-location is set to ''
+16:02:39 INFO  : Successfully done setting XSCT server connection channel  
+16:02:39 INFO  : Successfully done setting workspace for the tool. 
+16:02:40 INFO  : Registering command handlers for Vitis TCF services
+16:02:41 INFO  : Successfully done query RDI_DATADIR 
+16:02:42 INFO  : Platform repository initialization has completed.
+16:07:20 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+16:07:20 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:07:22 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:07:37 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:08:07 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:08:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:08:09 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:08:36 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:08:42 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:09:09 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:09:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:09:10 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:10:13 INFO  : Hardware specification for platform project 'FPro_Bus_Hardware' is updated.
+16:10:37 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:10:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:10:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:10:37 ERROR : couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory
+16:11:31 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:11:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:11:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:11:32 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:50:04 INFO  : Hardware specification for platform project 'FPro_Bus_Hardware' is updated.
+16:50:27 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:50:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:50:27 ERROR : couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory
+16:51:19 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:51:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:51:20 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:52:08 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+16:52:08 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:52:09 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:52:50 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:52:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:52:50 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:53:45 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+16:53:45 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:53:46 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:54:21 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:54:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:54:21 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+16:59:10 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+16:59:10 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:59:11 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+16:59:48 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+16:59:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+16:59:48 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+17:03:23 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+17:03:23 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:03:24 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+17:03:56 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+17:03:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+17:03:57 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
+17:05:09 INFO  : Result from executing command 'getProjects': FPro_Bus_Hardware
+17:05:09 INFO  : Result from executing command 'getPlatforms': FPro_Bus_Hardware|C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/FPro_Bus_Hardware.xpfm;xilinx_vck190_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|D:/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:05:11 INFO  : Checking for BSP changes to sync application flags for project 'Vanilla_FPro_Bus'...
+17:05:41 INFO  : Bit file 'C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit' is generated.
+17:05:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}' command is executed.
+17:05:41 INFO  : Device configured successfully with "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit"
