@@ -6,14 +6,15 @@
 */
 module uart_tx
 #(
-    parameter DATA_BITS = 8,    //Number of data bits to receieve via UART
-              STOP_BITS = 1,    //Number of stop bits
-              OVRSAMPLING = 16
+    parameter DATA_BITS,    //Max number of data bits
+              STOP_BITS,    //Number of stop bits
+              OVRSAMPLING
 )              
 (
     input logic clk, reset,
     input logic s_tick,                 //Input tick from baud_rate generator
     input logic tx_start,               //Signals the module to begin transmitting data
+    input logic [3:0] d_bits,           //Amount of data to transmit
     input logic [DATA_BITS-1:0] din,    //Data to be transmitted
     output logic tx_done,               //Flag indicating tx complete
     output logic tx                     //Bit to transmit
@@ -102,10 +103,10 @@ begin
                 begin
                     s_next = 0;                 //Reset the tick counter
                     b_next = b_reg >> 1;        //Shift the data register to the right 
-                    if(n_reg == (DATA_BITS-1))  //if all data bits have been sent                  
+                    if(n_reg == (d_bits-1))     //if all data bits have been sent                 
                         state_next = stop;      //Swicth to stop state
                     else
-                        n_next = n_reg + 1;    
+                        n_next = n_reg + 1;    //increment num of data bits transmitted
                 end
                 else
                     s_next = s_reg + 1;

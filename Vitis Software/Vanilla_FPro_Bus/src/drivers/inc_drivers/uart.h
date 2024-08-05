@@ -6,22 +6,34 @@
 
 /********* UART Macros ***********/
 #define DUMMY_DATA					0x0
+
+//Status Register
+#define PARITY_ERR_MASK				(1UL << 0)
+#define FRAME_ERR_MASK				(1UL << 1)
+#define OVERRUN_ERR_MASK			(1UL << 2)
+#define RX_EMPTY_MASK				(1UL << 3)
+#define TX_FULL_MASK				(1UL << 4)
+
+//Control Register
+#define DATA_BITS_7					(1UL << 15)
+#define DATA_BITS_8					~(1UL << 15)
+
+//Read Register
 #define RX_DATA_MASK				0x000000ff
-#define RX_EMPTY_MASK				0x00000100
-#define TX_FULL_MASK				0x00000200
 
 //UART Register mapping
 typedef enum{
-	READ_DATA_REG = 0,
-	DVSR_REG = 1,
-	WR_DATA_REG = 2,
-	RM_RD_DATA_REG = 3
+	UART_CTRL_REG = 0,
+	STATUS_REG = 1,
+	RD_REG = 2,
+	WR_REG = 3
 }UART_REG;
 
 //UART Handle
 typedef struct{
 	uint32_t base_reg;
 	uint32_t baud_rate;
+	uint32_t ctrl_reg_val;
 }uart_handle_t;
 
 /*********** Function Declarations **********/
@@ -36,6 +48,11 @@ void uart_init(uart_handle_t* self, uint32_t core_base_addr);
  * @brief Calculates the dvsr value to input into the register UART register
  */
 void set_baud_rate(uart_handle_t* self, uint32_t baud_rate);
+
+/**
+ * @brief Sets the number of data bits to recieve
+ */
+void set_data_bits(uart_handle_t* self, uint32_t data_bits);
 
 /*
  * @brief Determines if the rx fifo is empty

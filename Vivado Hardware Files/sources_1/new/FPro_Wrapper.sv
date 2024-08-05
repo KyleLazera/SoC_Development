@@ -13,9 +13,14 @@ module FPro_Wrapper
     //Switches and LEDS
     input logic [DATA_WIDTH-1:0] sw,
     output logic [DATA_WIDTH-1:0] LED,
+    //Seven Segment Display
     output logic [7:0] seg,
     output logic [3:0] an,
-    output logic timer_complete
+    //Timer
+    output logic timer_complete,
+    //UART Signals
+    input logic rx,
+    output logic tx
 );
 
 //Signal Declerations
@@ -74,7 +79,9 @@ MMIO_Wrapper #(.DATA_WIDTH(DATA_WIDTH)) mmio_unit(
     .led(LED),
     .an(an),
     .seg(seg),
-    .timer_complete(timer_complete)
+    .timer_complete(timer_complete),
+    .tx(tx),
+    .rx(rx)
 ); 
 
 endmodule

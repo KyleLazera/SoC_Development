@@ -1,5 +1,6 @@
 #include "uart.h"
 
+void disp_num(uart_handle_t* self, int num, int base);
 
 /***********************************************
  * Communication Functions
@@ -9,26 +10,34 @@ void set_baud_rate(uart_handle_t* self, uint32_t baud_rate)
 {
 	//Calculate the dvsr value to write into the registers
 	uint32_t dvsr = SYS_CLK_FREQ*1000000 / 16 / baud_rate - 1;
-	io_write(self->base_reg, DVSR_REG, dvsr);
+	self->ctrl_reg_val |= dvsr;
+	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
 }
 
 void uart_init(uart_handle_t* self, uint32_t core_base_addr)
 {
 	//Set the base address of the peripheral
 	self->base_reg = core_base_addr;
+	//Initialize the control reg value to 0
+	self->ctrl_reg_val = 0;
 	//Set default baud rate to 9600
 	set_baud_rate(self, 9600);
 }
 
+void set_data_bits(uart_handle_t* self, uint32_t data_bits)
+{
+	self->ctrl_reg_val |= data_bits;
+	//Write value into ctrl register
+	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
+}
+
 int rx_fifo_empty(uart_handle_t* self)
 {
-	uint32_t rd_word;
-	int empty;
+	uint32_t rx_empty;
 	//Read the value from the read register and use a bit mask to isolate desired bit
-	rd_word = io_read(self->base_reg, READ_DATA_REG);
-	//bit shift to the right by 8
-	empty = (int)(rd_word & RX_EMPTY_MASK) >> 8;
-	return empty;
+	rx_empty = ((io_read(self->base_reg, STATUS_REG) & RX_EMPTY_MASK) >> 3);
+	//disp_num(self, io_read(self->base_reg, STATUS_REG), 16);
+	return (int)rx_empty;
 }
 
 int tx_fifo_full(uart_handle_t* self)
@@ -36,7 +45,7 @@ int tx_fifo_full(uart_handle_t* self)
 	uint32_t rd_word;
 	int full_flag;
 	//read the value from read register and use bit mask to isolate desired bit
-	rd_word = io_read(self->base_reg, READ_DATA_REG);
+	rd_word = io_read(self->base_reg, STATUS_REG);
 	//Bit shift the value
 	full_flag = (int)(rd_word & TX_FULL_MASK) >> 9;
 	return full_flag;
@@ -47,24 +56,19 @@ void tx_byte(uart_handle_t* self, uint8_t tx_byte)
 	//Wait until tx fifo is not full so we can write into it
 	while(tx_fifo_full(self)){};
 	//Once the fifo is not full, write the desired value in
-	io_write(self->base_reg, WR_DATA_REG, (uint32_t)tx_byte);
+	io_write(self->base_reg, WR_REG, (uint32_t)tx_byte);
 }
 
 int rx_byte(uart_handle_t* self)
 {
 	uint32_t rd_data;
-
-	//check if fifo is empty
+	//Read the value from read data reg
+	rd_data = io_read(self->base_reg, RD_REG);
+	//Check if the rx fifo is empty to check if read data is valid
 	if(rx_fifo_empty(self))
 		return -1;
 	else
-	{
-		//Read from data reg and mask the desired bits
-		rd_data = io_read(self->base_reg, READ_DATA_REG) & RX_DATA_MASK;
-		//remove the read data from the fifo
-		io_write(self->base_reg, RM_RD_DATA_REG, DUMMY_DATA);
-		return rd_data;
-	}
+		return (int)(rd_data & RX_DATA_MASK);
 }
 
 /**************************************************

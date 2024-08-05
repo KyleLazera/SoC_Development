@@ -17,10 +17,15 @@ module MMIO_Wrapper
     input logic [31:0] mmio_wr_data,
     output logic [31:0] mmio_rd_data,
     //Input and output switchs/LEDs used for GPI and GPO slot
-    input logic [DATA_WIDTH-1:0] sw,
+    input logic [DATA_WIDTH-1:0] sw,   
     output logic [DATA_WIDTH-1:0] led,
+    //Seven Segment Display Signals
     output logic [3:0] an,
     output logic [7:0] seg,
+    //UART Signals
+    input logic rx,
+    output logic tx,
+    //Timer signals 
     output logic timer_complete
 );
 
@@ -61,6 +66,18 @@ Timer_Core timer_slot_0
  .wr_data(slot_wr_data[`S0_SYS_TIMER]),
  .rd_data(slot_rd_data[`S0_SYS_TIMER]),
  .counter_done(timer_complete)
+);
+
+//Slot 1: UART Controller
+uart_core uart_slot_1
+(.clk(clk), .reset(reset),
+ .cs(slot_cs[`S1_UART1]),
+ .read(slot_mem_rd[`S1_UART1]),
+ .write(slot_mem_wr[`S1_UART1]),
+ .reg_addr(slot_mem_addr[`S1_UART1]),
+ .wr_data(slot_wr_data[`S1_UART1]),
+ .rd_data(slot_rd_data[`S1_UART1]),
+ .tx(tx), .rx(rx)
 );
 
 /*Slot 2: GPO
@@ -117,7 +134,6 @@ generate
     genvar i;
     for(i = 6; i <64; i++)
         assign slot_rd_data[i] = 32'hffffffff;
-    assign slot_rd_data[1] = 32'hffffffff;
     assign slot_rd_data[2] = 32'hffffffff;
     assign slot_rd_data[3] = 32'hffffffff;
 endgenerate
