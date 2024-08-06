@@ -15,6 +15,7 @@ module uart_tx
     input logic s_tick,                 //Input tick from baud_rate generator
     input logic tx_start,               //Signals the module to begin transmitting data
     input logic [3:0] d_bits,           //Amount of data to transmit
+    input logic [5:0] stop_ticks,       //Number of stop ticks to count num of stop bits
     input logic [DATA_BITS-1:0] din,    //Data to be transmitted
     output logic tx_done,               //Flag indicating tx complete
     output logic tx                     //Bit to transmit
@@ -31,7 +32,7 @@ typedef enum {idle,                 //Initial starting state
 
 /*********** Signal Declarations ******************/
 state_type state_reg, state_next;
-logic [3:0] s_reg, s_next;                      //Keeps count of the number of ticks
+logic [5:0] s_reg, s_next;                      //Keeps count of the number of ticks
 logic [2:0] n_reg, n_next;                      //Keeps count of the number of bits sent
 logic [DATA_BITS-1:0] b_reg, b_next;            //Stores the data to transmit
 logic tx_reg, tx_next;                          //Stores the specific bit within the b_reg to send
@@ -117,7 +118,7 @@ begin
             tx_next = 1'b1;                     //Set high to indicate a stop signal
             if(s_tick)
             begin
-                if(s_reg == (SB_TICKS-1))        //If the stop bit has been sent for the correct period
+                if(s_reg == (stop_ticks - 1))        //If the stop bit has been sent for the correct period
                 begin
                     state_next = idle;
                     tx_done = 1'b1;

@@ -17,6 +17,9 @@ localparam CLK_PERIOD = 10;
 //variables for setting UART specs
 localparam DATA_BITS_7 = 32'h00008000;
 localparam DATA_BITS_8 = 32'h00000000;
+localparam STOP_BITS_1 = 32'h00000000;
+localparam STOP_BITS_1_5 = 32'h00002000;
+localparam STOP_BITS_2 = 32'h00004000;
 
 //Input Signals
 logic clk, reset;
@@ -44,7 +47,7 @@ end
 
 //task to set the data width for the UART
 //When setting this value make sure to take into account the dvsr vaue
-task set_data_width(input logic [31:0] width);
+task set_ctrl_reg(input logic [31:0] width);
 begin
     cs = 1;
     write = 1;
@@ -105,7 +108,7 @@ end
 endtask
 
 //Task to simulate sending data via the rx pin to the uart
-task send_rx_data(int num_data, input logic [DATA_BITS-1:0] rx_data);
+task send_rx_data(int num_data, int stop_bits, input logic [DATA_BITS-1:0] rx_data);
 begin
     //Initialize the start bit of the frame
     rx = 0;
@@ -121,7 +124,7 @@ begin
     
     //Send the stop bit
     rx = 1;
-    #(dvsr * 10);
+    #(dvsr * 10 * 16 * stop_bits);
 end
 endtask
 
@@ -146,9 +149,9 @@ initial begin
     set_baud(9600, ctrl_reg_val);     
     #20;
     
-    /************************** Writing - Test Case 1 ****************************
-    //Write 7 bits of data to the UART
-    set_data_width((ctrl_reg_val | DATA_BITS_7));
+    /************************** Writing - Test Case 1 ****************************/
+    //Write 7 bits of data to the UART & stop bits to 1.5
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1_5)); 
     write_uart(8'h33);
     #(dvsr * 1600); //Random value to send all the data
     write_uart(8'h7B);
@@ -158,9 +161,9 @@ initial begin
     write_uart(8'h45);
     #(dvsr * 1600); //Random value to send all the data
     
-    /************************* Writing - Test Case 2 *****************************
-    //Swicth back to 8 data bits to send
-    set_data_width((ctrl_reg_val & ~DATA_BITS_7));
+    /************************* Writing - Test Case 2 *****************************/
+    //Swicth back to 8 data bits to send & set stop bits to 2
+    set_ctrl_reg((ctrl_reg_val & ~DATA_BITS_7 | STOP_BITS_2));
     write_uart(8'hAC);
     #(dvsr * 1600); //Random value to send all the data
     write_uart(8'h91);
@@ -168,49 +171,51 @@ initial begin
     
     /************************** Reading - Test Case 1 ****************************/
     //Send data via the rx pin & read the data after a small delay
-    //Read 8 Bits of data 
-    send_rx_data(8, 8'h32);
+    //Read 8 Bits of data with 2 stop bits
+    send_rx_data(8, 2, 8'h32);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 8'h32) else $fatal("Data mismatch: expected 8'h32, got %h", rx_data);
     
-    send_rx_data(8, 8'h57);
+    send_rx_data(8, 2, 8'h57);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 8'h57) else $fatal("Data mismatch: expected 8'h57, got %h", rx_data);
     
-    send_rx_data(8, 8'hA5);
+    send_rx_data(8, 2, 8'hA5);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 8'hA5) else $fatal("Data mismatch: expected 8'h32, got %h", rx_data);
     
-    //Read 7 bits of data 
-    set_data_width((ctrl_reg_val | DATA_BITS_7));
+    //Read 7 bits of data & 1.5 stop bits
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1_5));
     
-    send_rx_data(7, 8'h41);
+    send_rx_data(7, 1.5, 8'h41);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 7'h41) else $fatal("Data mismatch: expected 8'h41, got %h", rx_data);
     
-    send_rx_data(7, 8'h67);
+    send_rx_data(7, 1.5, 8'h67);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 7'h67) else $fatal("Data mismatch: expected 8'h67, got %h", rx_data);
     
-    send_rx_data(7, 8'h3A);
+    send_rx_data(7, 1.5, 8'h3A);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)
     read_uart(rx_data);
     assert(rx_data == 7'h3A) else $fatal("Data mismatch: expected 8'h3A, got %h", rx_data);
     
     /************************* Reading - Test case 2 ******************************/
     //Send muldtiple bytes of data before reading them
-    send_rx_data(7,8'h79);
+    //7 data bits and 1 stop bits
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1));    
+    send_rx_data(7, 1, 8'h79);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)    
-    send_rx_data(7, 8'h12);
+    send_rx_data(7, 1, 8'h12);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)    
-    send_rx_data(7, 8'h6B);
+    send_rx_data(7, 1, 8'h6B);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)    
-    send_rx_data(7, 8'h01);
+    send_rx_data(7, 1, 8'h01);
     #((dvsr * 10) * (DATA_BITS + 2)); // Wait for the entire frame (1 start bit + 8 data bits + 1 stop bit)                
     
     //Read from the UARt to clear the FIFO
@@ -221,7 +226,7 @@ initial begin
     read_uart(rx_data);
     assert(rx_data == 8'h6B) else $fatal("Data mismatch: expected 8'h6B, got %h", rx_data);
     read_uart(rx_data);
-    assert(rx_data == 8'h01) else $fatal("Data mismatch: expected 8'h01, got %h", rx_data);           
+    assert(rx_data == 8'h01) else $fatal("Data mismatch: expected 8'h01, got %h", rx_data);          
     
     $finish;     
 end

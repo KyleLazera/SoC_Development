@@ -26,8 +26,22 @@ void uart_init(uart_handle_t* self, uint32_t core_base_addr)
 
 void set_data_bits(uart_handle_t* self, uint32_t data_bits)
 {
+	//Clear the data first
+	self->ctrl_reg_val &= ~DATA_BITS_CLEAR;
+	//Write bits
 	self->ctrl_reg_val |= data_bits;
 	//Write value into ctrl register
+	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
+}
+
+void set_stop_bits(uart_handle_t* self, uint32_t stop_bits)
+{
+	//Clear the bit first
+	self->ctrl_reg_val &= ~STOP_BITS_CLEAR;
+	//Write value in
+	self->ctrl_reg_val |= stop_bits;
+	disp_num(self, self->ctrl_reg_val, 16);
+	//Write new value to the control register
 	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
 }
 

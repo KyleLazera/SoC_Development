@@ -15,8 +15,13 @@
 #define TX_FULL_MASK				(1UL << 4)
 
 //Control Register
+#define STOP_BITS_CLEAR				(3UL << 13)
+#define STOP_BITS_1					(0UL << 13)
+#define STOP_BITS_1_5				(1UL << 13)
+#define STOP_BITS_2					(2UL << 13)
+#define DATA_BITS_CLEAR				(1UL << 15)
 #define DATA_BITS_7					(1UL << 15)
-#define DATA_BITS_8					~(1UL << 15)
+#define DATA_BITS_8					(0UL << 15)
 
 //Read Register
 #define RX_DATA_MASK				0x000000ff
@@ -53,6 +58,11 @@ void set_baud_rate(uart_handle_t* self, uint32_t baud_rate);
  * @brief Sets the number of data bits to recieve
  */
 void set_data_bits(uart_handle_t* self, uint32_t data_bits);
+
+/**
+ * @brief Set Number of stop bits
+ */
+void set_stop_bits(uart_handle_t* self, uint32_t stop_bits);
 
 /*
  * @brief Determines if the rx fifo is empty
