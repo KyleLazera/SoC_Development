@@ -7,7 +7,6 @@
 module uart_rx
 #(
     parameter DATA_BITS,    //Max number of data bits
-              STOP_BITS,    //Number of stop bits
               OVRSAMPLING
 )
 (
@@ -16,17 +15,19 @@ module uart_rx
     input logic rx,                     //Data coming into the UARt receiver
     input logic [3:0] d_bits,           //Number of data bits to read
     input logic [5:0] stop_ticks,       //Number of stop ticks to count num of stop bits
+    input logic parity_en,              //Enable or disable parity
+    input logic parity_pol,             //Determine whether polarity is even or odd (1 = even, 0 = odd)
+    output logic parity_err,            //Flag indicating mismatching parity bit 
     output logic rx_done,               //Flag indicating reception is complete (all bits read)
     output logic [DATA_BITS-1:0] dout
 );
 
 /*********** Varibale declerations ***************/
-localparam SB_TICKS = STOP_BITS * OVRSAMPLING;      //Number of ticks for the stop bits
-
 //State Machine decleration
 typedef enum {idle,                 //Initial starting state (when rx == 0 indicating start bit) switch states
               start,                //State to count the start bit ticks (7)
               data,                 //State to read the data
+              parity,               //Compare the calculated parity to the recieved parity
               stop} state_type;     //State to read the stop bits and signal completion
 
 /*********** Signal Declerations ***************/
@@ -34,6 +35,8 @@ state_type state_reg, state_next;
 logic [5:0] s_reg, s_next;                    //reg to keep track of smapling ticks (needs to count up to 15)
 logic [2:0] n_reg, n_next;                    //reg to keep track of number of data bits recieved
 logic [DATA_BITS-1:0] b_reg, b_next;          //reg to store the data coming into the receiever module
+logic parity_bit;                               //Output of the parity circuit
+logic par_din_xor, parity_temp;                 //Temporary wires used to store intermediary values in the parity combinational circuit
 
 /********** UART Receiver Logic ****************/
 always_ff @(posedge clk, posedge reset)
@@ -63,6 +66,7 @@ begin
     n_next = n_reg;
     b_next = b_reg;
     rx_done = 1'b0;
+    parity_err = 1'b0;
     //State Machine logic
     case(state_reg)
         idle:
@@ -102,7 +106,7 @@ begin
                     b_next = (d_bits[3]) ? {rx, b_reg[7:1]}         //Shift the rx data into a register
                               :{1'b0, rx, b_reg[6:1]};                       
                     if(n_reg == (d_bits - 1))                        //If we have counted all the data bits
-                        state_next = stop;
+                        state_next = (parity_en) ? parity : stop;
                     else
                         n_next = n_reg + 1;
                 end
@@ -110,6 +114,24 @@ begin
                     s_next = s_reg + 1;
             end
         end 
+        parity:
+        begin
+            if(s_tick)
+            begin
+                if(s_reg == 15)
+                begin
+                    s_next = 0;
+                    if(parity_bit == rx)
+                        state_next = stop;
+                    else
+                        //If parity does not match raise the flag indicating the parity error
+                        parity_err = 1'b1;
+                        state_next = stop;
+                end
+                else
+                    s_next = s_reg + 1;
+            end
+        end
         stop:
         begin
             if(s_tick)
@@ -124,6 +146,18 @@ begin
             end
         end     
     endcase
+end
+
+//Combinational Logic for Parity circuit
+always_comb
+begin
+    //XOR the first 6 data in bits
+    par_din_xor = (b_reg[0] ^ b_reg[1]) ^ (b_reg[2] ^ b_reg[3]) ^ (b_reg[4] ^ b_reg[5]);
+    //Depending on the number of data bits - either XOR the 7th and 8th data with the above wire
+    //Or XOR the above wire with the 7th data input - option depends upon msb of the d_bits wire
+    parity_temp = par_din_xor ^ ((d_bits[3]) ? (b_reg[6] ^ b_reg[7]) : (b_reg[6]));
+    //Determine whether the parity bit is even or odd
+    parity_bit = (parity_pol) ? parity_temp : ~parity_temp;
 end
 
 //Output logic

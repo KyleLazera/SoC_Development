@@ -7,7 +7,6 @@
 module uart_tx
 #(
     parameter DATA_BITS,    //Max number of data bits
-              STOP_BITS,    //Number of stop bits
               OVRSAMPLING
 )              
 (
@@ -16,18 +15,19 @@ module uart_tx
     input logic tx_start,               //Signals the module to begin transmitting data
     input logic [3:0] d_bits,           //Amount of data to transmit
     input logic [5:0] stop_ticks,       //Number of stop ticks to count num of stop bits
+    input logic parity_en,              //Enable or disable parity
+    input logic parity_pol,             //Determine whether polarity is even or odd (1 = even, 0 = odd)
     input logic [DATA_BITS-1:0] din,    //Data to be transmitted
     output logic tx_done,               //Flag indicating tx complete
     output logic tx                     //Bit to transmit
 );
 
 /*********** Varibale declerations ***************/
-localparam SB_TICKS = STOP_BITS * OVRSAMPLING;      //Number of ticks for the stop bits
-
 //State Machine decleration
 typedef enum {idle,                 //Initial starting state 
               start,                //State to send the tx=0 (start bit)
               data,                 //State to send the data 
+              parity,               //State used to send the parity bit - only used if parity is enabled
               stop} state_type;     //State to send teh stop bit
 
 /*********** Signal Declarations ******************/
@@ -36,6 +36,8 @@ logic [5:0] s_reg, s_next;                      //Keeps count of the number of t
 logic [2:0] n_reg, n_next;                      //Keeps count of the number of bits sent
 logic [DATA_BITS-1:0] b_reg, b_next;            //Stores the data to transmit
 logic tx_reg, tx_next;                          //Stores the specific bit within the b_reg to send
+logic parity_bit;                               //Output of the parity circuit
+logic par_din_xor, parity_temp;                 //Temporary wires used to store intermediary values in the parity combinational circuit
 
 /********** Transmitter Logic ********************/
 always_ff @(posedge clk, posedge reset)
@@ -105,13 +107,25 @@ begin
                     s_next = 0;                 //Reset the tick counter
                     b_next = b_reg >> 1;        //Shift the data register to the right 
                     if(n_reg == (d_bits-1))     //if all data bits have been sent                 
-                        state_next = stop;      //Swicth to stop state
+                        state_next = (parity_en) ? parity : stop;      //Swicth to stop state
                     else
                         n_next = n_reg + 1;    //increment num of data bits transmitted
                 end
                 else
                     s_next = s_reg + 1;
             end                           
+        end
+        parity:
+        begin
+            tx_next = parity_bit;
+            if(s_tick)
+                if(s_reg == 15)
+                begin
+                    state_next = stop;
+                    s_next = 0;
+                end
+                else
+                    s_next = s_reg + 1;
         end
         stop:
         begin
@@ -128,6 +142,18 @@ begin
             end
         end
     endcase
+end
+
+//Combinational Logic for Parity circuit
+always_comb
+begin
+    //XOR the first 6 data in bits
+    par_din_xor = (din[0] ^ din[1]) ^ (din[2] ^ din[3]) ^ (din[4] ^ din[5]);
+    //Depending on the number of data bits - either XOR the 7th and 8th data with the above wire
+    //Or XOR the above wire with the 7th data input - option depends upon msb of the d_bits wire
+    parity_temp = par_din_xor ^ ((d_bits[3]) ? (din[6] ^ din[7]) : (din[6]));
+    //Determine whether the parity bit is even or odd
+    parity_bit = (parity_pol) ? parity_temp : ~parity_temp;
 end
 
 //Ouput logic

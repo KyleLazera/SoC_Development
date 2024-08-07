@@ -49,9 +49,6 @@ int main()
 	//Adjust num of stop bits
 	set_stop_bits(&uart, STOP_BITS_1_5);
 
-	//Adjust parity
-	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
-
 	while(1)
 	{
 		//Blink each LED

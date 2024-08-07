@@ -1,5 +1,10 @@
-05:23:10 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+07:09:56 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
+'Building file: ../src/drivers/src_drivers/uart.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/drivers/src_drivers/uart.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drivers/src_drivers/uart.d" -MT"src/drivers/src_drivers/uart.o" -o "src/drivers/src_drivers/uart.o" "../src/drivers/src_drivers/uart.c"
+'Finished building: ../src/drivers/src_drivers/uart.c'
+' '
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/main.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
@@ -13,9 +18,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Viti
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10592	    268	   3116	  13976	   3698	Vanilla_FPro_Bus.elf
+  10744	    268	   3116	  14128	   3730	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '
 
-05:23:12 Build Finished (took 1s.874ms)
+07:10:00 Build Finished (took 3s.436ms)
 

@@ -5,7 +5,8 @@
 * Note: the following architecture is not implemented physically - the registers do not all correlate with physical registers
 * Control Register (Register 0):
 *   bits 10 - 0: dvsr for baud rate
-*   bit 12 & 11: parity enable -> (00 - no parity, 01 - even parity, 10 - odd parity) 
+*   bit 11: parity enable -> (0 - disable, 1 -enable)
+*   bit 12: parity odd/even -> (1 - even, 0 - odd) 
 *   bit 14 & 13: stop bits -> (00 - 1 stop bit, 01 - 1.5 stop bits, 10 - 2 stop bits)
 *   bit 15: data bits -> (0 - 7 data bits, 1 - 8 data bits) 
 * Status Register (Register 1):
@@ -46,8 +47,8 @@ localparam WR_REG = 5'b11;
 /********************* Signal Declarations ************************/
 logic wr_en;
 logic wr_uart, rd_uart, wr_ctrl;
-logic data_bit;
-logic [1:0] parity, stop_bits;
+logic data_bit, parity_en, parity_pol;
+logic [1:0] stop_bits;
 //Status signals
 logic tx_full, rx_empty, parity_err, frame_err, buffer_err;
 //Registers
@@ -57,7 +58,7 @@ logic [7:0] r_data;                 //Data read from the UART wrapper
 
 
 //Module Instantation
-uart_wrapper#(.DATA_BITS(8), .STOP_B(1), .FIFO_WIDTH(FIFO_DEPTH), .OVRSAMPLING(16), .DVSR_WIDTH(11)) uart_unit
+uart_wrapper#(.DATA_BITS(8), .FIFO_WIDTH(FIFO_DEPTH), .OVRSAMPLING(16), .DVSR_WIDTH(11)) uart_unit
             (.*, 
              .wr_data(wr_data[7:0]), 
              //Control Register Bits 
@@ -68,7 +69,8 @@ uart_wrapper#(.DATA_BITS(8), .STOP_B(1), .FIFO_WIDTH(FIFO_DEPTH), .OVRSAMPLING(1
              .rd_uart(rd_uart),
              .rd_data(r_data),
              .tx_full(tx_full),
-             .rx_empty(rx_empty));
+             .rx_empty(rx_empty),
+             .parity_err(parity_err));
              
 //Dvsr Register Logic
 always_ff @(posedge clk, posedge reset)
@@ -86,14 +88,15 @@ assign wr_ctrl = (wr_en && (reg_addr == CTRL_REG));
 //Logic for wires entering the uart_wrapper module
 assign rd_uart = (cs && read && (reg_addr == RD_REG));
 assign wr_uart = (wr_en && (reg_addr == WR_REG)); 
-
+//Decoding of control register
 assign dvsr_reg = control_reg[10:0];  
 assign data_bit = control_reg[15];
-assign parity = control_reg[12:11];
+assign parity_en = control_reg[11];
+assign parity_pol = control_reg[12];
 assign stop_bits = control_reg[14:13];  
 
 //Logic to read data from the uart slot interface
 //Only the status reg and read reg can be read from
-assign rd_data = (reg_addr == STATUS_REG) ?   {27'h0, tx_full, rx_empty, 3'h0} : {24'h0, r_data}; //TODO: add the error flags
+assign rd_data = (reg_addr == STATUS_REG) ?   {27'h0, tx_full, rx_empty, 2'b00, parity_err} : {24'h0, r_data}; //TODO: add the error flags
 
 endmodule

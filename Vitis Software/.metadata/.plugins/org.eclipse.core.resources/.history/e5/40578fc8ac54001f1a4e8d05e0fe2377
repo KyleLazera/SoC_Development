@@ -40,6 +40,7 @@ void set_stop_bits(uart_handle_t* self, uint32_t stop_bits)
 	self->ctrl_reg_val &= ~STOP_BITS_CLEAR;
 	//Write value in
 	self->ctrl_reg_val |= stop_bits;
+	disp_num(self, self->ctrl_reg_val, 16);
 	//Write new value to the control register
 	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
 }
@@ -50,8 +51,6 @@ void set_parity(uart_handle_t* self, uint32_t parity_en, uint32_t parity_pol)
 	self->ctrl_reg_val &= ~(PARITY_ENABLE | PARITY_EVEN);
 	//Write desired parity values in
 	self->ctrl_reg_val |= (parity_en | parity_pol);
-	//Write values to teh register
-	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
 }
 
 int rx_fifo_empty(uart_handle_t* self)

@@ -6,7 +6,6 @@
 module uart_wrapper
 #(
     parameter DATA_BITS = 8,                            //Max number of data bits
-              STOP_B = 1,                            //Num of stop bits
               FIFO_WIDTH,                               //Address width of the FIFO 
               OVRSAMPLING = 16,                         //Oversampling rate
               DVSR_WIDTH = 11 
@@ -17,9 +16,11 @@ module uart_wrapper
     input logic rx,                                     //Bit of data being received by UART
     input logic data_bit,                               //Input bit indicating num of data bits to send/receive
     input logic [1:0] sb_ticks,
+    input logic parity_en, parity_pol,                  //Input signals for parity
     input logic [DATA_BITS-1:0] wr_data,                //Full data to transmit from UART
     input logic [DVSR_WIDTH-1:0] dvsr,                  //Divisor used for baud rate
     output logic tx_full, rx_empty,                     //Flags indicating FIFO Status
+    output logic parity_err,
     output logic tx,                                    //Bit of data being transmitted form UART
     output logic [DATA_BITS-1:0] rd_data                //Total data being read/received into UART
 );
@@ -37,16 +38,18 @@ logic [5:0] stop_ticks;
 baud_gen #(.DVSR_WIDTH(DVSR_WIDTH)) baud_gen_unit (.*, .tick(tick), .dvsr(dvsr));
 
 //UART Transmitter Module
-uart_tx #(.DATA_BITS(DATA_BITS), .STOP_BITS(STOP_B), .OVRSAMPLING(OVRSAMPLING)) uart_tx_unit
-        (.*, .s_tick(tick), .tx_start(tx_fifo_not_empty), .din(tx_fifo_out), .tx_done(tx_done_tick), .tx(tx), .d_bits(data_bits_decoded), .stop_ticks(stop_ticks));
+uart_tx #(.DATA_BITS(DATA_BITS), .OVRSAMPLING(OVRSAMPLING)) uart_tx_unit
+        (.*, .s_tick(tick), .tx_start(tx_fifo_not_empty), .din(tx_fifo_out), .tx_done(tx_done_tick), .tx(tx), .d_bits(data_bits_decoded), 
+        .stop_ticks(stop_ticks), .parity_en(parity_en), .parity_pol(parity_pol));
 
 //tx FIFO
 fifo #(.DATA_WIDTH(DATA_BITS), .ADDR_WIDTH(FIFO_WIDTH)) tx_fifo_unit
       (.*, .rd(tx_done_tick), .wr(wr_uart), .wr_data(wr_data), .full(tx_full), .empty(tx_empty), .rd_data(tx_fifo_out));   
         
 //UART Receiver Module
-uart_rx #(.DATA_BITS(DATA_BITS), .STOP_BITS(STOP_B), .OVRSAMPLING(OVRSAMPLING))  uart_rx_unit
-         (.*, .s_tick(tick), .rx(rx), .rx_done(rx_done_tick), .dout(rx_data_out), .d_bits(data_bits_decoded), .stop_ticks(stop_ticks));   
+uart_rx #(.DATA_BITS(DATA_BITS), .OVRSAMPLING(OVRSAMPLING))  uart_rx_unit
+         (.*, .s_tick(tick), .rx(rx), .rx_done(rx_done_tick), .dout(rx_data_out), .d_bits(data_bits_decoded), .stop_ticks(stop_ticks),
+          .parity_en(parity_en), .parity_pol(parity_pol), .parity_err(parity_err));   
 
 //rx FIFO
 fifo #(.DATA_WIDTH(DATA_BITS), .ADDR_WIDTH(FIFO_WIDTH)) rx_fifo_unit

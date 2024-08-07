@@ -50,7 +50,7 @@ int main()
 	set_stop_bits(&uart, STOP_BITS_1_5);
 
 	//Adjust parity
-	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
+	set_parity(&uart, PARITY_EN, PARITY_EVEN);
 
 	while(1)
 	{
