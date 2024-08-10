@@ -78,10 +78,17 @@ void set_stop_bits(uart_handle_t* self, uint32_t stop_bits);
 void set_parity(uart_handle_t* self, uint32_t parity_en, uint32_t parity_pol);
 
 /*
- * @brief Determines if the rx fifo is empty
+ * @brief Determines status of rx fifo
  * @retval Returns 1 if empty and  if not empty
  */
 int rx_fifo_empty(uart_handle_t* self);
+
+/**
+ * @brief Reads the status register and returns the value
+ * @note use flags to isolate and check for specific flags
+ * @retval Returns the value held in status register
+ */
+int uart_status(uart_handle_t* self);
 
 /*
  * @brief Determines if tx fifo is full

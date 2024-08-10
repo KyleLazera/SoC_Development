@@ -21,12 +21,14 @@ module uart_wrapper
     input logic [DVSR_WIDTH-1:0] dvsr,                  //Divisor used for baud rate
     output logic tx_full, rx_empty,                     //Flags indicating FIFO Status
     output logic parity_err,
+    output logic frame_err,
+    output logic overflow_err,
     output logic tx,                                    //Bit of data being transmitted form UART
     output logic [DATA_BITS-1:0] rd_data                //Total data being read/received into UART
 );
 
 /************** Signal Declarations ******************/
-logic tick, rx_done_tick, tx_done_tick;
+logic tick, rx_done_tick, tx_done_tick, rx_full;
 logic tx_empty, tx_fifo_not_empty;
 logic [DATA_BITS-1:0] tx_fifo_out, rx_data_out;
 //User defined signals (can be dynamically changed)
@@ -49,11 +51,11 @@ fifo #(.DATA_WIDTH(DATA_BITS), .ADDR_WIDTH(FIFO_WIDTH)) tx_fifo_unit
 //UART Receiver Module
 uart_rx #(.DATA_BITS(DATA_BITS), .OVRSAMPLING(OVRSAMPLING))  uart_rx_unit
          (.*, .s_tick(tick), .rx(rx), .rx_done(rx_done_tick), .dout(rx_data_out), .d_bits(data_bits_decoded), .stop_ticks(stop_ticks),
-          .parity_en(parity_en), .parity_pol(parity_pol), .parity_err(parity_err));   
+          .parity_en(parity_en), .parity_pol(parity_pol), .frame_err(frame_err), .rx_fifo_full(rx_full), .overflow_err(overflow_err));   
 
 //rx FIFO
 fifo #(.DATA_WIDTH(DATA_BITS), .ADDR_WIDTH(FIFO_WIDTH)) rx_fifo_unit
-       (.*, .rd(rd_uart), .wr(rx_done_tick), .wr_data(rx_data_out), .full(), .empty(rx_empty), .rd_data(rd_data));
+       (.*, .rd(rd_uart), .wr(rx_done_tick), .wr_data(rx_data_out), .full(rx_full), .empty(rx_empty), .rd_data(rd_data));
 
 /******************** Decoding and assingment Logic ******************/
 

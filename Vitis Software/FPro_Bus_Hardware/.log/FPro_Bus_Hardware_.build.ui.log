@@ -1,1853 +1,6 @@
-2024-08-07T07:09:20.780729900255-07:09:20 **** Incremental Build of project FPro_Bus_Hardware ****
-000-buildplatform.bat 50211 FPro_Bus_Hardware no_domain_build 
-000-XSDB Server Channel: tcfchan#1
-000-D:/Xilinx/Vitis/2023.1/gnu/microblaze/nt
-000-Building the BSP Library for domain  - standalone_microblaze_I on processor microblaze_I
-000-make --no-print-directory seq_libs
-000-
-000-'Finished building libraries sequentially.'
-000-
-000-make -j 6 --no-print-directory par_libs
-000-
-000-"Running Make include in microblaze_I/libsrc/bram_v4_8/src"
-000-
-000-make -C microblaze_I/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
-000--sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make include in microblaze_I/libsrc/cpu_v2_17/src"
-000-
-000-make -C microblaze_I/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
-000--sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make include in microblaze_I/libsrc/iomodule_v2_14/src"
-000-
-000-make -C microblaze_I/libsrc/iomodule_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
-000-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
-000-fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make include in microblaze_I/libsrc/standalone_v8_1/src"
-000-
-000-make -C microblaze_I/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
-000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
-000--fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make libs in microblaze_I/libsrc/bram_v4_8/src"
-000-
-000-make -C microblaze_I/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
-000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
-000-ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make libs in microblaze_I/libsrc/cpu_v2_17/src"
-000-
-000-make -C microblaze_I/libsrc/cpu_v2_17/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
-000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
-000-ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make libs in microblaze_I/libsrc/iomodule_v2_14/src"
-000-
-000-make -C microblaze_I/libsrc/iomodule_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
-000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
-000-ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make libs in microblaze_I/libsrc/standalone_v8_1/src"
-000-
-000-make -C microblaze_I/libsrc/standalone_v8_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fd
-000-ata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-In file included from xbram_g.c:16:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_util.h:75,
-000-                 from xil_util.c:93:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from xio.h:73,
-000-                 from xio.c:37:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from ../../../include/xstatus.h:33,
-000-                 from xbram_sinit.c:33:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from xiomodule_stats.c:27:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from xbram.h:115,
-000-                 from xbram.c:36:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from microblaze_interrupts_i.h:37,
-000-                 from microblaze_interrupts_g.c:16:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from ../../../include/xil_assert.h:38,
-000-                 from xiomodule_uart.c:36:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule_l.c:41:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from xbram.h:115,
-000-                 from xbram_selftest.c:49:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule_l.c152-1-1comparison of unsigned expression in '< 0' is always false [-Wtype-limits]1-xiomodule_l.c:152:42: warning: comparison of unsigned expression in '< 0' is always false [-Wtype-limits]
-000-  152 |         for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
-000-      |                                          ^
-000-xiomodule_l.c: In function 'XIOModule_RegisterHandler':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule_l.c278-1-1array subscript InterruptId is outside array bounds of 'XIOModule_VectorTableEntry[0]' [-Warray-bounds]1-xiomodule_l.c:278:37: warning: array subscript InterruptId is outside array bounds of 'XIOModule_VectorTableEntry[0]' [-Warray-bounds]
-000-  278 |                 CfgPtr->HandlerTable[InterruptId].Handler = Handler;
-000-      |                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-000-In file included from xiomodule_l.c:42:
-000/FPro_Bus_Hardware360-1-1while referencing 'HandlerTable'0-xiomodule.h:360:17: note: while referencing 'HandlerTable'
-000-  360 |                 HandlerTable[XPAR_IOMODULE_INTC_MAX_INTR_SIZE];
-000-      |                 ^~~~~~~~~~~~
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule_l.c279-1-1array subscript InterruptId is outside array bounds of 'XIOModule_VectorTableEntry[0]' [-Warray-bounds]1-xiomodule_l.c:279:37: warning: array subscript InterruptId is outside array bounds of 'XIOModule_VectorTableEntry[0]' [-Warray-bounds]
-000-  279 |                 CfgPtr->HandlerTable[InterruptId].CallBackRef = CallBackRef;
-000-      |                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-000/FPro_Bus_Hardware360-1-1while referencing 'HandlerTable'0-xiomodule.h:360:17: note: while referencing 'HandlerTable'
-000-  360 |                 HandlerTable[XPAR_IOMODULE_INTC_MAX_INTR_SIZE];
-000-      |                 ^~~~~~~~~~~~
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from xbram.h:115,
-000-                 from xbram_intr.c:32:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from inbyte.c:1:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from microblaze_exceptions_i.h:31,
-000-                 from microblaze_exception_handler.c:31:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule.h:256,
-000-                 from xiomodule.c:40:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-xiomodule.c: In function 'XIOModule_Initialize':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c150-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:150:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  150 |         for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
-000-      |                         ^
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c196-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:196:33: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  196 |                 for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
-000-      |                                 ^
-000-In file included from ../../../include/xstatus.h:34,
-000-                 from xiomodule.h:257:
-000-xiomodule.c: In function 'XIOModule_Connect':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c333-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:333:30: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  333 |         Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                              ^
-000/FPro_Bus_Hardware113-1-1in definition of macro 'Xil_AssertNonvoid'0-../../../include/xil_assert.h:113:9: note: in definition of macro 'Xil_AssertNonvoid'
-000-  113 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_Disconnect':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c373-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:373:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  373 |         Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                           ^
-000/FPro_Bus_Hardware88-1-1in definition of macro 'Xil_AssertVoid'0-../../../include/xil_assert.h:88:9: note: in definition of macro 'Xil_AssertVoid'
-000-   88 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_Enable':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c423-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:423:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  423 |         Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                           ^
-000/FPro_Bus_Hardware88-1-1in definition of macro 'Xil_AssertVoid'0-../../../include/xil_assert.h:88:9: note: in definition of macro 'Xil_AssertVoid'
-000-   88 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_Disable':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c469-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:469:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  469 |         Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                           ^
-000/FPro_Bus_Hardware88-1-1in definition of macro 'Xil_AssertVoid'0-../../../include/xil_assert.h:88:9: note: in definition of macro 'Xil_AssertVoid'
-000-   88 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_Acknowledge':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c513-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:513:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  513 |         Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                           ^
-000/FPro_Bus_Hardware88-1-1in definition of macro 'Xil_AssertVoid'0-../../../include/xil_assert.h:88:9: note: in definition of macro 'Xil_AssertVoid'
-000-   88 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_ConnectFastHandler':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c618-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:618:30: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  618 |         Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                              ^
-000/FPro_Bus_Hardware113-1-1in definition of macro 'Xil_AssertNonvoid'0-../../../include/xil_assert.h:113:9: note: in definition of macro 'Xil_AssertNonvoid'
-000-  113 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
-000/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/microblaze_I/libsrc/iomodule_v2_14/src/xiomodule.c700-1-1comparison is always false due to limited range of data type [-Wtype-limits]1-xiomodule.c:700:27: warning: comparison is always false due to limited range of data type [-Wtype-limits]
-000-  700 |         Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
-000-      |                           ^
-000/FPro_Bus_Hardware88-1-1in definition of macro 'Xil_AssertVoid'0-../../../include/xil_assert.h:88:9: note: in definition of macro 'Xil_AssertVoid'
-000-   88 |     if (Expression) {                              \
-000-      |         ^~~~~~~~~~
-000-In file included from pvr.c:15:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule.h:256,
-000-                 from xiomodule_options.c:32:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule.h:256,
-000-                 from xiomodule_extra.c:33:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule.h:256,
-000-                 from xiomodule_selftest.c:31:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from errno.c:12:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from ../../../include/xil_types.h:48,
-000-                 from ../../../include/xil_assert.h:38,
-000-                 from xiomodule_uart_intr.c:38:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_exception.c:33:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_testmem.h:105,
-000-                 from xil_testmem.c:42:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule_g.c:16:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xiomodule_intr.c:72:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_printf.h:15,
-000-                 from xdebug.h:15,
-000-                 from xil_clocking.h:35,
-000-                 from xil_clocking.c:25:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from outbyte.c:1:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_io.h:48,
-000-                 from xil_sleepcommon.c:29:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_assert.c:28:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_printf.h:15,
-000-                 from xil_printf.c:12:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from mb_interface.h:30,
-000-                 from xil_cache.h:53,
-000-                 from xil_cache.c:31:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_mem.c:32:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xplatform_info.c:52:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_testio.h:44,
-000-                 from xil_testio.c:24:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_printf.h:15,
-000-                 from print.c:20:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from fcntl.c:7:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from microblaze_sleep.h:60,
-000-                 from microblaze_sleep.c:67:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware81-1-1'#pragma message: For the sleep routines, assembly instructions are used'0-microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
-000-   81 | #pragma message ("For the sleep routines, assembly instructions are used")
-000-      |         ^~~~~~~
-000-In file included from xil_types.h:48,
-000-                 from _exit.c:8:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xinterrupt_wrap.h:28,
-000-                 from xinterrupt_wrap.c:23:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from xil_types.h:48,
-000-                 from xil_misc_psreset_api.h:38,
-000-                 from xil_misc_psreset_api.c:31:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_enable_exceptions.S:12:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_enable_dcache.S:18:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_icache_range.S:19:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_flush_dcache_range.S:17:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_init_dcache_range.S:18:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_dcache.S:14:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_disable_interrupts.S:29:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_disable_icache.S:18:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_flush_dcache.S:14:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_dcache_range.S:19:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_scrub.S:24:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_update_dcache.S:34:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_flush_cache_ext_range.S:17:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_enable_interrupts.S:30:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_cache_ext_range.S:17:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_enable_icache.S:17:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_init_icache_range.S:19:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_icache.S:15:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_disable_dcache.S:16:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_disable_exceptions.S:12:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_update_icache.S:33:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_invalidate_cache_ext.S:14:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from hw_exception_handler.S:17:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_flush_cache_ext.S:14:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-In file included from microblaze_selftest.S:59:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
-000-
-000-In file included from xil_types.h:48,
-000-                 from xil_exception.h:39,
-000-                 from microblaze_interrupt_handler.c:28:
-000/FPro_Bus_Hardware543-1-1"XPAR_DLMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:543: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
-000-  543 | #define XPAR_DLMB_CNTLR_BASEADDR XPAR_DLMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware499-1-1this is the location of the previous definition0-../../../include/xparameters.h:499: note: this is the location of the previous definition
-000-  499 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware544-1-1"XPAR_DLMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:544: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
-000-  544 | #define XPAR_DLMB_CNTLR_HIGHADDR XPAR_DLMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware500-1-1this is the location of the previous definition0-../../../include/xparameters.h:500: note: this is the location of the previous definition
-000-  500 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000/FPro_Bus_Hardware564-1-1"XPAR_ILMB_CNTLR_BASEADDR" redefined1-../../../include/xparameters.h:564: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
-000-  564 | #define XPAR_ILMB_CNTLR_BASEADDR XPAR_ILMB_0_CNTLR_BASEADDR
-000-      | 
-000/FPro_Bus_Hardware517-1-1this is the location of the previous definition0-../../../include/xparameters.h:517: note: this is the location of the previous definition
-000-  517 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000U
-000-      | 
-000/FPro_Bus_Hardware565-1-1"XPAR_ILMB_CNTLR_HIGHADDR" redefined1-../../../include/xparameters.h:565: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
-000-  565 | #define XPAR_ILMB_CNTLR_HIGHADDR XPAR_ILMB_0_CNTLR_HIGHADDR
-000-      | 
-000/FPro_Bus_Hardware518-1-1this is the location of the previous definition0-../../../include/xparameters.h:518: note: this is the location of the previous definition
-000-  518 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFFU
-000-      | 
-000-'Finished building libraries parallelly.'
-000-
-000-make --no-print-directory archive
-000-
-000-mb-ar -r  microblaze_I/lib/libxil.a microblaze_I/lib/_exit.o microblaze_I/lib/errno.o microblaze_I/lib/fcntl.o microblaze_I/lib
-000-/hw_exception_handler.o microblaze_I/lib/inbyte.o microblaze_I/lib/microblaze_disable_dcache.o microblaze_I/lib/microblaze_disa
-000-ble_exceptions.o microblaze_I/lib/microblaze_disable_icache.o microblaze_I/lib/microblaze_disable_interrupts.o microblaze_I/lib
-000-/microblaze_enable_dcache.o microblaze_I/lib/microblaze_enable_exceptions.o microblaze_I/lib/microblaze_enable_icache.o microbl
-000-aze_I/lib/microblaze_enable_interrupts.o microblaze_I/lib/microblaze_exception_handler.o microblaze_I/lib/microblaze_flush_cach
-000-e_ext.o microblaze_I/lib/microblaze_flush_cache_ext_range.o microblaze_I/lib/microblaze_flush_dcache.o microblaze_I/lib/microbl
-000-aze_flush_dcache_range.o microblaze_I/lib/microblaze_init_dcache_range.o microblaze_I/lib/microblaze_init_icache_range.o microb
-000-laze_I/lib/microblaze_interrupt_handler.o microblaze_I/lib/microblaze_interrupts_g.o microblaze_I/lib/microblaze_invalidate_cac
-000-he_ext.o microblaze_I/lib/microblaze_invalidate_cache_ext_range.o microblaze_I/lib/microblaze_invalidate_dcache.o microblaze_I/
-000-lib/microblaze_invalidate_dcache_range.o microblaze_I/lib/microblaze_invalidate_icache.o microblaze_I/lib/microblaze_invalidate
-000-_icache_range.o microblaze_I/lib/microblaze_scrub.o microblaze_I/lib/microblaze_selftest.o microblaze_I/lib/microblaze_sleep.o 
-000-microblaze_I/lib/microblaze_update_dcache.o microblaze_I/lib/microblaze_update_icache.o microblaze_I/lib/outbyte.o microblaze_I
-000-/lib/print.o microblaze_I/lib/pvr.o microblaze_I/lib/xbram.o microblaze_I/lib/xbram_g.o microblaze_I/lib/xbram_intr.o microblaz
-000-e_I/lib/xbram_selftest.o microblaze_I/lib/xbram_sinit.o microblaze_I/lib/xil_assert.o microblaze_I/lib/xil_cache.o microblaze_I
-000-/lib/xil_clocking.o microblaze_I/lib/xil_exception.o microblaze_I/lib/xil_mem.o microblaze_I/lib/xil_misc_psreset_api.o microbl
-000-aze_I/lib/xil_printf.o microblaze_I/lib/xil_sleepcommon.o microblaze_I/lib/xil_testcache.o microblaze_I/lib/xil_testio.o microb
-000-laze_I/lib/xil_testmem.o microblaze_I/lib/xil_util.o microblaze_I/lib/xinterrupt_wrap.o microblaze_I/lib/xio.o microblaze_I/lib
-000-/xiomodule.o microblaze_I/lib/xiomodule_extra.o microblaze_I/lib/xiomodule_g.o microblaze_I/lib/xiomodule_intr.o microblaze_I/l
-000-ib/xiomodule_l.o microblaze_I/lib/xiomodule_options.o microblaze_I/lib/xiomodule_selftest.o microblaze_I/lib/xiomodule_stats.o 
-000-microblaze_I/lib/xiomodule_uart.o microblaze_I/lib/xiomodule_uart_intr.o microblaze_I/lib/xplatform_info.o
-000-
-000-mb-ar: creating microblaze_I/lib/libxil.a
-000-'Finished building libraries'
-000-
+2024-08-10T07:11:11.190779900255-07:11:11 **** Incremental Build of project FPro_Bus_Hardware ****
+000-buildplatform.bat 49187 FPro_Bus_Hardware no_domain_build 
+000-XSDB Server Channel: tcfchan#5
 00255-
-07:09:55 Build Finished (took 34s.875ms)
+07:11:13 Build Finished (took 2s.534ms)
 

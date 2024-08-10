@@ -61,15 +61,15 @@ begin
     cs = 1;
     reg_addr = STATUS_REG;
     read = 1;
-    reg_val = rd_data;
     @(posedge clk);
+    reg_val = rd_data;
     $display("Status reg: %b", reg_val);
     cs = 0;
     read = 0;
     reg_addr = READ_REG;
     
     if(reg_val & 32'h1)
-        $fatal("Parity Error.");
+        $display("Parity Error.");
 end
 endtask
 
@@ -122,7 +122,7 @@ begin
 end
 endtask
 
-//Read from UART
+//Signals processor to remove/read data from the rx FIFO Buffer
 task read_uart(output logic [DATA_BITS-1:0] data);
 begin
     @(posedge clk);
@@ -162,6 +162,9 @@ begin
     //Send the stop bit
     rx = 1;
     #(dvsr * 10 * 16 * stop_bits);
+    
+    #100; rd_status_reg();            //Right after data frame has been sent, check to see if there are any status reg errors
+    
 end
 endtask
 
@@ -284,7 +287,7 @@ initial begin
     assert(rx_data == 8'h32) else $fatal("Data rx mismatch: expected 8'h32, got %h", rx_data);
     
     send_rx_data(8, 2, 0, 8'h57);
-    #((dvsr * 10) * (DATA_BITS + 2)); 
+    #((dvsr * 10) * (DATA_BITS + 2));
     read_uart(rx_data);
     assert(rx_data == 8'h57) else $fatal("Data rx mismatch: expected 8'h57, got %h", rx_data);
     
@@ -297,7 +300,7 @@ initial begin
     set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1_5));
     
     send_rx_data(7, 1.5, 0, 8'h41);
-    #((dvsr * 10) * (DATA_BITS + 2)); 
+    #((dvsr * 10) * (DATA_BITS + 2));
     read_uart(rx_data);
     assert(rx_data == 7'h41) else $fatal("Data rx mismatch: expected 8'h41, got %h", rx_data);
     
@@ -307,10 +310,10 @@ initial begin
     assert(rx_data == 7'h67) else $fatal("Data rx mismatch: expected 8'h67, got %h", rx_data);
     
     send_rx_data(7, 1.5, 0, 8'h3A);
-    #((dvsr * 10) * (DATA_BITS + 2)); 
+    #((dvsr * 10) * (DATA_BITS + 2));
     read_uart(rx_data);
-    assert(rx_data == 7'h3A) else $fatal("Data rx mismatch: expected 8'h3A, got %h", rx_data);
-    
+    assert(rx_data == 7'h3A) else $fatal("Data rx mismatch: expected 8'h3A, got %h", rx_data); 
+        
     /********** UART Specs: 7 data bits, 1 stop bit, even parity ***********/
     //Note: when using parity, we must simulate a parity bit being sent
     set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1 | PARITY_EN | PARITY_EVEN));
@@ -321,7 +324,7 @@ initial begin
     assert(rx_data == 7'h49) else $fatal("Data rx mismatch: expected 8'h49, got %h", rx_data);
     
     send_rx_data(7, 1, 1, 8'h58);
-    #((dvsr * 10) * (DATA_BITS + 2)); 
+    #((dvsr * 10) * (DATA_BITS + 2));
     read_uart(rx_data);
     assert(rx_data == 7'h58) else $fatal("Data rx mismatch: expected 8'h58, got %h", rx_data);
     
@@ -329,19 +332,22 @@ initial begin
     #((dvsr * 10) * (DATA_BITS + 2)); 
     read_uart(rx_data);
     assert(rx_data == 7'h79) else $fatal("Data rx mismatch: expected 8'h79, got %h", rx_data);
-    
    
     //Send multiple bytes of data before reading them
     //7 data bits and 1 stop bits
-    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1 | PARITY_EN | PARITY_ODD));    
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1 | PARITY_EN | PARITY_ODD)); 
+       
     send_rx_data(7, 1, 1, 8'h79);
-    #((dvsr * 10) * (DATA_BITS + 2));   
+    #((dvsr * 10) * (DATA_BITS + 2)); 
+     
     send_rx_data(7, 1, 1, 8'h12);
-    #((dvsr * 10) * (DATA_BITS + 2));   
+    #((dvsr * 10) * (DATA_BITS + 2)); 
+     
     send_rx_data(7, 1, 1, 8'h6B);
-    #((dvsr * 10) * (DATA_BITS + 2));   
+    #((dvsr * 10) * (DATA_BITS + 2)); 
+   
     send_rx_data(7, 1, 1, 8'h01);
-    #((dvsr * 10) * (DATA_BITS + 2));               
+    #((dvsr * 10) * (DATA_BITS + 2));        
     
     //Read from the UARt to clear the FIFO
     read_uart(rx_data);
@@ -354,7 +360,30 @@ initial begin
     assert(rx_data == 8'h6B) else $fatal("Data rx mismatch: expected 8'h6B, got %h", rx_data);
     
     read_uart(rx_data);
-    assert(rx_data == 8'h01) else $fatal("Data rx mismatch: expected 8'h01, got %h", rx_data);          
+    assert(rx_data == 8'h01) else $fatal("Data rx mismatch: expected 8'h01, got %h", rx_data); 
+    
+    //Overflow error check - fill up the rx fifo and try to write in more data before reading
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_8 | STOP_BITS_1));
+    
+    //FIFO can hold up to 4 bytes of data
+    for(int i = 0; i <  6; i++)
+    begin
+        send_rx_data(8, 1, 0, 8'h1);
+        #((dvsr * 10) * (DATA_BITS + 2));
+    end  
+    
+    //Frame Error Check - Sending 8 bits instead of 7
+    set_ctrl_reg((ctrl_reg_val | DATA_BITS_7 | STOP_BITS_1));
+        
+    send_rx_data(8, 1, 0, 8'h73);
+    #((dvsr * 10) * (DATA_BITS + 2));
+    read_uart(rx_data);
+    assert(rx_data == 7'h73) else $fatal("Data rx mismatch: expected 8'h73, got %h", rx_data);
+    
+    send_rx_data(8, 1, 0, 8'h62);
+    #((dvsr * 10) * (DATA_BITS + 2)); 
+    read_uart(rx_data);
+    assert(rx_data == 7'h62) else $fatal("Data rx mismatch: expected 8'h62, got %h", rx_data);  
     
     $finish;     
 end

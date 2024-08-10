@@ -3,7 +3,7 @@
 void disp_num(uart_handle_t* self, int num, int base);
 
 /***********************************************
- * Communication Functions
+ * Initialization Functions
  ***********************************************/
 
 void set_baud_rate(uart_handle_t* self, uint32_t baud_rate)
@@ -54,12 +54,15 @@ void set_parity(uart_handle_t* self, uint32_t parity_en, uint32_t parity_pol)
 	io_write(self->base_reg, UART_CTRL_REG, self->ctrl_reg_val);
 }
 
+/***********************************************
+ * Status Checking Functions
+ ***********************************************/
+
 int rx_fifo_empty(uart_handle_t* self)
 {
 	uint32_t rx_empty;
 	//Read the value from the read register and use a bit mask to isolate desired bit
 	rx_empty = ((io_read(self->base_reg, STATUS_REG) & RX_EMPTY_MASK) >> 3);
-	//disp_num(self, io_read(self->base_reg, STATUS_REG), 16);
 	return (int)rx_empty;
 }
 
@@ -67,12 +70,24 @@ int tx_fifo_full(uart_handle_t* self)
 {
 	uint32_t rd_word;
 	int full_flag;
-	//read the value from read register and use bit mask to isolate desired bit
+	//read the value from status register and use bit mask to isolate desired bit
 	rd_word = io_read(self->base_reg, STATUS_REG);
 	//Bit shift the value
 	full_flag = (int)(rd_word & TX_FULL_MASK) >> 9;
 	return full_flag;
 }
+
+int uart_status(uart_handle_t* self)
+{
+	uint32_t rd_word;
+	//read the value from status register
+	rd_word = io_read(self->base_reg, STATUS_REG);
+	return rd_word;
+}
+
+/***********************************************
+ * Communication Functions
+ ***********************************************/
 
 void tx_byte(uart_handle_t* self, uint8_t tx_byte)
 {
@@ -85,13 +100,15 @@ void tx_byte(uart_handle_t* self, uint8_t tx_byte)
 int rx_byte(uart_handle_t* self)
 {
 	uint32_t rd_data;
-	//Read the value from read data reg
-	rd_data = io_read(self->base_reg, RD_REG);
 	//Check if the rx fifo is empty to check if read data is valid
 	if(rx_fifo_empty(self))
 		return -1;
 	else
+	{
+		//Read the value from read data reg
+		rd_data = io_read(self->base_reg, RD_REG);
 		return (int)(rd_data & RX_DATA_MASK);
+	}
 }
 
 /**************************************************

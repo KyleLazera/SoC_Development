@@ -44,13 +44,16 @@ int main()
 	gpio_blink(&gpio, &timer_core);
 
 	//Adjust num of data bits
-	set_data_bits(&uart, DATA_BITS_7);
+	set_data_bits(&uart, DATA_BITS_8);
 
 	//Adjust num of stop bits
 	set_stop_bits(&uart, STOP_BITS_1_5);
 
 	//Adjust parity
 	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
+
+	//Display the status of teh control register to ensure the correct specs are set
+	disp_num(&uart, uart.ctrl_reg_val, 16);
 
 	while(1)
 	{

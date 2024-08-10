@@ -8,7 +8,7 @@
 *   bit 11: parity enable -> (0 - disable, 1 -enable)
 *   bit 12: parity odd/even -> (1 - even, 0 - odd) 
 *   bit 14 & 13: stop bits -> (00 - 1 stop bit, 01 - 1.5 stop bits, 10 - 2 stop bits)
-*   bit 15: data bits -> (0 - 7 data bits, 1 - 8 data bits) 
+*   bit 15: data bits -> (0 - 8 data bits, 1 - 7 data bits) 
 * Status Register (Register 1):
 *   bit 0: Parity Error
 *   bit 1: Frame error
@@ -50,7 +50,7 @@ logic wr_uart, rd_uart, wr_ctrl;
 logic data_bit, parity_en, parity_pol;
 logic [1:0] stop_bits;
 //Status signals
-logic tx_full, rx_empty, parity_err, frame_err, buffer_err;
+logic tx_full, rx_empty, parity_err, frame_err, overflow_err;
 //Registers
 logic [15:0] control_reg;
 logic [10:0] dvsr_reg;
@@ -70,7 +70,9 @@ uart_wrapper#(.DATA_BITS(8), .FIFO_WIDTH(FIFO_DEPTH), .OVRSAMPLING(16), .DVSR_WI
              .rd_data(r_data),
              .tx_full(tx_full),
              .rx_empty(rx_empty),
-             .parity_err(parity_err));
+             .parity_err(parity_err),
+             .frame_err(frame_err), 
+             .overflow_err(overflow_err));
              
 //Dvsr Register Logic
 always_ff @(posedge clk, posedge reset)
@@ -97,6 +99,6 @@ assign stop_bits = control_reg[14:13];
 
 //Logic to read data from the uart slot interface
 //Only the status reg and read reg can be read from
-assign rd_data = (reg_addr == STATUS_REG) ?   {27'h0, tx_full, rx_empty, 2'b00, parity_err} : {24'h0, r_data}; //TODO: add the error flags
+assign rd_data = (reg_addr == STATUS_REG) ?   {27'h0, tx_full, rx_empty, overflow_err, frame_err, parity_err} : {24'h0, r_data}; 
 
 endmodule
