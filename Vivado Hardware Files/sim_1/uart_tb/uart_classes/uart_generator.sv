@@ -9,16 +9,11 @@ class uart_generator;
     mailbox drv_mailbox;
     //Event to signal generator when to send a new data item to driver
     event drv_done;
-    //variables to randomze variable generation
-    rand int num, seed;
     //Tag
     string TAG = "Generator";
     
     //Task that ranomizes/generates values to be driven to the DUT
     task run();
-        //Randomize the number of values to send - used to get a wide scope
-        seed = $urandom;
-        num = $urandom_range(80, 100);
         //Begin generating and sending these values to the driver
         for(int i = 0; i < 50; i++) begin
             uart_trans_item gen_item = new;

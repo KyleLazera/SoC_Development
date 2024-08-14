@@ -1,6 +1,12 @@
 `timescale 1ns / 1ps
 `include "uart_inst.sv"
 
+/*
+* This is a more robust testbench modue that utilizes OOP principles and follows a similar architecture to the UVM
+* framework. The testbench is designed to test a real-life UART usage, by having two seperate UART modules connected 
+* to one another, and transmitting data in full duplex mode. The testbench is also self-checking and provides an output scoreboard
+* for each test displaying whether all data packets were transferred or not.
+*/
 module uart_tb_top;
 
     logic clk, reset;
