@@ -4,6 +4,7 @@
 #include "seg.h"
 #include "gpio_core.h"
 #include "uart.h"
+#include "xadc.h"
 
 /******** Macros ****************/
 #define SW1				0
@@ -15,6 +16,7 @@ void gpio_read_sw(gpio_handle_t* gpio, Timer_Handle_t* timer);
 void set_led_gpio(gpio_handle_t* gpio, Timer_Handle_t* timer, int led_num);
 void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio);
 void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer);
+void get_temp(uart_handle_t* uart, xadc_handle_t* adc);
 
 int main()
 {
@@ -23,12 +25,14 @@ int main()
 	seg_handle_t seg;
 	gpio_handle_t gpio;
 	uart_handle_t uart;
+	xadc_handle_t adc;
 
 	//Initialize the peripherals - This sets their address
 	gpio_init(&gpio, get_slot_addr(BRIDGE_BASE, S5_GPIO));
 	Timer_Init(&timer_core, get_slot_addr(BRIDGE_BASE, TIMER_SLOT));
 	seg_init(&seg, get_slot_addr(BRIDGE_BASE, S4_SEG));
 	uart_init(&uart, get_slot_addr(BRIDGE_BASE, S1_UART));
+	xadc_init(&adc, get_slot_addr(BRIDGE_BASE, S6_XADC));
 
 	//Set timer mode to continous
 	timer_set_mode(&timer_core, TIMER_CONT);
@@ -47,7 +51,7 @@ int main()
 	set_data_bits(&uart, DATA_BITS_8);
 
 	//Adjust num of stop bits
-	set_stop_bits(&uart, STOP_BITS_1_5);
+	set_stop_bits(&uart, STOP_BITS_1);
 
 	//Adjust parity
 	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
@@ -59,7 +63,8 @@ int main()
 	{
 		//Blink each LED
 		set_led_gpio(&gpio, &timer_core, 16);
-		uart_test(&uart, &gpio, &timer_core);
+		//uart_test(&uart, &gpio, &timer_core);
+		get_temp(&uart, &adc);
 	}
 
 	return 0;
@@ -83,7 +88,23 @@ void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio)
 	}
 }
 
-//Test function for the UART Module
+//Function used to test the XADC - this prints out the temperature which is passed through the ADC,
+//& aso prints out the voltage of the core
+void get_temp(uart_handle_t* uart, xadc_handle_t* adc)
+{
+	double temp, vcc;
+
+	temp = read_fpga_temp(adc);
+	disp_str(uart, "FPGA Temp from XADC: ");
+	disp_num(uart, (int)temp, 10);
+	disp_str(uart, "\n\r");
+	vcc = read_fpga_vcc(adc);
+	disp_str(uart, "FPGA VCC from XADC: ");
+	disp_num(uart, (int)vcc, 10);
+	disp_str(uart, "\n\r");
+}
+
+//Test function for the UART Module and the ADC Module
 void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer)
 {
 	static int counter = 0;
@@ -98,6 +119,7 @@ void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer)
 	disp_num(uart, num, 10);
 	disp_str(uart, "\n\r");
 	counter++;
+
 }
 
 //Blink all 16 LED's on the Basys 3 board

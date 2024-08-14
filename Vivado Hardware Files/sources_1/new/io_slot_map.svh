@@ -15,5 +15,6 @@
 `define S3_SW               3
 `define S4_SEG              4
 `define S5_GPIO             5
+`define S6_XADC             6
 
 `endif

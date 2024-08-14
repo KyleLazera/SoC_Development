@@ -1,0 +1,13 @@
+#include "xadc.h"
+
+void xadc_init(xadc_handle_t* self, uint32_t core_base_addr)
+{
+	self->base_addr = core_base_addr;
+}
+
+uint16_t read_raw(xadc_handle_t* self, int reg_offset)
+{
+	uint16_t rd_data;
+	rd_data = (uint16_t)io_read(self->base_addr, (ADC_0_REG + reg_offset)) & 0x0000ffff;
+	return rd_data;
+}

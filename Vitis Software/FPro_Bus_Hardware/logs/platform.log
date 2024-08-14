@@ -30724,3 +30724,742 @@ TRACE::2024-08-10.07:11:13::SCWMssOS::Checking the sw design at  C:/Users/klaze/
 TRACE::2024-08-10.07:11:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
 
 TRACE::2024-08-10.07:11:13::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened new HwDB with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWReader::Active system found as  FPro_Bus_Hardware
+TRACE::2024-08-13.11:22:29::SCWReader::Handling sysconfig FPro_Bus_Hardware
+TRACE::2024-08-13.11:22:29::SCWDomain::checking for install qemu data   : 
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-08-13.11:22:29::SCWMssOS::No sw design opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::mss exists loading the mss file  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::Opened the sw design from mss  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::Adding the swdes entry C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss with des name system
+TRACE::2024-08-13.11:22:29::SCWMssOS::updating the scw layer about changes
+TRACE::2024-08-13.11:22:29::SCWMssOS::Opened the sw design.  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-08-13.11:22:29::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-08-13.11:22:29::SCWMssOS::Commit changes completed.
+TRACE::2024-08-13.11:22:29::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-08-13.11:22:29::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-13.11:22:29::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWReader::No isolation master present  
+LOG::2024-08-13.11:22:29::SCWPlatform::Started generating the artifacts platform FPro_Bus_Hardware
+TRACE::2024-08-13.11:22:29::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-08-13.11:22:29::SCWPlatform::Started generating the artifacts for system configuration FPro_Bus_Hardware
+LOG::2024-08-13.11:22:29::SCWSystem::Checking the domain standalone_microblaze_I
+LOG::2024-08-13.11:22:29::SCWSystem::Not a boot domain 
+LOG::2024-08-13.11:22:29::SCWSystem::Started Processing the domain standalone_microblaze_I
+TRACE::2024-08-13.11:22:29::SCWDomain::Generating domain artifcats
+TRACE::2024-08-13.11:22:29::SCWMssOS::Generating standalone artifcats
+TRACE::2024-08-13.11:22:29::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:29::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:29::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-13.11:22:29::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::Completed writing the mss file at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp
+TRACE::2024-08-13.11:22:29::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:29::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-08-13.11:22:29::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-08-13.11:22:29::SCWDomain::Skipping the build for domain :  standalone_microblaze_I
+TRACE::2024-08-13.11:22:29::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-08-13.11:22:29::SCWMssOS::Copying to export directory.
+TRACE::2024-08-13.11:22:30::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-08-13.11:22:30::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-08-13.11:22:30::SCWSystem::Completed Processing the domain standalone_microblaze_I
+LOG::2024-08-13.11:22:30::SCWSystem::Completed Processing the sysconfig FPro_Bus_Hardware
+LOG::2024-08-13.11:22:30::SCWPlatform::Completed generating the artifacts for system configuration FPro_Bus_Hardware
+TRACE::2024-08-13.11:22:30::SCWPlatform::Started preparing the platform 
+TRACE::2024-08-13.11:22:30::SCWSystem::Writing the bif file for system config FPro_Bus_Hardware
+TRACE::2024-08-13.11:22:30::SCWSystem::dir created 
+TRACE::2024-08-13.11:22:30::SCWSystem::Writing the bif 
+TRACE::2024-08-13.11:22:30::SCWPlatform::Started writing the spfm file 
+TRACE::2024-08-13.11:22:30::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-08-13.11:22:30::SCWPlatform::Completed generating the platform
+TRACE::2024-08-13.11:22:30::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-08-13.11:22:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-08-13.11:22:30::SCWMssOS::Commit changes completed.
+TRACE::2024-08-13.11:22:30::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:30::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:30::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:30::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:30::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:30::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:30::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:30::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-13.11:22:30::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:30::SCWWriter::formatted JSON is {
+	"platformName":	"FPro_Bus_Hardware",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FPro_Bus_Hardware",
+	"platHandOff":	"C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FPro_Vanilla.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FPro_Bus_Hardware",
+	"systems":	[{
+			"systemName":	"FPro_Bus_Hardware",
+			"systemDesc":	"FPro_Bus_Hardware",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FPro_Bus_Hardware",
+			"sysActiveDom":	"standalone_microblaze_I",
+			"sysDefaultDom":	"standalone_microblaze_I",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_I",
+					"domainDispName":	"standalone_microblaze_I",
+					"domainDesc":	"standalone_microblaze_I",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"82b3b5690ffcd2976fc4a5634563882b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-08-13.11:22:30::SCWPlatform::updated the xpfm file.
+TRACE::2024-08-13.11:22:31::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:31::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:31::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:31::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-13.11:22:31::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-13.11:22:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-13.11:22:31::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper
+TRACE::2024-08-13.11:22:31::SCWPlatform::Opened existing hwdb FPro_Wrapper
+TRACE::2024-08-13.11:22:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-13.11:22:31::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-13.11:22:31::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-13.11:22:31::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened new HwDB with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWReader::Active system found as  FPro_Bus_Hardware
+TRACE::2024-08-14.14:00:45::SCWReader::Handling sysconfig FPro_Bus_Hardware
+TRACE::2024-08-14.14:00:45::SCWDomain::checking for install qemu data   : 
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:45::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-08-14.14:00:45::SCWMssOS::No sw design opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::mss exists loading the mss file  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::Opened the sw design from mss  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::Adding the swdes entry C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss with des name system
+TRACE::2024-08-14.14:00:45::SCWMssOS::updating the scw layer about changes
+TRACE::2024-08-14.14:00:45::SCWMssOS::Opened the sw design.  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-08-14.14:00:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-08-14.14:00:45::SCWMssOS::Commit changes completed.
+TRACE::2024-08-14.14:00:45::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-08-14.14:00:45::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:45::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:00:45::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:45::SCWReader::No isolation master present  
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform location is C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:52::SCWMssOS::Doing hw sync for the mss in domain: standalone_microblaze_I
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Opened existing hwdb FPro_Wrapper_0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:52::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:00:52::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/tempdsa/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::update - Opened existing hwdb FPro_Wrapper_1
+TRACE::2024-08-14.14:00:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:52::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-08-14.14:00:52::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-08-14.14:00:52::SCWMssOS::Commit changes completed.
+TRACE::2024-08-14.14:00:52::SCWMssOS::Completed hw sync for the mss in domain: standalone_microblaze_I
+TRACE::2024-08-14.14:00:52::SCWMssOS::Removing the swdes entry for  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-08-14.14:00:52::SCWPlatform::Opened new HwDB with name FPro_Wrapper_2
+TRACE::2024-08-14.14:00:52::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss with des name system
+TRACE::2024-08-14.14:00:52::SCWMssOS::Writing the mss file completed C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWMssOS::Commit changes completed.
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:00:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:00:52::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.14:00:52::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.14:00:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:00:52::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:00:52::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:00:52::SCWWriter::formatted JSON is {
+	"platformName":	"FPro_Bus_Hardware",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FPro_Bus_Hardware",
+	"platHandOff":	"C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FPro_Vanilla.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FPro_Bus_Hardware",
+	"systems":	[{
+			"systemName":	"FPro_Bus_Hardware",
+			"systemDesc":	"FPro_Bus_Hardware",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FPro_Bus_Hardware",
+			"sysActiveDom":	"standalone_microblaze_I",
+			"sysDefaultDom":	"standalone_microblaze_I",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_I",
+					"domainDispName":	"standalone_microblaze_I",
+					"domainDesc":	"standalone_microblaze_I",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"82b3b5690ffcd2976fc4a5634563882b1",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-08-14.14:01:36::SCWPlatform::Started generating the artifacts platform FPro_Bus_Hardware
+TRACE::2024-08-14.14:01:36::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-08-14.14:01:36::SCWPlatform::Started generating the artifacts for system configuration FPro_Bus_Hardware
+LOG::2024-08-14.14:01:36::SCWSystem::Checking the domain standalone_microblaze_I
+LOG::2024-08-14.14:01:36::SCWSystem::Not a boot domain 
+LOG::2024-08-14.14:01:36::SCWSystem::Started Processing the domain standalone_microblaze_I
+TRACE::2024-08-14.14:01:36::SCWDomain::Generating domain artifcats
+TRACE::2024-08-14.14:01:36::SCWMssOS::Generating standalone artifcats
+TRACE::2024-08-14.14:01:36::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-08-14.14:01:36::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:36::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:36::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:36::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:01:36::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:36::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:01:36::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.14:01:36::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.14:01:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:01:36::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:36::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:01:36::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:36::SCWMssOS::Completed writing the mss file at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp
+TRACE::2024-08-14.14:01:36::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:36::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2024-08-14.14:01:44::SCWMssOS::doing bsp build ... 
+TRACE::2024-08-14.14:01:44::SCWMssOS::System Command Ran  C: & cd  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp & make 
+TRACE::2024-08-14.14:01:44::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::"Running Make include in microblaze_I/libsrc/bram_v4_8/src"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::make -C microblaze_I/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-08-14.14:01:44::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
+TRACE::2024-08-14.14:01:44::SCWMssOS::-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::"Running Make include in microblaze_I/libsrc/cpu_v2_17/src"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::make -C microblaze_I/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-08-14.14:01:44::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
+TRACE::2024-08-14.14:01:44::SCWMssOS::-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::"Running Make include in microblaze_I/libsrc/iomodule_v2_14/src"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::make -C microblaze_I/libsrc/iomodule_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2024-08-14.14:01:44::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
+TRACE::2024-08-14.14:01:44::SCWMssOS::fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::"Running Make include in microblaze_I/libsrc/standalone_v8_1/src"
+
+TRACE::2024-08-14.14:01:44::SCWMssOS::make -C microblaze_I/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-08-14.14:01:44::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
+TRACE::2024-08-14.14:01:44::SCWMssOS::-fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::"Running Make libs in microblaze_I/libsrc/bram_v4_8/src"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::make -C microblaze_I/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-08-14.14:01:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2024-08-14.14:01:45::SCWMssOS::ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::"Running Make libs in microblaze_I/libsrc/cpu_v2_17/src"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::make -C microblaze_I/libsrc/cpu_v2_17/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-08-14.14:01:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2024-08-14.14:01:45::SCWMssOS::ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::"Running Make libs in microblaze_I/libsrc/iomodule_v2_14/src"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::make -C microblaze_I/libsrc/iomodule_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-08-14.14:01:45::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
+TRACE::2024-08-14.14:01:45::SCWMssOS::ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::"Running Make libs in microblaze_I/libsrc/standalone_v8_1/src"
+
+TRACE::2024-08-14.14:01:45::SCWMssOS::make -C microblaze_I/libsrc/standalone_v8_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-08-14.14:01:45::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fd
+TRACE::2024-08-14.14:01:45::SCWMssOS::ata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-08-14.14:01:48::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2024-08-14.14:01:48::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-08-14.14:01:48::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-08-14.14:01:48::SCWMssOS::mb-ar -r  microblaze_I/lib/libxil.a microblaze_I/lib/_exit.o microblaze_I/lib/errno.o microblaze_I/lib/fcntl.o microblaze_I/lib
+TRACE::2024-08-14.14:01:48::SCWMssOS::/hw_exception_handler.o microblaze_I/lib/inbyte.o microblaze_I/lib/microblaze_disable_dcache.o microblaze_I/lib/microblaze_disa
+TRACE::2024-08-14.14:01:48::SCWMssOS::ble_exceptions.o microblaze_I/lib/microblaze_disable_icache.o microblaze_I/lib/microblaze_disable_interrupts.o microblaze_I/lib
+TRACE::2024-08-14.14:01:48::SCWMssOS::/microblaze_enable_dcache.o microblaze_I/lib/microblaze_enable_exceptions.o microblaze_I/lib/microblaze_enable_icache.o microbl
+TRACE::2024-08-14.14:01:48::SCWMssOS::aze_I/lib/microblaze_enable_interrupts.o microblaze_I/lib/microblaze_exception_handler.o microblaze_I/lib/microblaze_flush_cach
+TRACE::2024-08-14.14:01:48::SCWMssOS::e_ext.o microblaze_I/lib/microblaze_flush_cache_ext_range.o microblaze_I/lib/microblaze_flush_dcache.o microblaze_I/lib/microbl
+TRACE::2024-08-14.14:01:48::SCWMssOS::aze_flush_dcache_range.o microblaze_I/lib/microblaze_init_dcache_range.o microblaze_I/lib/microblaze_init_icache_range.o microb
+TRACE::2024-08-14.14:01:48::SCWMssOS::laze_I/lib/microblaze_interrupt_handler.o microblaze_I/lib/microblaze_interrupts_g.o microblaze_I/lib/microblaze_invalidate_cac
+TRACE::2024-08-14.14:01:48::SCWMssOS::he_ext.o microblaze_I/lib/microblaze_invalidate_cache_ext_range.o microblaze_I/lib/microblaze_invalidate_dcache.o microblaze_I/
+TRACE::2024-08-14.14:01:48::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_I/lib/microblaze_invalidate_icache.o microblaze_I/lib/microblaze_invalidate
+TRACE::2024-08-14.14:01:48::SCWMssOS::_icache_range.o microblaze_I/lib/microblaze_scrub.o microblaze_I/lib/microblaze_selftest.o microblaze_I/lib/microblaze_sleep.o 
+TRACE::2024-08-14.14:01:48::SCWMssOS::microblaze_I/lib/microblaze_update_dcache.o microblaze_I/lib/microblaze_update_icache.o microblaze_I/lib/outbyte.o microblaze_I
+TRACE::2024-08-14.14:01:48::SCWMssOS::/lib/print.o microblaze_I/lib/pvr.o microblaze_I/lib/xbram.o microblaze_I/lib/xbram_g.o microblaze_I/lib/xbram_intr.o microblaz
+TRACE::2024-08-14.14:01:48::SCWMssOS::e_I/lib/xbram_selftest.o microblaze_I/lib/xbram_sinit.o microblaze_I/lib/xil_assert.o microblaze_I/lib/xil_cache.o microblaze_I
+TRACE::2024-08-14.14:01:48::SCWMssOS::/lib/xil_clocking.o microblaze_I/lib/xil_exception.o microblaze_I/lib/xil_mem.o microblaze_I/lib/xil_misc_psreset_api.o microbl
+TRACE::2024-08-14.14:01:48::SCWMssOS::aze_I/lib/xil_printf.o microblaze_I/lib/xil_sleepcommon.o microblaze_I/lib/xil_testcache.o microblaze_I/lib/xil_testio.o microb
+TRACE::2024-08-14.14:01:48::SCWMssOS::laze_I/lib/xil_testmem.o microblaze_I/lib/xil_util.o microblaze_I/lib/xinterrupt_wrap.o microblaze_I/lib/xio.o microblaze_I/lib
+TRACE::2024-08-14.14:01:48::SCWMssOS::/xiomodule.o microblaze_I/lib/xiomodule_extra.o microblaze_I/lib/xiomodule_g.o microblaze_I/lib/xiomodule_intr.o microblaze_I/l
+TRACE::2024-08-14.14:01:48::SCWMssOS::ib/xiomodule_l.o microblaze_I/lib/xiomodule_options.o microblaze_I/lib/xiomodule_selftest.o microblaze_I/lib/xiomodule_stats.o 
+TRACE::2024-08-14.14:01:48::SCWMssOS::microblaze_I/lib/xiomodule_uart.o microblaze_I/lib/xiomodule_uart_intr.o microblaze_I/lib/xplatform_info.o
+
+TRACE::2024-08-14.14:01:49::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-08-14.14:01:49::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-08-14.14:01:49::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-08-14.14:01:49::SCWSystem::Completed Processing the domain standalone_microblaze_I
+LOG::2024-08-14.14:01:49::SCWSystem::Completed Processing the sysconfig FPro_Bus_Hardware
+LOG::2024-08-14.14:01:49::SCWPlatform::Completed generating the artifacts for system configuration FPro_Bus_Hardware
+TRACE::2024-08-14.14:01:49::SCWPlatform::Started preparing the platform 
+TRACE::2024-08-14.14:01:49::SCWSystem::Writing the bif file for system config FPro_Bus_Hardware
+TRACE::2024-08-14.14:01:49::SCWSystem::dir created 
+TRACE::2024-08-14.14:01:49::SCWSystem::Writing the bif 
+TRACE::2024-08-14.14:01:49::SCWPlatform::Started writing the spfm file 
+TRACE::2024-08-14.14:01:49::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-08-14.14:01:49::SCWPlatform::Completed generating the platform
+TRACE::2024-08-14.14:01:49::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:49::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss with des name system
+TRACE::2024-08-14.14:01:49::SCWMssOS::Writing the mss file completed C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:49::SCWMssOS::Commit changes completed.
+TRACE::2024-08-14.14:01:49::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:49::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:49::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:49::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:01:49::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:01:49::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.14:01:49::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.14:01:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:01:49::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:49::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:01:49::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:49::SCWWriter::formatted JSON is {
+	"platformName":	"FPro_Bus_Hardware",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FPro_Bus_Hardware",
+	"platHandOff":	"C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FPro_Vanilla.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FPro_Bus_Hardware",
+	"systems":	[{
+			"systemName":	"FPro_Bus_Hardware",
+			"systemDesc":	"FPro_Bus_Hardware",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FPro_Bus_Hardware",
+			"sysActiveDom":	"standalone_microblaze_I",
+			"sysDefaultDom":	"standalone_microblaze_I",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_I",
+					"domainDispName":	"standalone_microblaze_I",
+					"domainDesc":	"standalone_microblaze_I",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"82b3b5690ffcd2976fc4a5634563882b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-08-14.14:01:49::SCWPlatform::updated the xpfm file.
+TRACE::2024-08-14.14:01:52::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:52::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:52::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:52::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.14:01:52::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.14:01:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.14:01:52::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.14:01:52::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.14:01:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.14:01:52::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.14:01:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.14:01:52::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+LOG::2024-08-14.16:30:19::SCWPlatform::Started generating the artifacts platform FPro_Bus_Hardware
+TRACE::2024-08-14.16:30:19::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-08-14.16:30:20::SCWPlatform::Started generating the artifacts for system configuration FPro_Bus_Hardware
+LOG::2024-08-14.16:30:20::SCWSystem::Checking the domain standalone_microblaze_I
+LOG::2024-08-14.16:30:20::SCWSystem::Not a boot domain 
+LOG::2024-08-14.16:30:20::SCWSystem::Started Processing the domain standalone_microblaze_I
+TRACE::2024-08-14.16:30:20::SCWDomain::Generating domain artifcats
+TRACE::2024-08-14.16:30:20::SCWMssOS::Generating standalone artifcats
+TRACE::2024-08-14.16:30:20::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-08-14.16:30:20::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.16:30:20::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.16:30:20::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.16:30:20::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.16:30:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.16:30:20::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.16:30:20::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWMssOS::Completed writing the mss file at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp
+TRACE::2024-08-14.16:30:20::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-08-14.16:30:20::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-08-14.16:30:20::SCWDomain::Skipping the build for domain :  standalone_microblaze_I
+TRACE::2024-08-14.16:30:20::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-08-14.16:30:20::SCWMssOS::Copying to export directory.
+TRACE::2024-08-14.16:30:20::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-08-14.16:30:20::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-08-14.16:30:20::SCWSystem::Completed Processing the domain standalone_microblaze_I
+LOG::2024-08-14.16:30:20::SCWSystem::Completed Processing the sysconfig FPro_Bus_Hardware
+LOG::2024-08-14.16:30:20::SCWPlatform::Completed generating the artifacts for system configuration FPro_Bus_Hardware
+TRACE::2024-08-14.16:30:20::SCWPlatform::Started preparing the platform 
+TRACE::2024-08-14.16:30:20::SCWSystem::Writing the bif file for system config FPro_Bus_Hardware
+TRACE::2024-08-14.16:30:20::SCWSystem::dir created 
+TRACE::2024-08-14.16:30:20::SCWSystem::Writing the bif 
+TRACE::2024-08-14.16:30:20::SCWPlatform::Started writing the spfm file 
+TRACE::2024-08-14.16:30:20::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-08-14.16:30:20::SCWPlatform::Completed generating the platform
+TRACE::2024-08-14.16:30:20::SCWMssOS::Saving the mss changes C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-08-14.16:30:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-08-14.16:30:20::SCWMssOS::Commit changes completed.
+TRACE::2024-08-14.16:30:20::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.16:30:20::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.16:30:20::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.16:30:20::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.16:30:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.16:30:20::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.16:30:20::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:20::SCWWriter::formatted JSON is {
+	"platformName":	"FPro_Bus_Hardware",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FPro_Bus_Hardware",
+	"platHandOff":	"C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FPro_Vanilla.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FPro_Bus_Hardware",
+	"systems":	[{
+			"systemName":	"FPro_Bus_Hardware",
+			"systemDesc":	"FPro_Bus_Hardware",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FPro_Bus_Hardware",
+			"sysActiveDom":	"standalone_microblaze_I",
+			"sysDefaultDom":	"standalone_microblaze_I",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_I",
+					"domainDispName":	"standalone_microblaze_I",
+					"domainDesc":	"standalone_microblaze_I",
+					"processors":	"microblaze_I",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"82b3b5690ffcd2976fc4a5634563882b",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-08-14.16:30:20::SCWPlatform::updated the xpfm file.
+TRACE::2024-08-14.16:30:22::SCWPlatform::Trying to open the hw design at C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:22::SCWPlatform::DSA given C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:22::SCWPlatform::DSA absoulate path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:22::SCWPlatform::DSA directory C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw
+TRACE::2024-08-14.16:30:22::SCWPlatform:: Platform Path C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa
+TRACE::2024-08-14.16:30:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-08-14.16:30:22::SCWPlatform::Trying to set the existing hwdb with name FPro_Wrapper_2
+TRACE::2024-08-14.16:30:22::SCWPlatform::Opened existing hwdb FPro_Wrapper_2
+TRACE::2024-08-14.16:30:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-08-14.16:30:22::SCWMssOS::Checking the sw design at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss
+TRACE::2024-08-14.16:30:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss|system||
+
+TRACE::2024-08-14.16:30:22::SCWMssOS::Sw design exists and opened at  C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/microblaze_I/standalone_microblaze_I/bsp/system.mss

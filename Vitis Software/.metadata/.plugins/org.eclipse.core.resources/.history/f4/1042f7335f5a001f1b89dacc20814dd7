@@ -1,0 +1,6 @@
+#ifndef _XADC_H
+#define _XADC_H
+
+#include "fpro_init.h"
+
+#endif	//_XADC_H

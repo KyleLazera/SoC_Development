@@ -26,7 +26,9 @@ module MMIO_Wrapper
     input logic rx,
     output logic tx,
     //Timer signals 
-    output logic timer_complete
+    output logic timer_complete,
+    //XADC Signals
+    input logic [3:0] adc_p, adc_n
 );
 
 //Signal Declerations - These are used mainly for the initialization of the MMIO controller
@@ -129,10 +131,23 @@ gpio_core #(.DATA_WIDTH(DATA_WIDTH)) gpio_slot_5
  .data_in(sw)
 );
 
+xadc_core xadc_slot_6
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S6_XADC]),
+ .read(slot_mem_rd[`S6_XADC]),
+ .write(slot_mem_wr[`S6_XADC]),
+ .reg_addr(slot_mem_addr[`S6_XADC]),
+ .wr_data(slot_wr_data[`S6_XADC]),
+ .rd_data(slot_rd_data[`S6_XADC]),
+ .adc_p(adc_p),
+ .adc_n(adc_n)
+);
+
 //Assign 0's to all unused rd_data slots
 generate
     genvar i;
-    for(i = 6; i <64; i++)
+    for(i = 7; i <64; i++)
         assign slot_rd_data[i] = 32'hffffffff;
     assign slot_rd_data[2] = 32'hffffffff;
     assign slot_rd_data[3] = 32'hffffffff;

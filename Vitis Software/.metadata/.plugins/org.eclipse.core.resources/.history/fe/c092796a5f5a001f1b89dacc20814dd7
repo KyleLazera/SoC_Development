@@ -1,0 +1,18 @@
+#ifndef _XADC_H
+#define _XADC_H
+
+#include "fpro_init.h"
+
+typedef enum{
+	ADC_0_REG = 0,
+	TMP_REG = 4,
+	VCC_REG = 5
+}XADC_REG;
+
+typedef struct{
+	uint32_t base_addr;
+}xadc_handle_t;
+
+xadc_init(xadc_handle_t* self, uint32_t core_base_addr);
+
+#endif	//_XADC_H
