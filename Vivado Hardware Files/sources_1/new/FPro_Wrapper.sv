@@ -20,7 +20,9 @@ module FPro_Wrapper
     output logic timer_complete,
     //UART Signals
     input logic rx,
-    output logic tx
+    output logic tx,
+    //XADC Signals
+    input logic [3:0] adc_p, adc_n
 );
 
 //Signal Declerations
@@ -81,7 +83,9 @@ MMIO_Wrapper #(.DATA_WIDTH(DATA_WIDTH)) mmio_unit(
     .seg(seg),
     .timer_complete(timer_complete),
     .tx(tx),
-    .rx(rx)
+    .rx(rx),
+    .adc_p(adc_p),
+    .adc_n(adc_n)
 ); 
 
 endmodule

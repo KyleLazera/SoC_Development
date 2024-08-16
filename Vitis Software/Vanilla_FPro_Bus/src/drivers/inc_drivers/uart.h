@@ -121,6 +121,12 @@ void disp_str(uart_handle_t* self, const char* str);
  */
 void disp_num(uart_handle_t* self, int num, int base);
 
+/*
+ * @brief Display decimal values
+ * @param num - the number to display
+ * @param digit - the number of digits to display
+ */
+void disp_double(uart_handle_t* self, double num, int digit);
 
 
 #endif

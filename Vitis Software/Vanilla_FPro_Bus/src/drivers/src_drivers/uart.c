@@ -199,7 +199,6 @@ static void convert_num_to_str(uart_handle_t* self, int num, int base, int len)
 	display_str(self, str);
 }
 
-
 /*********************************************
  * Display Functions
  *********************************************/
@@ -218,5 +217,33 @@ void disp_str(uart_handle_t* self, const char* str)
 void disp_num(uart_handle_t* self, int num, int base)
 {
 	convert_num_to_str(self, num, base, 0);
+}
+
+void disp_double(uart_handle_t* self, double num, int digit)
+{
+	double num_a, frac;
+	int n, i, i_part;
+
+	//get absolute value of num
+	num_a = num;
+	if(num < 0.0){
+		num_a = -num;
+		disp_str(self, "-");
+	}
+
+	//Display integer portion & decimal point
+	i_part = (int)num_a;
+	disp_num(self, i_part, 10);
+	disp_str(self, ".");
+
+	//Display fraction portion
+	frac = num_a - (double)i_part;
+	for(int n = 0; n < digit; n++)
+	{
+		frac *= 10.0;
+		i = (int)frac;
+		disp_num(self, i, 10);
+		frac -= i;
+	}
 }
 

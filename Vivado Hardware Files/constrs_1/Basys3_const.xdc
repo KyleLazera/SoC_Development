@@ -1,6 +1,3 @@
-set_property CFGBVS VCCO [current_design]
-set_property CONFIG_VOLTAGE 3.3 [current_design]
-
 # Clock signal
 set_property PACKAGE_PIN W5 [get_ports clk]							
 	set_property IOSTANDARD LVCMOS33 [get_ports clk]
@@ -109,3 +106,40 @@ set_property PACKAGE_PIN W4 [get_ports {an[3]}]
 #Flag output for timer - used logic analyzer to test
 set_property PACKAGE_PIN A14 [get_ports timer_complete]					
 	set_property IOSTANDARD LVCMOS33 [get_ports timer_complete]
+	
+#====================================================================================================
+# USB-RS232 Interface
+#====================================================================================================
+set_property PACKAGE_PIN B18 [get_ports rx]
+set_property IOSTANDARD LVCMOS33 [get_ports rx]
+set_property PACKAGE_PIN A18 [get_ports tx]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
+
+#Pmod Header JXADC
+#Sch name = XA1_P
+set_property PACKAGE_PIN J3 [get_ports {adc_p[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_p[0]}]
+#Sch name = XA2_P
+set_property PACKAGE_PIN L3 [get_ports {adc_p[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_p[1]}]
+#Sch name = XA3_P
+set_property PACKAGE_PIN M2 [get_ports {adc_p[2]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_p[2]}]
+#Sch name = XA4_P
+set_property PACKAGE_PIN N2 [get_ports {adc_p[3]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_p[3]}]
+#Sch name = XA1_N
+set_property PACKAGE_PIN K3 [get_ports {adc_n[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_n[0]}]
+#Sch name = XA2_N
+set_property PACKAGE_PIN M3 [get_ports {adc_n[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_n[1]}]
+#Sch name = XA3_N
+set_property PACKAGE_PIN M1 [get_ports {adc_n[2]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_n[2]}]
+#Sch name = XA4_N
+set_property PACKAGE_PIN N1 [get_ports {adc_n[3]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {adc_n[3]}]

@@ -1,2 +1,6 @@
-Nothing to build in platform 'FPro_Bus_Hardware'
+09:07:55 **** Incremental Build of project FPro_Bus_Hardware ****
+buildplatform.bat 53475 FPro_Bus_Hardware no_domain_build 
+XSDB Server Channel: tcfchan#6
+
+09:07:58 Build Finished (took 3s.108ms)
 

@@ -1,6 +1,7 @@
-Nothing to build in platform 'FPro_Bus_Hardware'
-
-16:32:35 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+09:07:55 **** Incremental Build of project FPro_Bus_Hardware ****
+buildplatform.bat 53475 FPro_Bus_Hardware no_domain_build 
+XSDB Server Channel: tcfchan#6
+09:07:58 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,6 +16,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Viti
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  20072	    268	   3108	  23448	   5b98	Vanilla_FPro_Bus.elf
+  21984	    268	   3108	  25360	   6310	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '

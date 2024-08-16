@@ -2,10 +2,9 @@
 
 /* This module is a wrapping circuit for an XADC IP Core. It enables the user to
 * access the data from the XADC core using software which is run by the Microblaze.
-* Architecture of the XADC Core:
-* Register 0 - 3:  Analog channel 0 - 3 data value
-* Register 4: on-chip temperature reading
-* Register 5: on chip-internal voltage reading
+* This core enables both reading and writing to teh XADC core, however, due to the difference in 
+* address space between teh XADC core (7-bit) and the reg_addr width (5-bit) the user can only read from
+* the analog input channels (0x10 to 0x1f) and can only write to the config registers (0x40 to 0x4f)
 */
 module xadc_core
 (
@@ -23,23 +22,22 @@ module xadc_core
 );
 
 //Signal Declarations
+logic wr_en, rd_en;
 logic [4:0] channel;        //Holds the output channel
 logic [6:0] daddr_in;       //Register address to access in the XADC status/control reg
 logic eoc, rdy;             
 logic [15:0] adc_data;      //Ouput data form the ADC
-//Registers for the analog channels 
-logic [15:0] adc0_out_reg, adc1_out_reg, adc2_out_reg, adc3_out_reg;
-logic [15:0] tmp_out_reg, vcc_out_reg;
+logic rdy_reg;
 logic [31:0] r_data;        //Output data to the processor
 
 //XADC Module Instantiation
 xadc_fpro xadc_unit (
     .dclk_in(clk),                  // input wire dclk_in
     .reset_in(reset),               // input wire reset_in
-    .di_in(16'h0000),               // input wire [15 : 0] di_in
+    .di_in(wr_data[15:0]),               // input wire [15 : 0] di_in
     .daddr_in(daddr_in),            // input wire [6 : 0] daddr_in
-    .den_in(eoc),                   // input wire den_in
-    .dwe_in(1'b0),                  // input wire dwe_in
+    .den_in(eoc | rd_en | wr_en),   // input wire den_in
+    .dwe_in(write),                  // input wire dwe_in
     .drdy_out(rdy),                 // output wire drdy_out
     .do_out(adc_data),              // output wire [15 : 0] do_out
     .vp_in(1'b0),                   // input wire vp_in
@@ -59,46 +57,20 @@ xadc_fpro xadc_unit (
     .busy_out()                     // output wire busy_out
 );
 
-assign daddr_in = {2'b00, channel};
+//Intermediary signals
+assign daddr_in = (wr_en) ? {2'b10, reg_addr} : {2'b00, reg_addr};
+assign wr_en = write & cs;
+assign rd_en = read & cs;
 
 always_ff@(posedge clk) begin
-    if(reset) begin
-        //If reset is high, reset all register values to 0
-        adc0_out_reg <= 0;
-        adc1_out_reg <= 0;
-        adc2_out_reg <= 0;
-        adc3_out_reg <= 0;
-        tmp_out_reg <= 0;
-        vcc_out_reg <= 0;
-    end
-    else begin
-        //Decoding logic for the register values
-        if(rdy && (channel == 5'b10110))
-            adc0_out_reg <= adc_data;
-        if(rdy && (channel == 5'b11110))
-            adc1_out_reg <= adc_data;
-        if(rdy && (channel == 5'b10111))
-            adc2_out_reg <= adc_data;
-        if(rdy && (channel == 5'b11111))
-            adc3_out_reg <= adc_data;
-        if(rdy && (channel == 5'b00000))
-            tmp_out_reg <= adc_data;
-        if(rdy && (channel == 5'b00001))
-            vcc_out_reg <= adc_data;
-    end
+    if(reset) 
+        rdy_reg <= 0;
+    else
+        rdy_reg <= rdy;
 end
 
-//Multiplexing/output logic
-always_comb begin
-    case(reg_addr[2:0])
-        3'b000: r_data <= {16'h0000, adc0_out_reg};
-        3'b001: r_data <= {16'h0000, adc1_out_reg};
-        3'b010: r_data <= {16'h0000, adc2_out_reg};
-        3'b011: r_data <= {16'h0000, adc3_out_reg};
-        3'b100: r_data <= {16'h0000, tmp_out_reg};
-        default: r_data <= {16'h0000, vcc_out_reg};
-    endcase
-end
+//Multiplexing Logic
+assign r_data = {15'h0, adc_data, rdy_reg};
 
 //Output logic
 assign rd_data = r_data;

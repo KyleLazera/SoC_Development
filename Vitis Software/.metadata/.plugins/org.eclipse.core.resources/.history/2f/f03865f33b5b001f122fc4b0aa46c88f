@@ -1,0 +1,53 @@
+#include "xadc.h"
+#include "uart.h"
+
+void xadc_init(xadc_handle_t* self, uint32_t core_base_addr)
+{
+	self->base_addr = core_base_addr;
+}
+
+uint16_t read_raw(xadc_handle_t* self, int reg_offset)
+{
+	uart_handle_t uart_debug;
+	uart_init(&uart_debug, get_slot_addr(BRIDGE_BASE, S1_UART));
+	//Adjust num of data bits
+	set_data_bits(&uart_debug, DATA_BITS_8);
+
+	//Adjust num of stop bits
+	set_stop_bits(&uart_debug, STOP_BITS_1);
+
+	//Adjust parity
+	set_parity(&uart_debug, PARITY_ENABLE, PARITY_EVEN);
+	uint16_t rd_data, flag_reg;
+	//Read from the control/status register specified
+	//rd_data = (uint16_t)(io_read(self->base_addr, (ADC_0_REG + reg_offset)) & 0x0000ffff);
+	//disp_num(&uart_debug, flag_reg, 16);
+	rd_data = (uint16_t)(io_read(self->base_addr, reg_offset) & 0x0001ffff);
+	while(!(rd_data & 0x01)){
+		rd_data = (uint16_t)(io_read(self->base_addr, reg_offset) & 0x0001ffff);
+		disp_str(&uart_debug, "rd_data: ");
+		disp_num(&uart_debug, rd_data, 16);
+		disp_str(&uart_debug, "\n\r");
+	}
+	disp_str(&uart_debug, "Final Data: ");
+	disp_num(&uart_debug, rd_data, 16);
+	disp_str(&uart_debug, "\n\r");
+	return rd_data;
+}
+
+double read_adc_in(xadc_handle_t* self, int reg_offset)
+{
+	uint16_t raw;
+	raw = read_raw(self, reg_offset) >> 4;
+	return ((double)raw/4096.0);
+}
+
+double read_fpga_vcc(xadc_handle_t* self)
+{
+	return(read_adc_in(self, VCC_REG) * 3.0);
+}
+
+double read_fpga_temp(xadc_handle_t* self)
+{
+	return(read_adc_in(self, TEMP_REG)*503.975 - 273.15);
+}

@@ -57,14 +57,35 @@ int main()
 	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
 
 	//Display the status of teh control register to ensure the correct specs are set
-	disp_num(&uart, uart.ctrl_reg_val, 16);
+	//disp_num(&uart, uart.ctrl_reg_val, 16);
+
+	adc_set_mode(&adc, ON_CHIP_MODE_SEL, BIPOLAR);
 
 	while(1)
 	{
-		//Blink each LED
-		set_led_gpio(&gpio, &timer_core, 16);
-		//uart_test(&uart, &gpio, &timer_core);
-		get_temp(&uart, &adc);
+		for(int i = 0; i < 10; i++)
+		{
+			//Blink each LED
+			set_led_gpio(&gpio, &timer_core, 16);
+			//uart_test(&uart, &gpio, &timer_core);
+			get_temp(&uart, &adc);
+
+			if(i == 5)
+			{
+				//De-select the temperature channel and VCC channel on chip
+				adc_config_channels(&adc, ON_CHIP_CHANNEL, 0x0);
+			}
+
+			//For the time from when the on chip ADC's are disabled ot when the temperature is re-enabled,
+			//the values should remain exactly the same as no new readings are going into the status registers.
+
+			if(i == 7)
+			{
+				//Re-enable only the temperature channel
+				//This means the vcc port should remain the exact same
+				adc_config_channels(&adc, ON_CHIP_CHANNEL, ON_CHIP_TEMP);
+			}
+		}
 	}
 
 	return 0;
@@ -96,11 +117,13 @@ void get_temp(uart_handle_t* uart, xadc_handle_t* adc)
 
 	temp = read_fpga_temp(adc);
 	disp_str(uart, "FPGA Temp from XADC: ");
-	disp_num(uart, (int)temp, 10);
+	//disp_num(uart, (int)temp, 10);
+	disp_double(uart, temp, 3);
 	disp_str(uart, "\n\r");
 	vcc = read_fpga_vcc(adc);
 	disp_str(uart, "FPGA VCC from XADC: ");
-	disp_num(uart, (int)vcc, 10);
+	//disp_num(uart, (int)vcc, 10);
+	disp_double(uart, vcc, 3);
 	disp_str(uart, "\n\r");
 }
 
