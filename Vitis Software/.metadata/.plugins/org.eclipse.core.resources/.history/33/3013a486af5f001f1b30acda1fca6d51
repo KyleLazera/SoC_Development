@@ -1,0 +1,12 @@
+#include "pwm_core.h"
+
+void pwm_init(pwm_handle_t* self, uint32_t core_addr)
+{
+	self->base_reg = core_addr;
+}
+
+void set_dvsr(pwm_handle_t* self, uint32_t dvsr_val)
+{
+	//Write the dvsr value into the base address with the dvsr reg offset
+	io_write(self->base_reg, DVSR_REG, dvsr_val);
+}

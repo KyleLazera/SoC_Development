@@ -1,0 +1,29 @@
+#ifndef _PWM_CORE_H
+#define _PWM_CORE_H
+
+//Register declarations
+enum{
+	DVSR_REG = 0x0,
+	RES_REG = 0x01,
+	DUTY_REG_BASE = 0x10
+};
+
+//PWM Handle Object
+typedef struct{
+	uint32_t base_reg;
+}pwm_handle_t;
+
+/******* Methods *********/
+
+/**
+ * @brief Constructor to init the base address of the peripheral
+ */
+void pwm_init(pwm_handle_t* self, uint32_t core_addr);
+
+/**
+ * @brief Function used to set the divisor for the system clock
+ * @note This is used to adjust the switchig frequency of the PWM signal
+ */
+void set_dvsr(pwm_handle_t* self, uint32_t dvsr_val);
+
+#endif //_PWM_CORE_H

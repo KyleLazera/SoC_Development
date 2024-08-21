@@ -1,0 +1,8 @@
+#ifndef _PWM_CORE_H
+#define _PWM_CORE_H
+
+typedef struct{
+	uint32_t base_reg;
+}pwm_handle_t;
+
+#endif //_PWM_CORE_H

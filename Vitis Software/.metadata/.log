@@ -5108,3 +5108,1641 @@ java.lang.Error
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-08-16 09:08:27.581
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 10:17:31.706
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 10:17:31.787
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 10:17:31.788
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 10:17:31.789
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 10:17:31.789
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 12:20:50.661
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 12:20:50.696
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 12:20:50.697
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 12:20:50.698
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 12:20:50.699
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:11:59.813
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:11:59.838
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:11:59.855
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:11:59.855
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:11:59.855
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:59:33.314
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:59:33.350
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:59:33.382
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:59:33.383
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 13:59:33.385
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 16:50:26.962
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 16:50:27.010
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 16:50:27.011
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 16:50:27.012
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-16 16:50:27.013
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SESSION 2024-08-20 14:07:43.226 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-20 14:08:45.902
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2024-08-20 14:08:51.813
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:13.773
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:13.774
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:13.775
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:13.892
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.819
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.820
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.822
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.824
+!MESSAGE XSCT Command: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.825
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/SharedData/2023.1/data;D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-20 14:09:36.839
+!MESSAGE XSCT command with result: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Result: [null, ]. Thread: Thread-27
+!SESSION 2024-08-21 06:58:03.336 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-08-21 07:06:30.053
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.868
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.870
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.935
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.936
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.945
+!MESSAGE XSCT Command: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:07:21.958
+!MESSAGE XSCT command with result: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Result: [null, ]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:08:03.503
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:08:39.572
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:08:39.575
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:08:39.576
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/SharedData/2023.1/data;D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 07:11:37.147
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 07:11:37.148
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 07:11:37.150
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:49:50.689
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:49:52.010
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:49:52.117
+!MESSAGE XSCT Command: [platform active {FPro_Bus_Hardware}], Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:49:52.119
+!MESSAGE XSCT command with result: [platform active {FPro_Bus_Hardware}], Result: [null, ]. Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:49:55.379
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:49:55.380
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:50:38.912
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:50:39.152
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-13: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:50:41.314
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:50:41.315
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:50:44.293
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Thread: Worker-15: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:50:44.599
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Result: [null, ]. Thread: Worker-15: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.620
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.731
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.783
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.808
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.809
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.812
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:53:42.813
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.837
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:53:42.838
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-14: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-08-21 07:53:44.702
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.543
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.547
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.548
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.552
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:54:31.553
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.554
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:54:31.556
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-08-21 07:54:33.160
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.964
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.968
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.969
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.979
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:55:07.980
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.981
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:07.984
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.422
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.426
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.427
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.432
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:55:42.433
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.434
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:42.436
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:46.504
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-17: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:46.778
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-17: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:55:48.872
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:55:48.873
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:51.123
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Thread: Worker-13: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:55:51.420
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Result: [null, ]. Thread: Worker-13: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.601
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.604
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Thu Jul 18 07:49:33 2024",
+"vivado_version": "2023.1",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.605
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.622
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, {"microblaze_I": "cpu_unit/microblaze_I:cpu_unit/microblaze_I",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.623
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:16.628
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:19.738
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:19.740
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:21.856
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:21.857
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:23.516
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:56:23.517
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:26.114
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:26.118
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:26.119
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:26.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:47.242
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-21 07:56:50.021
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.064
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.067
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.544
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.562
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.568
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.568
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.587
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.689
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.722
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.723
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:56:50.727
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [{Format=couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory, Time=1724241410727, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:21.375
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:21.376
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:26.537
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:26.537
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:28.261
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 07:57:28.261
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:30.265
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:30.268
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.708
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.721
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.722
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.730
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.731
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.738
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.760
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.784
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.785
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.827
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:53.828
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:54.325
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:55.128
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 07:57:55.130
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.ui 4 4 2024-08-21 08:03:45.969
+!MESSAGE Error
+!STACK 0
+java.lang.ClassFormatError: Incompatible magic value 4294967295 in class file java/util/ArrayDeque$DescendingIterator
+	at java.base/java.util.ArrayDeque.descendingIterator(ArrayDeque.java:675)
+	at org.eclipse.cdt.internal.core.PositionTrackerChain.findTrackerAt(PositionTrackerChain.java:121)
+	at org.eclipse.cdt.internal.core.PositionTrackerManager.findPositionConverter(PositionTrackerManager.java:206)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForName(CSourceHover.java:375)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForBinding(CSourceHover.java:312)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.runOnAST(CSourceHover.java:214)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:221)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$1.run(CSourceHover.java:855)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-21 08:05:44.260 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-21 08:06:32.931
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2024-08-21 08:06:38.222
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.805
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.807
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.846
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.847
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.848
+!MESSAGE XSCT Command: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:44.851
+!MESSAGE XSCT command with result: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:06:50.508
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:02.924
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:12.430
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:12.432
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:13.063
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:13.064
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/SharedData/2023.1/data;D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:13.328
+!MESSAGE XSCT Command: [platform active {FPro_Bus_Hardware}], Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:13.329
+!MESSAGE XSCT command with result: [platform active {FPro_Bus_Hardware}], Result: [null, ]. Thread: Worker-2: Reading platform
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 08:07:13.902
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 08:07:13.902
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 08:07:13.903
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:14.491
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-1: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:14.647
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-1: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:17.566
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:17.567
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:20.543
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Thread: Worker-6: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:20.857
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Result: [null, ]. Thread: Worker-6: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.468
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.606
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.640
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.644
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Thu Jul 18 07:49:33 2024",
+"vivado_version": "2023.1",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.646
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.649
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, {"microblaze_I": "cpu_unit/microblaze_I:cpu_unit/microblaze_I",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.651
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:47.660
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:48.728
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:48.729
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:50.679
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:50.680
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:53.833
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:07:53.834
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:56.439
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:56.445
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:56.447
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:07:56.449
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:19.163
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2024-08-21 08:08:21.806
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:21.842
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:21.855
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:37.433
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A (closed)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:37.467
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:37.473
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A (closed)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:37.473
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:40.491
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:43.507
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:08:46.524
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:08:58.757
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:08:58.758
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:00.110
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:00.111
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:05.943
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:05.944
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:07.572
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:07.576
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.384
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.396
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.398
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.408
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.409
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.431
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.431
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.449
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.627
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.656
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.657
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:21.661
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [{Format=couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory, Time=1724242161661, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:46.253
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:46.254
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:47.764
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:47.765
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:51.742
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:09:51.742
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:55.487
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:09:55.491
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.385
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.397
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.399
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.409
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.410
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.418
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.419
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.462
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.464
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.518
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:13.519
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:14.063
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:14.867
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:10:14.869
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.931
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.956
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.957
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.963
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:34.964
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.984
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:34.986
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:42.625
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:42.625
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:44.540
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:44.541
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:47.651
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 08:12:47.651
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:49.776
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:12:49.780
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.309
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.322
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.323
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.335
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.336
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.367
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.368
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.395
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.396
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.440
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.442
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:11.906
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:12.719
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 08:13:12.723
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+!SESSION 2024-08-21 19:36:27.259 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-08-21 19:37:20.314
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.431
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.432
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.445
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.460
+!MESSAGE XSCT Command: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.468
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:42.469
+!MESSAGE XSCT command with result: [setws C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro], Result: [null, ]. Thread: Thread-44
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:37:47.807
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:38:10.396
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:38:10.398
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:38:10.400
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/Xilinx/SharedData/2023.1/data;D:/Xilinx/Vitis/2023.1/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:41.670
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.379
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.406
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.476
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Thu Jul 18 07:49:33 2024",
+"vivado_version": "2023.1",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.489
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.494
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, {"microblaze_I": "cpu_unit/microblaze_I:cpu_unit/microblaze_I",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.495
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:42.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa], Result: [null, {"dlmb": {"hier_name": "dlmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"dlmb_cntlr": {"hier_name": "dlmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"ilmb": {"hier_name": "ilmb",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"ilmb_cntlr": {"hier_name": "ilmb_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"iomodule_0": {"hier_name": "iomodule_0",
+"type": "iomodule",
+"version": "3.1",
+"ip_type": "PERIPHERAL",
+},
+"lmb_bram_I": {"hier_name": "lmb_bram_I",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_I": {"hier_name": "microblaze_I",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"rst_0": {"hier_name": "rst_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 19:41:44.905
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 19:41:44.906
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-08-21 19:41:44.906
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:48.159
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:48.159
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:50.373
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:50.373
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:52.302
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:41:52.302
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:55.967
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:55.993
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:55.994
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:41:56.027
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa microblaze_I C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:30.812
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:33.788
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:33.791
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.147
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.185
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.186
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.205
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.351
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.380
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:36.381
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:42:57.121
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [{Format=could not find configuration request., Time=1724283777120, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:09.069
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:09.070
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:10.678
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:10.679
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:14.305
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:43:14.306
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:17.706
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:17.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.353
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.356
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.357
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.370
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A (closed)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.371
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.380
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A (closed)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:39.381
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:42.409
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:45.422
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:43:48.441
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A (closed)" && level==1}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.909
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.933
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.935
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.942
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, {"procname": "microblaze_I",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:17.943
+!MESSAGE Generating MD5 hash for file: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\export\FPro_Bus_Hardware\sw\FPro_Bus_Hardware\standalone_microblaze_I\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.963
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:17.966
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:53.712
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:53.713
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:55.589
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:55.590
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:57.189
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:44:57.190
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:58.898
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:44:58.901
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.691
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.695
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.696
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.703
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.704
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.710
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.711
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.743
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.744
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.788
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:07.789
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:08.313
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:09.119
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:09.125
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:24.282
+!MESSAGE XSCT Command: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Thread: Worker-6: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:24.480
+!MESSAGE XSCT command with result: [platform read {C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/platform.spr}], Result: [null, ]. Thread: Worker-6: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:24.502
+!MESSAGE XSCT Command: [platform active {FPro_Bus_Hardware}], Thread: Worker-6: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:24.504
+!MESSAGE XSCT command with result: [platform active {FPro_Bus_Hardware}], Result: [null, ]. Thread: Worker-6: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:26.982
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:26.982
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Xilinx_FGPA_Projects\Introductory_Projects\Chapter_11_MMIO\Vanilla_Fpro_Bus
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:29.666
+!MESSAGE XSCT Command: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Thread: Worker-1: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:29.935
+!MESSAGE XSCT command with result: [platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}], Result: [null, ]. Thread: Worker-1: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:38.309
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:38.310
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:39.773
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:39.774
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:42.913
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:45:42.914
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:44.469
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:44.472
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.504
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.507
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.508
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.518
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.519
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.527
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.528
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.564
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.565
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.605
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.606
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:45:52.610
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [{Format=couldn't open "C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit": no such file or directory, Time=1724283952609, Code=1}, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:05.901
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:05.901
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:07.629
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: sdx_program_fpga_view_bit_bmm_browse_key, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:07.629
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\FPro_Bus_Hardware\hw
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:11.046
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: fpga_elf_mem_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-08-21 19:46:11.046
+!MESSAGE Preference loaded using local preference: C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\Debug
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:12.847
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:12.850
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.664
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.667
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.669
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.680
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.681
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.691
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Basys3 210183BB7486A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.692
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.719
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.722
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.771
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7486A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7486A-0362d093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:32.772
+!MESSAGE XSCT Command: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:33.238
+!MESSAGE XSCT command with result: [fpga -file C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/hw/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:34.081
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-08-21 19:46:34.085
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/hw/FPro_Vanilla.xsa ], Result: [null, dlmb_cntlr ilmb_cntlr]. Thread: ModalContext

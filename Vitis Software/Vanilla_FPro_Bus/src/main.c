@@ -5,6 +5,7 @@
 #include "gpio_core.h"
 #include "uart.h"
 #include "xadc.h"
+#include "pwm_core.h"
 
 /******** Macros ****************/
 #define SW1				0
@@ -17,6 +18,7 @@ void set_led_gpio(gpio_handle_t* gpio, Timer_Handle_t* timer, int led_num);
 void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio);
 void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer);
 void get_temp(uart_handle_t* uart, xadc_handle_t* adc);
+void pwm_test(pwm_handle_t* pwm);
 
 int main()
 {
@@ -26,6 +28,7 @@ int main()
 	gpio_handle_t gpio;
 	uart_handle_t uart;
 	xadc_handle_t adc;
+	pwm_handle_t pwm;
 
 	//Initialize the peripherals - This sets their address
 	gpio_init(&gpio, get_slot_addr(BRIDGE_BASE, S5_GPIO));
@@ -33,6 +36,7 @@ int main()
 	seg_init(&seg, get_slot_addr(BRIDGE_BASE, S4_SEG));
 	uart_init(&uart, get_slot_addr(BRIDGE_BASE, S1_UART));
 	xadc_init(&adc, get_slot_addr(BRIDGE_BASE, S6_XADC));
+	pwm_init(&pwm, get_slot_addr(BRIDGE_BASE, S7_PWM));
 
 	//Set timer mode to continous
 	timer_set_mode(&timer_core, TIMER_CONT);
@@ -56,10 +60,8 @@ int main()
 	//Adjust parity
 	set_parity(&uart, PARITY_ENABLE, PARITY_EVEN);
 
-	//Display the status of teh control register to ensure the correct specs are set
-	//disp_num(&uart, uart.ctrl_reg_val, 16);
-
-	adc_set_mode(&adc, ON_CHIP_MODE_SEL, BIPOLAR);
+	//Set the PWM output signals to measure using an oscilliscope/logic analyzer
+	pwm_test(&pwm);
 
 	while(1)
 	{
@@ -67,24 +69,7 @@ int main()
 		{
 			//Blink each LED
 			set_led_gpio(&gpio, &timer_core, 16);
-			//uart_test(&uart, &gpio, &timer_core);
 			get_temp(&uart, &adc);
-
-			if(i == 5)
-			{
-				//De-select the temperature channel and VCC channel on chip
-				adc_config_channels(&adc, ON_CHIP_CHANNEL, 0x0);
-			}
-
-			//For the time from when the on chip ADC's are disabled ot when the temperature is re-enabled,
-			//the values should remain exactly the same as no new readings are going into the status registers.
-
-			if(i == 7)
-			{
-				//Re-enable only the temperature channel
-				//This means the vcc port should remain the exact same
-				adc_config_channels(&adc, ON_CHIP_CHANNEL, ON_CHIP_TEMP);
-			}
 		}
 	}
 
@@ -92,6 +77,19 @@ int main()
 }
 
 /**************** Function Definitions *********************/
+//Outputs PWM pulses with different duty cycles on 3 different channels
+//This was checked using a logic analyzer
+void pwm_test(pwm_handle_t* pwm)
+{
+	//Setting dvsr to 20 - this means that the pwm signal will have a clk period of 200ns or 5MHz
+	set_dvsr(pwm, 20);
+	//The resolution is unchanged, meaning it is at 255
+	//Activate 3 channels, each with varying duty cycles and measure using an oscilliscope/logic analyzer
+	set_duty(pwm, 50, CHANNEL0);
+	set_duty(pwm, 25, CHANNEL1);
+	set_duty(pwm, 75, CHANNEL2);
+}
+
 //Utilizes the first switch on the basys board to reset the one-shot timer
 void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio)
 {
