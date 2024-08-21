@@ -17,12 +17,14 @@ class pwm_monitor;
     
     forever begin
         pwm_trans_item rec_item = new;
-        
         //Calculate the duty_cycle and dvsr 
         calculate_values(rec_item.calc_duty_cycle, rec_item.calc_dvsr);
+        //Pass the actual values into the transmission object
+        rec_item.duty_cycle = vif.actual_duty_cycle;
+        rec_item.dvsr = vif.actual_dvsr;
         rec_item.print_calc(TAG);
         scb_mbx.put(rec_item);
-        //Signal the driver to send another "pulse"
+        //Signal the generator to send another "pulse"
         ->trans_complete;
     end
     
@@ -34,8 +36,8 @@ class pwm_monitor;
         int duty_cycle_dur, dvsr_dur;
         int duty_cycle, dvsr;
         
-       start_time = $time;
         wait(vif.pwm_out[0] == 1'b1);
+        start_time = $time;
 
         //Wait until the pwm signal goes low - indicating the pulse has ended & sample the time
         wait(vif.pwm_out[0] == 1'b0);
@@ -48,11 +50,12 @@ class pwm_monitor;
         //Calculate the period of the entire process and the pulse
         duty_cycle_dur = pulse_low - start_time;
         dvsr_dur = completion_time - start_time;
-        //$display("[%s] dvsr_dur: %0d, duty_cycle_dur: %0d", TAG, dvsr_dur, duty_cycle_dur);
+        $display("[%s] dvsr_dur: %0d, duty_cycle_dur: %0d", TAG, dvsr_dur, duty_cycle_dur);
         //using formula: dvsr = ((2^res)(sys_clk))/dvsr_period
         //This formula can be used to cauclate the dvsr from the period of the dvsr
-        dvsr = ((dvsr_dur)/10)/(2**8);
+        dvsr = ((dvsr_dur)/10)/(vif.res);
         duty_cycle = ((duty_cycle_dur)*(100))/(dvsr_dur);  
+
     endtask : calculate_values
     
     

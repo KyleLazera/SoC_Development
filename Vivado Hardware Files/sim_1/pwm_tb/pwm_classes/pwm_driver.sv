@@ -7,7 +7,7 @@ class pwm_driver;
     //instance of virtual inerface
     virtual pwm_if vif;
     //mailbox and event 
-    mailbox drv_mbx, drv_scb_mbx;
+    mailbox drv_mbx;
     //debugging TAG
     string TAG = "Driver";
     
@@ -15,23 +15,22 @@ class pwm_driver;
         $display("[%s] Starting...", TAG);
         
         forever begin 
+            for(int i = 0; i < 2; i++) begin
+            //Generated transaction Item
+            pwm_trans_item pwm_gen_item;
             @(posedge vif.clk);           
-            for(int i = 0; i < 4; i++) begin
-                //Generated transaction Item
-                pwm_trans_item pwm_gen_item;
-                $display("[%s] Waiting for Item...", TAG);
-                drv_mbx.get(pwm_gen_item);
-                //Send the generated item to the scoreboard
-                drv_scb_mbx.put(pwm_gen_item);
-                //Set the dvsr/prescaler for all of the PWM ports - this is universal to all ports
-                //therefore only set it once
-                if(i == 0)
-                    write_pwm(5'h0, pwm_gen_item.dvsr);
-                
-                //Write a duty cycle to each port
-                write_pwm(5'b10000, pwm_gen_item.duty_count);
-                //pwm_gen_item.print(TAG);
-            end  
+            $display("[%s] Waiting for Item...", TAG);
+            drv_mbx.get(pwm_gen_item);
+            //pass the resolution, duty cycle, dvsr  & channel id through the VIF. This is used for scoreboard monitoring
+            vif.res = pwm_gen_item.resolution;
+            vif.actual_duty_cycle = pwm_gen_item.duty_cycle;
+            vif.actual_dvsr = pwm_gen_item.dvsr;
+            //Write the dvsr and resolution
+            write_pwm(5'h0, pwm_gen_item.dvsr);             //Write dvsr into the module
+            write_pwm(5'h1, pwm_gen_item.resolution);       //Write resolution into the module
+            //Write a duty cycle to each port
+            write_pwm(5'b10000, pwm_gen_item.duty_count);
+            end
         end
     endtask : main
     

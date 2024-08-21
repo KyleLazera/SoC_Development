@@ -7,7 +7,7 @@ class pwm_test;
     //Init env
     pwm_env     env;
     //mailbox
-    mailbox     drv_mbx, drv_scb_mbx;
+    mailbox     drv_mbx;
     //Event indicating that a transmission was complete
     event trans_complete;
     string TAG = "Test";
@@ -15,14 +15,11 @@ class pwm_test;
     function new(virtual pwm_if vif);
         env = new();
         drv_mbx = new();
-        drv_scb_mbx = new();
     endfunction : new
     
     task main();
         //assign driver mailbox
         env.driver.drv_mbx = drv_mbx;
-        env.driver.drv_scb_mbx = drv_scb_mbx;
-        env.scb.drv_scb_mbx = drv_scb_mbx;
         env.monitor.trans_complete = trans_complete;
         
         //Call environemnt task in a seperate thread
@@ -31,16 +28,24 @@ class pwm_test;
         join_none
         //Apply stimulus here
         stimulus();
+        //Print the scoreboard after completion
         env.scb.display_score();
     endtask : main
 
     task stimulus();
-        for(int i = 0; i < 100; i++) begin
-            pwm_trans_item gen_item = new;
-            $display("[%s] Starting stimulus...", TAG);
+        //Create a virtual interface
+        pwm_trans_item gen_item = new;
+        
+        for(int i = 0; i < 100; i++) begin 
+            $display("[%s] Generating stimulus %0d", TAG, i);
+            //On the first iteration, generate a random dvsr and resolution value 
+            if(i == 0) begin
+                gen_item.dvsr = 120;
+                gen_item.resolution = 1023;
+            end
+            //The duty cycle is varied
             gen_item.randomize();
-            gen_item.dvsr = 120;
-            gen_item.duty_count = ((gen_item.duty_cycle)*(2**8))/(100);
+            gen_item.duty_count = ((gen_item.duty_cycle)*(gen_item.resolution))/(100);
             drv_mbx.put(gen_item);
             gen_item.print_gen(TAG);
             @(trans_complete);
