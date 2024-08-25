@@ -28,7 +28,14 @@ module MMIO_Wrapper
     //Timer signals 
     output logic timer_complete,
     //XADC Signals
-    input logic [3:0] adc_p, adc_n
+    input logic [3:0] adc_p, adc_n,
+    //PWM Output Signals
+    output logic [5:0] pwm_out,
+    //SPI Signals
+    output logic spi_mosi,
+    output logic spi_clk,
+    output logic [1:0] spi_cs,
+    input logic spi_miso
 );
 
 //Signal Declerations - These are used mainly for the initialization of the MMIO controller
@@ -131,6 +138,7 @@ gpio_core #(.DATA_WIDTH(DATA_WIDTH)) gpio_slot_5
  .data_in(sw)
 );
 
+//Slot 6: XADC Core
 xadc_core xadc_slot_6
 (
  .clk(clk), .reset(reset),
@@ -144,10 +152,40 @@ xadc_core xadc_slot_6
  .adc_n(adc_n)
 );
 
+//Slot 7: Multi-channel PWM Core
+pwm_core #(.OUT_PORTS(6)) pwm_slot_7
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S7_PWM]),
+ .read(slot_mem_rd[`S7_PWM]),
+ .write(slot_mem_wr[`S7_PWM]),
+ .reg_addr(slot_mem_addr[`S7_PWM]),
+ .wr_data(slot_wr_data[`S7_PWM]),
+ .rd_data(slot_rd_data[`S7_PWM]),
+ .pwm_out(pwm_out)
+);
+
+//Slot 8: SPI Module
+SPI_Wrapper#(.S(2)) spi_slot_8
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S8_SPI]),
+ .read(slot_mem_rd[`S8_SPI]),
+ .write(slot_mem_wr[`S8_SPI]),
+ .reg_addr(slot_mem_addr[`S8_SPI]),
+ .wr_data(slot_wr_data[`S8_SPI]),
+ .rd_data(slot_rd_data[`S8_SPI]),
+ //SPI Signals
+ .spi_clk(spi_clk),
+ .spi_mosi(spi_mosi),
+ .spi_miso(spi_miso),
+ .spi_ss_n(spi_cs)
+);
+
 //Assign 0's to all unused rd_data slots
 generate
     genvar i;
-    for(i = 7; i <64; i++)
+    for(i = 9; i <64; i++)
         assign slot_rd_data[i] = 32'hffffffff;
     assign slot_rd_data[2] = 32'hffffffff;
     assign slot_rd_data[3] = 32'hffffffff;

@@ -1,0 +1,8 @@
+#ifndef _SPI_CORE_H
+#define _SPI_CORE_H
+
+#include "io_rw.h"
+#include "io_map.h"
+
+
+#endif //_SPI_CORE_H

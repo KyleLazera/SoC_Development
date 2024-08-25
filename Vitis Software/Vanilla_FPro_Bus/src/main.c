@@ -6,9 +6,11 @@
 #include "uart.h"
 #include "xadc.h"
 #include "pwm_core.h"
+#include "spi_core.h"
 
 /******** Macros ****************/
 #define SW1				0
+#define DUMMY_DATA		0x00
 
 /******** Function Declarations **********/
 
@@ -19,6 +21,7 @@ void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio);
 void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer);
 void get_temp(uart_handle_t* uart, xadc_handle_t* adc);
 void pwm_test(pwm_handle_t* pwm);
+void adxl_read_data(spi_handle_t* spi, uart_handle_t* uart);
 
 int main()
 {
@@ -29,6 +32,7 @@ int main()
 	uart_handle_t uart;
 	xadc_handle_t adc;
 	pwm_handle_t pwm;
+	spi_handle_t spi;
 
 	//Initialize the peripherals - This sets their address
 	gpio_init(&gpio, get_slot_addr(BRIDGE_BASE, S5_GPIO));
@@ -37,6 +41,7 @@ int main()
 	uart_init(&uart, get_slot_addr(BRIDGE_BASE, S1_UART));
 	xadc_init(&adc, get_slot_addr(BRIDGE_BASE, S6_XADC));
 	pwm_init(&pwm, get_slot_addr(BRIDGE_BASE, S7_PWM));
+	spi_init(&spi, get_slot_addr(BRIDGE_BASE, S8_SPI));
 
 	//Set timer mode to continous
 	timer_set_mode(&timer_core, TIMER_CONT);
@@ -65,18 +70,84 @@ int main()
 
 	while(1)
 	{
-		for(int i = 0; i < 10; i++)
-		{
-			//Blink each LED
-			set_led_gpio(&gpio, &timer_core, 16);
-			get_temp(&uart, &adc);
-		}
+
+		//Blink each LED
+		set_led_gpio(&gpio, &timer_core, 16);
+		//Read ADC Temp and display to UART
+		get_temp(&uart, &adc);
+		//Read ADXL345 and display to UART
+		adxl_read_data(&spi, &uart);
+
 	}
 
 	return 0;
 }
 
 /**************** Function Definitions *********************/
+//SPI Test function used to read and transmit data from the ADXL345 accelerometer
+void adxl_read_data(spi_handle_t* spi, uart_handle_t* uart)
+{
+	/******* Local Variables ******/
+	//ADXL Initialization vars
+	uint8_t adxl_set_data_format[2] = {0x31, 0x01};
+	uint8_t adxl_clear_powerctl_reg[2] = {0x2D, 0x00};
+	uint8_t adxl_set_powerctl_reg[2] = {0x2D, 0x08};
+	uint8_t adxl_set_bw_rate_reg[2] = {0x2C, 0x0A};
+	uint8_t adxl_address = 0xF2;	//Address of data register to read from
+	uint8_t adxl_data_rec[7];			//Buffer to store the adxl data
+	int16_t x, y, z;
+
+	//Init SPI Settings - for ADXL345, the mode of operation is cpol = 1, cphase = 1
+	spi_set_mode(spi, MODE_3);
+
+	//Assert the first slave select pin
+	spi_assert_ss(spi, 0);
+
+	/***** ADXL Initialization ****/
+	//Select the register to write into
+	spi_transfer_data(spi, adxl_clear_powerctl_reg[0]);
+	//Send the value to write in
+	spi_transfer_data(spi, adxl_clear_powerctl_reg[1]);
+	spi_transfer_data(spi, adxl_set_data_format[0]);
+	spi_transfer_data(spi, adxl_set_data_format[1]);
+	spi_transfer_data(spi, adxl_set_bw_rate_reg[0]);
+	spi_transfer_data(spi, adxl_set_bw_rate_reg[1]);
+	spi_transfer_data(spi, adxl_set_powerctl_reg[0]);
+	spi_transfer_data(spi, adxl_set_powerctl_reg[1]);
+
+	/***** Read Registers from ADXL ********/
+	//Set the address to read from
+	//adxl_data_rec[0] = spi_transfer_data(spi, adxl_address);
+
+	for(int i = 1; i < 7; i++)
+	{
+		//Continue reading data & send dummy data
+		adxl_data_rec[i] = spi_transfer_data(spi, (adxl_address + i));
+	}
+
+	spi_deassert_ss(spi, 0);
+
+	/*
+	* Convert the data into usable/readable values - this can be found in the ADXL345 documentation,
+	* and send the stored values to a queue.
+	*/
+	x = ((adxl_data_rec[2] << 8) | adxl_data_rec[1]);
+	y = ((adxl_data_rec[4] << 8) | adxl_data_rec[3]);
+	z = ((adxl_data_rec[6] << 8) | adxl_data_rec[5]);
+
+	disp_str(uart, "Accelerometer Readings: \n\r");
+	disp_str(uart, "x-axis: ");
+	disp_num(uart, x, 10);
+	disp_str(uart, "\n\r");
+	disp_str(uart, "y-axis: ");
+	disp_num(uart, y, 10);
+	disp_str(uart, "\n\r");
+	disp_str(uart, "z-axis: ");
+	disp_num(uart, z, 10);
+	disp_str(uart, "\n\r");
+
+}
+
 //Outputs PWM pulses with different duty cycles on 3 different channels
 //This was checked using a logic analyzer
 void pwm_test(pwm_handle_t* pwm)

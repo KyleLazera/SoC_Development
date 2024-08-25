@@ -1,3 +1,6 @@
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+
 # Clock signal
 set_property PACKAGE_PIN W5 [get_ports clk]							
 	set_property IOSTANDARD LVCMOS33 [get_ports clk]
@@ -102,11 +105,11 @@ set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
-	
-#Flag output for timer - used logic analyzer to test
-set_property PACKAGE_PIN A14 [get_ports timer_complete]					
-	set_property IOSTANDARD LVCMOS33 [get_ports timer_complete]
-	
+
+##Timer output port
+##Sch name = JC1
+set_property PACKAGE_PIN K17 [get_ports timer_complete]					
+	set_property IOSTANDARD LVCMOS33 [get_ports timer_complete]	
 #====================================================================================================
 # USB-RS232 Interface
 #====================================================================================================
@@ -143,3 +146,42 @@ set_property PACKAGE_PIN M1 [get_ports {adc_n[2]}]
 #Sch name = XA4_N
 set_property PACKAGE_PIN N1 [get_ports {adc_n[3]}]				
 	set_property IOSTANDARD LVCMOS33 [get_ports {adc_n[3]}]
+
+
+#PWM Output Channels
+##Pmod Header JA
+##Sch name = JA1
+set_property PACKAGE_PIN J1 [get_ports {pwm_out[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[0]}]
+##Sch name = JA2
+set_property PACKAGE_PIN L2 [get_ports {pwm_out[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[1]}]
+##Sch name = JA3
+set_property PACKAGE_PIN J2 [get_ports {pwm_out[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[2]}]
+##Sch name = JA4
+set_property PACKAGE_PIN G2 [get_ports {pwm_out[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[3]}]
+##Sch name = JA7
+set_property PACKAGE_PIN H1 [get_ports {pwm_out[4]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[4]}]
+##Sch name = JA8
+set_property PACKAGE_PIN K2 [get_ports {pwm_out[5]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[5]}]
+	
+##SPI Connection Ports
+##Sch name = JB1
+set_property PACKAGE_PIN A14 [get_ports spi_clk]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_clk]
+##Sch name = JB2
+set_property PACKAGE_PIN A16 [get_ports spi_mosi]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_mosi]
+##Sch name = JB3
+set_property PACKAGE_PIN B15 [get_ports spi_miso]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_miso]
+##Sch name = JB4
+set_property PACKAGE_PIN B16 [get_ports {spi_cs[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {spi_cs[0]}]	
+##Sch name = JB7
+set_property PACKAGE_PIN A15 [get_ports {spi_cs[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {spi_cs[1]}]

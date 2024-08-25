@@ -72,6 +72,10 @@ begin
     n_next = n_reg;
     b_next = b_reg;
     rx_done = 1'b0;
+    //Implement these signals to avoid inferred latch
+    parity_err = 1'b0;
+    frame_err = 1'b0;
+    overflow_err = 1'b0;
     //State Machine logic
     case(state_reg)
         idle:
@@ -144,6 +148,7 @@ begin
         end
         stop:
         begin
+            
             if(s_tick)
             begin
                 if(s_reg == (stop_ticks - 1))

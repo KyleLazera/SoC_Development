@@ -1,0 +1,8 @@
+#include "spi_core.h"
+
+void spi_init(spi_handle_t* self, uint32_t core_addr)
+{
+	//Init the SPI Core addres
+	self->base_reg = core_addr;
+	//Set the freq, mode & slave select pin
+}

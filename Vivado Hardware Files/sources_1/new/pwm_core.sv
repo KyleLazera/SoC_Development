@@ -15,8 +15,7 @@
 */
 module pwm_core
 #(
-    parameter OUT_PORTS = 6,                //Number of output ports
-    parameter RES = 10                      //Number of resolution bits
+    parameter OUT_PORTS = 6                //Number of output ports
  )                   
 (
     input logic clk, reset,

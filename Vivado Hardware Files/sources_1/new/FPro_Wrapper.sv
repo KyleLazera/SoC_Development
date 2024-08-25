@@ -22,7 +22,14 @@ module FPro_Wrapper
     input logic rx,
     output logic tx,
     //XADC Signals
-    input logic [3:0] adc_p, adc_n
+    input logic [3:0] adc_p, adc_n,
+    //PWM output
+    output logic [5:0] pwm_out,
+    //SPI Signals
+    output logic spi_mosi,
+    output logic spi_clk,
+    output logic [1:0] spi_cs,
+    input logic spi_miso    
 );
 
 //Signal Declerations
@@ -85,7 +92,12 @@ MMIO_Wrapper #(.DATA_WIDTH(DATA_WIDTH)) mmio_unit(
     .tx(tx),
     .rx(rx),
     .adc_p(adc_p),
-    .adc_n(adc_n)
+    .adc_n(adc_n),
+    .pwm_out(pwm_out),
+    .spi_clk(spi_clk),
+    .spi_mosi(spi_mosi),
+    .spi_miso(spi_miso),
+    .spi_cs(spi_cs)
 ); 
 
 endmodule

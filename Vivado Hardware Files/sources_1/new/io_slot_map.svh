@@ -16,5 +16,7 @@
 `define S4_SEG              4
 `define S5_GPIO             5
 `define S6_XADC             6
+`define S7_PWM              7
+`define S8_SPI              8
 
 `endif

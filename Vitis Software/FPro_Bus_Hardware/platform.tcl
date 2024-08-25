@@ -273,3 +273,14 @@ platform generate -domains
 platform generate -domains 
 platform active {FPro_Bus_Hardware}
 platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}
+platform generate -domains 
+platform active {FPro_Bus_Hardware}
+platform config -updatehw {C:/Users/klaze/Xilinx_FGPA_Projects/Introductory_Projects/Chapter_11_MMIO/Vanilla_Fpro_Bus/FPro_Vanilla.xsa}
+platform generate -domains 
+platform generate -domains 
+platform generate -domains 
+platform generate -domains 
+platform generate -domains 
+platform generate -domains 
+platform generate -domains 
+platform generate

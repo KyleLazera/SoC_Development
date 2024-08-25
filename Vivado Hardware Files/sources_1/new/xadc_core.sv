@@ -69,7 +69,6 @@ always_ff@(posedge clk) begin
         rdy_reg <= rdy;
 end
 
-//Multiplexing Logic
 assign r_data = {15'h0, adc_data, rdy_reg};
 
 //Output logic
