@@ -1,0 +1,19 @@
+#include "fpro_init.h"
+#include "gpo_core.h"
+#include "gpi_core.h"
+#include "seg.h"
+#include "gpio_core.h"
+#include "uart.h"
+#include "xadc.h"
+#include "pwm_core.h"
+#include "spi_core.h"
+
+void gpio_blink(gpio_handle_t* gpio, Timer_Handle_t* timer);
+void gpio_read_sw(gpio_handle_t* gpio, Timer_Handle_t* timer);
+void set_led_gpio(gpio_handle_t* gpio, Timer_Handle_t* timer, int led_num);
+void timer_reset(Timer_Handle_t* timer, gpio_handle_t* gpio);
+void uart_test(uart_handle_t* uart, gpio_handle_t* gpio, Timer_Handle_t* timer);
+double get_temp(uart_handle_t* uart, xadc_handle_t* adc);
+void pwm_test(pwm_handle_t* pwm);
+void adxl_read_data(spi_handle_t* spi, uart_handle_t* uart);
+void display_addr_value(uart_handle_t* uart, uint8_t reg_addr, uint8_t value);

@@ -1,110 +1,45 @@
-20:01:13 **** Build of project FPro_Bus_Hardware ****
-buildplatform.bat 57326 FPro_Bus_Hardware  
-XSDB Server Channel: tcfchan#10
-Building the BSP Library for domain  - standalone_microblaze_I on processor microblaze_I
-make --no-print-directory seq_libs
+Nothing to build in platform 'FPro_Bus_Hardware'
 
-'Finished building libraries sequentially.'
-
-make -j 6 --no-print-directory par_libs
-
-"Running Make include in microblaze_I/libsrc/bram_v4_8/src"
-
-make -C microblaze_I/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
--sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make include in microblaze_I/libsrc/cpu_v2_17/src"
-
-make -C microblaze_I/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata
--sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make include in microblaze_I/libsrc/iomodule_v2_14/src"
-
-make -C microblaze_I/libsrc/iomodule_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -
-fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make include in microblaze_I/libsrc/standalone_v8_1/src"
-
-make -C microblaze_I/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections 
--fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make libs in microblaze_I/libsrc/bram_v4_8/src"
-
-make -C microblaze_I/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
-ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make libs in microblaze_I/libsrc/cpu_v2_17/src"
-
-make -C microblaze_I/libsrc/cpu_v2_17/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
-ctions -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make libs in microblaze_I/libsrc/iomodule_v2_14/src"
-
-make -C microblaze_I/libsrc/iomodule_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fda
-ta-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-"Running Make libs in microblaze_I/libsrc/standalone_v8_1/src"
-
-make -C microblaze_I/libsrc/standalone_v8_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fd
-ata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
-
-'Finished building libraries parallelly.'
-
-make --no-print-directory archive
-
-mb-ar -r  microblaze_I/lib/libxil.a microblaze_I/lib/_exit.o microblaze_I/lib/errno.o microblaze_I/lib/fcntl.o microblaze_I/lib
-/hw_exception_handler.o microblaze_I/lib/inbyte.o microblaze_I/lib/microblaze_disable_dcache.o microblaze_I/lib/microblaze_disa
-ble_exceptions.o microblaze_I/lib/microblaze_disable_icache.o microblaze_I/lib/microblaze_disable_interrupts.o microblaze_I/lib
-/microblaze_enable_dcache.o microblaze_I/lib/microblaze_enable_exceptions.o microblaze_I/lib/microblaze_enable_icache.o microbl
-aze_I/lib/microblaze_enable_interrupts.o microblaze_I/lib/microblaze_exception_handler.o microblaze_I/lib/microblaze_flush_cach
-e_ext.o microblaze_I/lib/microblaze_flush_cache_ext_range.o microblaze_I/lib/microblaze_flush_dcache.o microblaze_I/lib/microbl
-aze_flush_dcache_range.o microblaze_I/lib/microblaze_init_dcache_range.o microblaze_I/lib/microblaze_init_icache_range.o microb
-laze_I/lib/microblaze_interrupt_handler.o microblaze_I/lib/microblaze_interrupts_g.o microblaze_I/lib/microblaze_invalidate_cac
-he_ext.o microblaze_I/lib/microblaze_invalidate_cache_ext_range.o microblaze_I/lib/microblaze_invalidate_dcache.o microblaze_I/
-lib/microblaze_invalidate_dcache_range.o microblaze_I/lib/microblaze_invalidate_icache.o microblaze_I/lib/microblaze_invalidate
-_icache_range.o microblaze_I/lib/microblaze_scrub.o microblaze_I/lib/microblaze_selftest.o microblaze_I/lib/microblaze_sleep.o 
-microblaze_I/lib/microblaze_update_dcache.o microblaze_I/lib/microblaze_update_icache.o microblaze_I/lib/outbyte.o microblaze_I
-/lib/print.o microblaze_I/lib/pvr.o microblaze_I/lib/xbram.o microblaze_I/lib/xbram_g.o microblaze_I/lib/xbram_intr.o microblaz
-e_I/lib/xbram_selftest.o microblaze_I/lib/xbram_sinit.o microblaze_I/lib/xil_assert.o microblaze_I/lib/xil_cache.o microblaze_I
-/lib/xil_clocking.o microblaze_I/lib/xil_exception.o microblaze_I/lib/xil_mem.o microblaze_I/lib/xil_misc_psreset_api.o microbl
-aze_I/lib/xil_printf.o microblaze_I/lib/xil_sleepcommon.o microblaze_I/lib/xil_testcache.o microblaze_I/lib/xil_testio.o microb
-laze_I/lib/xil_testmem.o microblaze_I/lib/xil_util.o microblaze_I/lib/xinterrupt_wrap.o microblaze_I/lib/xio.o microblaze_I/lib
-/xiomodule.o microblaze_I/lib/xiomodule_extra.o microblaze_I/lib/xiomodule_g.o microblaze_I/lib/xiomodule_intr.o microblaze_I/l
-ib/xiomodule_l.o microblaze_I/lib/xiomodule_options.o microblaze_I/lib/xiomodule_selftest.o microblaze_I/lib/xiomodule_stats.o 
-microblaze_I/lib/xiomodule_uart.o microblaze_I/lib/xiomodule_uart_intr.o microblaze_I/lib/xplatform_info.o
-
-'Finished building libraries'
-
-20:01:21 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+19:23:56 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/main.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:13: warning: "DUMMY_DATA" redefined
-   13 | #define DUMMY_DATA              0x00
+In file included from ../src/main.c:2:
+../src/test_functions.h:15: warning: "DUMMY_DATA" redefined
+   15 | #define DUMMY_DATA              0x00
       | 
-In file included from ../src/main.c:6:
+In file included from ../src/test_functions.h:7:
 C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers/uart.h:8: note: this is the location of the previous definition
     8 | #define DUMMY_DATA                                      0x0
       | 
+../src/main.c: In function 'main':
+../src/main.c:65:25: warning: unused variable 'read_data' [-Wunused-variable]
+   65 |                 uint8_t read_data;
+      |                         ^~~~~~~~~
 'Finished building: ../src/main.c'
+' '
+'Building file: ../src/test_functions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/test_functions.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_functions.d" -MT"src/test_functions.o" -o "src/test_functions.o" "../src/test_functions.c"
+In file included from ../src/test_functions.c:1:
+../src/test_functions.h:15: warning: "DUMMY_DATA" redefined
+   15 | #define DUMMY_DATA              0x00
+      | 
+In file included from ../src/test_functions.h:7:
+C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers/uart.h:8: note: this is the location of the previous definition
+    8 | #define DUMMY_DATA                                      0x0
+      | 
+'Finished building: ../src/test_functions.c'
 ' '
 'Building target: Vanilla_FPro_Bus.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/pwm_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/spi_core.o ./src/drivers/src_drivers/timer.o ./src/drivers/src_drivers/uart.o ./src/drivers/src_drivers/xadc.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/pwm_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/spi_core.o ./src/drivers/src_drivers/timer.o ./src/drivers/src_drivers/uart.o ./src/drivers/src_drivers/xadc.o  ./src/main.o ./src/test_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Vanilla_FPro_Bus.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24048	    268	   3108	  27424	   6b20	Vanilla_FPro_Bus.elf
+  24200	    268	   3108	  27576	   6bb8	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '

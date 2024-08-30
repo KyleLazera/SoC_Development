@@ -16,7 +16,8 @@ typedef enum{
 	S5_GPIO,
 	S6_XADC,
 	S7_PWM,
-	S8_SPI
+	S8_SPI,
+	S9_SPI_S
 }SLOT;
 
 #endif

@@ -8,8 +8,8 @@ class spi_test;
     string TAG = "Test";
     
     //Redefine the constructor:
-    function new(virtual spi_if _vif);
-        env = new(_vif);
+    function new(virtual spi_if _vif, virtual spi_slave_if _vif_s);
+        env = new(_vif, _vif_s);
     endfunction : new
     
     task main();

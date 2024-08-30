@@ -3,13 +3,17 @@
 
 `include "spi_trans_item.sv"
 
+/***********************************************
+SPI Master Generator
+***********************************************/
+
 class spi_generator;
     //Mailbox to send data from the generator to the driver
     mailbox drv_mbx;
     //Event indicating driver has completed processing of data
     event drv_done, mtr_done;
     //Tag for the class
-    string TAG = "Generator";
+    string TAG = "[Master] Generator";
     
     //Redefinition of constructor
     function new(mailbox _mbx, event _drv_evt, event _mtr_event);
@@ -23,8 +27,7 @@ class spi_generator;
         spi_trans_item gen_item = new;
         $display("[%s] Starting...", TAG);
         
-        //Send all possible combinations of data (256 total values because we are transmittting 8 bits)
-        for(int i = 0; i < 256; i++) begin
+        for(int i = 0; i < 500; i++) begin
             //Randomize the din value
             gen_item.randomize();
             //Send the generated item to the driver via mailbox
@@ -40,5 +43,33 @@ class spi_generator;
     endtask : main
     
 endclass : spi_generator
+
+/***********************************************
+SPI Slave Generator
+***********************************************/
+
+class spi_slave_generator;
+    //Mailbox for driver 
+    mailbox drv_mbx_s;
+    string TAG = "[Slave] Generator";
+    
+    //Redefine constructor
+    function new(mailbox _mbx);
+        drv_mbx_s = _mbx;
+    endfunction : new
+    
+    //Task used to generate the register file contents
+    task main();
+        spi_slave_trans_item gen_item = new;
+        $display("[%s] Starting...", TAG);        
+        //Generate a singular instance of teh register file
+        gen_item.randomize();
+        //Send teh item to the driver
+        drv_mbx_s.put(gen_item);
+        //Debugging
+        $display("[%s] Reg file sent to driver", TAG);
+    endtask : main
+    
+endclass : spi_slave_generator
 
 `endif  //_SPI_GENERATOR

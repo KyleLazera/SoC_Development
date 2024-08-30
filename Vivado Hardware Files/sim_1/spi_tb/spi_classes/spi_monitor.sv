@@ -6,10 +6,10 @@
 class spi_monitor;
     //Virtual interface handle
     virtual spi_if vif;
-    //Maiblox to interact with scoreboard
+    //Mailbox to interact with scoreboard
     mailbox scb_mbx;
     event mtr_done;
-    string TAG = "Monitor";
+    string TAG = "[Master] Monitor";
     
     //Redefinition of the constructor
     function new(virtual spi_if _vif, mailbox _mbx, event _mtr_event);
@@ -27,19 +27,14 @@ class spi_monitor;
         
         forever begin
             @(posedge vif.clk);
-            //If spi_ready signal is low - this indicates the spi is undergoing transmission. During this time,
-            //probe the mosi line
-            if(!vif.rd_data[8]) begin
-                compute_mosi(scb_item.mosi_dout);
-                //Wait for the spi_ready signal to go high indicating transmission complete
-                @(vif.rd_data[8]);
-                //Read data recieved from the MISO line
-                read_data(scb_item.miso_din);
-                //Send new item to the scoreboard
-                scb_mbx.put(scb_item);
-                scb_item.print(TAG); 
-                ->mtr_done;               
-            end //if statement
+            //Wait for the spi_done tick from the SPI Master
+            @(vif.rd_data[9]);
+            //Read data recieved from the MISO line
+            read_data(scb_item.miso_din);
+            //Send new item to the scoreboard
+            scb_mbx.put(scb_item);
+            //Send event to generator indicating data has been read
+            ->mtr_done;               
         end //forever loop
         
     endtask : main
@@ -55,20 +50,9 @@ class spi_monitor;
         @(posedge vif.clk);
         vif.cs = 1'b0;
         vif.read = 1'b0;
-    endtask : read_data
-    
-    //This task is used to compute the data on the MOSI line and compare to the 
-    //data that was originally transmitted by the driver
-    task compute_mosi(output bit [7:0] mosi_value);
-        //Make sure to read all 8 signals on the MOSI line
-        for(int i = 0; i < 8; i++) begin
-            //Wait for a rising edge on the spi clock
-            @(posedge vif.spi_clk);
-            //Sample the data on the MOSI line & shift into an 8 bit "register"
-            mosi_value = {mosi_value[6:0], vif.spi_mosi};
-        end
-    endtask : compute_mosi
-    
+    endtask : read_data  
 endclass : spi_monitor
+
+
 
 `endif  //_SPI_MON

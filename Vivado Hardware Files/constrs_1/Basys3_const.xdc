@@ -170,6 +170,7 @@ set_property PACKAGE_PIN K2 [get_ports {pwm_out[5]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_out[5]}]
 	
 ##SPI Connection Ports
+##SPI Master:
 ##Sch name = JB1
 set_property PACKAGE_PIN A14 [get_ports spi_clk]					
 	set_property IOSTANDARD LVCMOS33 [get_ports spi_clk]
@@ -185,3 +186,17 @@ set_property PACKAGE_PIN B16 [get_ports {spi_cs[0]}]
 ##Sch name = JB7
 set_property PACKAGE_PIN A15 [get_ports {spi_cs[1]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {spi_cs[1]}]
+
+##SPI Slave:
+##Sch name = JC2
+set_property PACKAGE_PIN M18 [get_ports spi_clk_s]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_clk_s]
+##Sch name = JC3
+set_property PACKAGE_PIN N17 [get_ports spi_mosi_s]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_mosi_s]
+##Sch name = JC4
+set_property PACKAGE_PIN P18 [get_ports spi_miso_s]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_miso_s]
+##Sch name = JC7
+set_property PACKAGE_PIN L17 [get_ports spi_cs_s_n]					
+	set_property IOSTANDARD LVCMOS33 [get_ports spi_cs_s_n]
