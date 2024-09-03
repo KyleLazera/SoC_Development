@@ -50,7 +50,7 @@ class i2c_m_driver;
             //Set the dvsr based on randomly generated i2c clk freq
             set_dvsr(rec_item.i2c_clk_freq);
             //Begin data transaction
-            write_data(rec_item.master_out, rec_item);
+            write_data(rec_item);
             //Signal the generator the driver has complete processing
             ->drv_done;  
             end          
@@ -74,9 +74,8 @@ class i2c_m_driver;
         vif.write = 1'b0;        
     endtask : set_dvsr
     
-    //TODO: More modular and restart condition must be taken into account
     //Task that sends instructions for the I2C master an how it should operate
-    task write_data(input logic [7:0] data_byte, i2c_item_m rec_item);
+    task write_data(i2c_item_m rec_item);
         /* Initialize a Start Condition for the I2C Master */
         vif.cs = 1'b1;
         vif.read = 1'b0;
@@ -94,7 +93,7 @@ class i2c_m_driver;
         vif.write = 1'b1;
         //Todo: This area should have a check to see if we are reading/writing data 
         vif.reg_addr = WR_REG;
-        vif.wr_data = {21'h0, WR_CMD, data_byte};
+        vif.wr_data = {21'h0, WR_CMD, rec_item.master_out};
         @(posedge vif.clk);
         //Once again wait unitl i2c has completed data transmission/reception
         vif.write = 1'b0;

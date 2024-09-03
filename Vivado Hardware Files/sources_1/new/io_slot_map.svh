@@ -18,5 +18,7 @@
 `define S6_XADC             6
 `define S7_PWM              7
 `define S8_SPI              8
+`define S9_SPI_S            9
+`define S10_I2C_M           10
 
 `endif

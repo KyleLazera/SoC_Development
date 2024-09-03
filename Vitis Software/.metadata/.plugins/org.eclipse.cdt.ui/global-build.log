@@ -1,30 +1,36 @@
-Nothing to build in platform 'FPro_Bus_Hardware'
-
-19:23:56 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
+20:55:05 **** Incremental Build of project FPro_Bus_Hardware ****
+buildplatform.bat 53007 FPro_Bus_Hardware no_domain_build 
+XSDB Server Channel: tcfchan#11
+20:55:08 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus ****
 make all 
+'Building file: ../src/drivers/src_drivers/i2c_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/drivers/src_drivers/i2c_core.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/drivers/src_drivers/i2c_core.d" -MT"src/drivers/src_drivers/i2c_core.o" -o "src/drivers/src_drivers/i2c_core.o" "../src/drivers/src_drivers/i2c_core.c"
+'Finished building: ../src/drivers/src_drivers/i2c_core.c'
+' '
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/main.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:2:
-../src/test_functions.h:15: warning: "DUMMY_DATA" redefined
-   15 | #define DUMMY_DATA              0x00
+In file included from ../src/main.c:1:
+../src/test_functions.h:16: warning: "DUMMY_DATA" redefined
+   16 | #define DUMMY_DATA              0x00
       | 
 In file included from ../src/test_functions.h:7:
 C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers/uart.h:8: note: this is the location of the previous definition
     8 | #define DUMMY_DATA                                      0x0
       | 
 ../src/main.c: In function 'main':
-../src/main.c:65:25: warning: unused variable 'read_data' [-Wunused-variable]
-   65 |                 uint8_t read_data;
-      |                         ^~~~~~~~~
+../src/main.c:14:17: warning: unused variable 'reg_addr' [-Wunused-variable]
+   14 |         uint8_t reg_addr = 0;
+      |                 ^~~~~~~~
 'Finished building: ../src/main.c'
 ' '
 'Building file: ../src/test_functions.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -IC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bspinclude/include -I"C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers" -c -fmessage-length=0 -MT"src/test_functions.o" -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_functions.d" -MT"src/test_functions.o" -o "src/test_functions.o" "../src/test_functions.c"
 In file included from ../src/test_functions.c:1:
-../src/test_functions.h:15: warning: "DUMMY_DATA" redefined
-   15 | #define DUMMY_DATA              0x00
+../src/test_functions.h:16: warning: "DUMMY_DATA" redefined
+   16 | #define DUMMY_DATA              0x00
       | 
 In file included from ../src/test_functions.h:7:
 C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\inc_drivers/uart.h:8: note: this is the location of the previous definition
@@ -34,12 +40,12 @@ C:\Users\klaze\Desktop\Vitis_Projects\Vitis_intro\Vanilla_FPro_Bus\src\drivers\i
 ' '
 'Building target: Vanilla_FPro_Bus.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/pwm_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/spi_core.o ./src/drivers/src_drivers/timer.o ./src/drivers/src_drivers/uart.o ./src/drivers/src_drivers/xadc.o  ./src/main.o ./src/test_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/klaze/Desktop/Vitis_Projects/Vitis_intro/FPro_Bus_Hardware/export/FPro_Bus_Hardware/sw/FPro_Bus_Hardware/standalone_microblaze_I/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Vanilla_FPro_Bus.elf"  ./src/drivers/src_drivers/fpro_init.o ./src/drivers/src_drivers/gpi_core.o ./src/drivers/src_drivers/gpio_core.o ./src/drivers/src_drivers/gpo_core.o ./src/drivers/src_drivers/i2c_core.o ./src/drivers/src_drivers/pwm_core.o ./src/drivers/src_drivers/seg.o ./src/drivers/src_drivers/spi_core.o ./src/drivers/src_drivers/timer.o ./src/drivers/src_drivers/uart.o ./src/drivers/src_drivers/xadc.o  ./src/main.o ./src/test_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Vanilla_FPro_Bus.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Vanilla_FPro_Bus.elf  |tee "Vanilla_FPro_Bus.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24200	    268	   3108	  27576	   6bb8	Vanilla_FPro_Bus.elf
+  25472	    268	   3108	  28848	   70b0	Vanilla_FPro_Bus.elf
 'Finished building: Vanilla_FPro_Bus.elf.size'
 ' '

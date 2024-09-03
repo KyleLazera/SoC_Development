@@ -25,11 +25,19 @@ module FPro_Wrapper
     input logic [3:0] adc_p, adc_n,
     //PWM output
     output logic [5:0] pwm_out,
-    //SPI Signals
+    //SPI Master Signals
     output logic spi_mosi,
     output logic spi_clk,
     output logic [1:0] spi_cs,
-    input logic spi_miso    
+    input logic spi_miso,
+    //SPI Slave Signals
+    input logic spi_clk_s,
+    input logic spi_mosi_s,
+    input logic spi_cs_s_n,
+    output logic spi_miso_s, 
+    //I2C Master Signals
+    output tri scl,
+    inout tri sda            
 );
 
 //Signal Declerations
@@ -97,7 +105,13 @@ MMIO_Wrapper #(.DATA_WIDTH(DATA_WIDTH)) mmio_unit(
     .spi_clk(spi_clk),
     .spi_mosi(spi_mosi),
     .spi_miso(spi_miso),
-    .spi_cs(spi_cs)
+    .spi_cs(spi_cs),
+    .spi_clk_s(spi_clk_s),
+    .spi_mosi_s(spi_mosi_s),
+    .spi_cs_s_n(spi_cs_s_n),
+    .spi_miso_s(spi_miso_s),
+    .scl(scl),
+    .sda(sda)
 ); 
 
 endmodule

@@ -21,8 +21,60 @@ void spi_master_slave_test(spi_handle_t* spi_master, spi_handle_t* spi_slave, ua
 	spi_deassert_ss(spi_master, 0);
 }
 
+void adxl_i2c_read_data(i2c_handle_t* i2c_master, uart_handle_t* uart)
+{
+	/******* Local Variables ******/
+	//Address for the adxl345
+	uint8_t adxl_addr =  0x1D;
+	//ADXL Initialization vars
+	uint8_t adxl_set_data_format[2] = {0x31, 0x01};
+	uint8_t adxl_clear_powerctl_reg[2] = {0x2D, 0x00};
+	uint8_t adxl_set_powerctl_reg[2] = {0x2D, 0x08};
+	uint8_t adxl_set_bw_rate_reg[2] = {0x2C, 0x0A};
+	uint8_t adxl_address[1] = {0xF2};	//Address of data register to read from
+	uint8_t *adxl_id_addr = 0x00;
+	uint8_t device_id[1];
+	uint8_t adxl_data_rec[7];			//Buffer to store the adxl data
+	int16_t x, y, z;
 
-void adxl_read_data(spi_handle_t* spi, uart_handle_t* uart)
+	//Read and print the device ID
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_id_addr, 1, 0);
+	i2c_read_transaction(i2c_master, adxl_addr, device_id, 1, 0);
+	disp_str(uart, "Device ID: ");
+	disp_num(uart, (int)device_id[0], 10);
+	disp_str(uart, "\n\r");
+
+	//Configure the ADXL to read accelerometer data
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_set_data_format, 2, 0);
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_clear_powerctl_reg, 2, 0);
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_set_powerctl_reg, 2, 0);
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_set_bw_rate_reg, 2, 0);
+	i2c_write_transaction(i2c_master, adxl_addr, adxl_address, 1, 0);
+	//Read data from the ADXl
+	i2c_read_transaction(i2c_master, adxl_addr, adxl_data_rec, 7, 0);
+
+	/*
+	* Convert the data into usable/readable values - this can be found in the ADXL345 documentation,
+	* and send the stored values to a queue.
+	*/
+	x = ((adxl_data_rec[1] << 8) | adxl_data_rec[0]);
+	y = ((adxl_data_rec[3] << 8) | adxl_data_rec[2]);
+	z = ((adxl_data_rec[5] << 8) | adxl_data_rec[4]);
+
+	disp_str(uart, "Accelerometer Readings: \n\r");
+	disp_str(uart, "x-axis: ");
+	disp_num(uart, x, 10);
+	disp_str(uart, "\n\r");
+	disp_str(uart, "y-axis: ");
+	disp_num(uart, y, 10);
+	disp_str(uart, "\n\r");
+	disp_str(uart, "z-axis: ");
+	disp_num(uart, z, 10);
+	disp_str(uart, "\n\r");
+}
+
+
+void adxl_spi_read_data(spi_handle_t* spi, uart_handle_t* uart)
 {
 	/******* Local Variables ******/
 	//ADXL Initialization vars
@@ -68,9 +120,9 @@ void adxl_read_data(spi_handle_t* spi, uart_handle_t* uart)
 	* Convert the data into usable/readable values - this can be found in the ADXL345 documentation,
 	* and send the stored values to a queue.
 	*/
-	x = ((adxl_data_rec[2] << 8) | adxl_data_rec[1]);
-	y = ((adxl_data_rec[4] << 8) | adxl_data_rec[3]);
-	z = ((adxl_data_rec[6] << 8) | adxl_data_rec[5]);
+	x = ((adxl_data_rec[1] << 8) | adxl_data_rec[0]);
+	y = ((adxl_data_rec[3] << 8) | adxl_data_rec[2]);
+	z = ((adxl_data_rec[5] << 8) | adxl_data_rec[4]);
 
 	disp_str(uart, "Accelerometer Readings: \n\r");
 	disp_str(uart, "x-axis: ");

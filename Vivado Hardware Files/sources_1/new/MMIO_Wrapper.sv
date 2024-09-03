@@ -31,11 +31,19 @@ module MMIO_Wrapper
     input logic [3:0] adc_p, adc_n,
     //PWM Output Signals
     output logic [5:0] pwm_out,
-    //SPI Signals
+    //SPI Master Signals
     output logic spi_mosi,
     output logic spi_clk,
     output logic [1:0] spi_cs,
-    input logic spi_miso
+    input logic spi_miso,
+    //SPI Slave Signals
+    input logic spi_clk_s,
+    input logic spi_mosi_s,
+    input logic spi_cs_s_n,
+    output logic spi_miso_s,
+    //I2C Master Signals
+    output tri scl,
+    inout tri sda      
 );
 
 //Signal Declerations - These are used mainly for the initialization of the MMIO controller
@@ -182,10 +190,39 @@ SPI_Wrapper#(.S(2)) spi_slot_8
  .spi_ss_n(spi_cs)
 );
 
+spi_slave_reg_file #() spi_slave_core_9
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S9_SPI_S]),
+ .read(slot_mem_rd[`S9_SPI_S]),
+ .write(slot_mem_wr[`S9_SPI_S]),
+ .reg_addr(slot_mem_addr[`S9_SPI_S]),
+ .wr_data(slot_wr_data[`S9_SPI_S]),
+ .rd_data(slot_rd_data[`S9_SPI_S]),
+ //SPI Signals
+ .spi_clk(spi_clk_s),
+ .spi_mosi(spi_mosi_s),
+ .spi_miso(spi_miso_s),
+ .spi_cs_n(spi_cs_s_n)
+);
+
+i2c_master_core i2c_master_10
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S10_I2C_M]),
+ .read(slot_mem_rd[`S10_I2C_M]),
+ .write(slot_mem_wr[`S10_I2C_M]),
+ .reg_addr(slot_mem_addr[`S10_I2C_M]),
+ .wr_data(slot_wr_data[`S10_I2C_M]),
+ .rd_data(slot_rd_data[`S10_I2C_M]),
+ //I2C Signals
+ .scl(scl), .sda(sda)    
+);
+
 //Assign 0's to all unused rd_data slots
 generate
     genvar i;
-    for(i = 9; i <64; i++)
+    for(i = 11; i <64; i++)
         assign slot_rd_data[i] = 32'hffffffff;
     assign slot_rd_data[2] = 32'hffffffff;
     assign slot_rd_data[3] = 32'hffffffff;

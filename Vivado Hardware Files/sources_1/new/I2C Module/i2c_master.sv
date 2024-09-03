@@ -70,7 +70,7 @@ always_ff @(posedge clk) begin
 end
 
 //SCL Line Logic - use the FPGA I/O tristate buffer which has pull up resistor
-assign scl = (scl_reg) ? 1'b1 : 1'b0;  
+assign scl = (scl_reg) ? 1'bZ : 1'b0;  
 
 //SDA Line Logic
 //The tri state buffer must be disabled (sda line is recieveing data from slave) if either of the following conditions are met:
@@ -79,7 +79,7 @@ assign scl = (scl_reg) ? 1'b1 : 1'b0;
 assign tri_ctrl = (data_phase && (cmd_reg == RD_CMD) && bit_reg < 8) ||
                    (data_phase && (cmd_reg == WR_CMD) && (bit_reg == 8));
                    
-assign sda = (tri_ctrl || sda_reg) ? 1'b1 : 1'b0;
+assign sda = (tri_ctrl || sda_reg) ? 1'bZ : 1'b0;
 //Output logic for the processor interface
 assign dout = rx_reg[8:1];
 assign ack = rx_reg[0];                   

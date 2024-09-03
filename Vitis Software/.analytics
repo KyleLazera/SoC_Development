@@ -644,3 +644,38 @@ timestamp=[2024-08-29 19:23:57], mode=BUILD, duration=0:00:01.164, duration_ms=1
 timestamp=[2024-08-29 20:57:11], mode=WORKBENCH_START, duration=0:00:19.431, duration_ms=19431, data={}
 timestamp=[2024-08-29 20:57:13], mode=WORKBENCH_UI_INIT, duration=0:00:01.335, duration_ms=1335, data={editors_count=9, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=FPro_Bus_Hardware,RemoteSystemsTempFiles,Vanilla_FPro_Bus,Vanilla_FPro_Bus_system}
 timestamp=[2024-08-29 20:57:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.002, duration_ms=4002, data={}
+timestamp=[2024-09-02 17:22:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.110, duration_ms=4110, data={}
+timestamp=[2024-09-02 17:24:00], mode=WORKBENCH_START, duration=0:01:29.649, duration_ms=89649, data={}
+timestamp=[2024-09-02 17:24:00], mode=WORKBENCH_UI_INIT, duration=0:00:00.841, duration_ms=841, data={editors_count=9, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=FPro_Bus_Hardware,RemoteSystemsTempFiles,Vanilla_FPro_Bus,Vanilla_FPro_Bus_system}
+timestamp=[2024-09-02 19:49:23], mode=PLATFORM_GENERATION, duration=0:00:22.447, duration_ms=22447, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 19:58:33], mode=PLATFORM_GENERATION, duration=0:00:13.051, duration_ms=13051, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 19:58:37], mode=BUILD, duration=0:00:03.891, duration_ms=3891, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 19:59:37], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 19:59:56], mode=BUILD, duration=0:00:02.438, duration_ms=2438, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:00:49], mode=BUILD, duration=0:00:00.380, duration_ms=380, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:01:14], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:02:05], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:02:25], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:02:50], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:03:40], mode=BUILD, duration=0:00:00.372, duration_ms=372, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:09:14], mode=BUILD, duration=0:00:01.475, duration_ms=1475, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:11:27], mode=BUILD, duration=0:00:01.891, duration_ms=1891, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:15:40], mode=PLATFORM_GENERATION, duration=0:00:11.557, duration_ms=11557, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:15:40], mode=BUILD, duration=0:00:00.383, duration_ms=383, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:15:51], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:16:08], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:17:36], mode=PLATFORM_GENERATION, duration=0:00:05.395, duration_ms=5395, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:17:36], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:22:32], mode=PLATFORM_GENERATION, duration=0:00:03.118, duration_ms=3118, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:22:35], mode=BUILD, duration=0:00:02.793, duration_ms=2793, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:37:11], mode=PLATFORM_GENERATION, duration=0:00:03.069, duration_ms=3069, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:37:12], mode=BUILD, duration=0:00:00.986, duration_ms=986, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:40:54], mode=PLATFORM_GENERATION, duration=0:00:11.352, duration_ms=11352, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:40:58], mode=BUILD, duration=0:00:03.708, duration_ms=3708, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:42:51], mode=PLATFORM_GENERATION, duration=0:00:03.018, duration_ms=3018, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:42:52], mode=BUILD, duration=0:00:00.915, duration_ms=915, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:43:26], mode=BUILD, duration=0:00:00.996, duration_ms=996, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:46:55], mode=PLATFORM_GENERATION, duration=0:00:15.180, duration_ms=15180, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:46:58], mode=BUILD, duration=0:00:02.652, duration_ms=2652, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
+timestamp=[2024-09-02 20:55:08], mode=PLATFORM_GENERATION, duration=0:00:03.177, duration_ms=3177, data={name=FPro_Bus_Hardware}
+timestamp=[2024-09-02 20:55:10], mode=BUILD, duration=0:00:01.730, duration_ms=1730, data={name=Vanilla_FPro_Bus, configuration=Debug, clean_build=false}
