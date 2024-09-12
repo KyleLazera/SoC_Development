@@ -42,8 +42,11 @@ module MMIO_Wrapper
     input logic spi_cs_s_n,
     output logic spi_miso_s,
     //I2C Master Signals
-    output tri scl,
-    inout tri sda      
+    output tri scl_m,
+    inout tri sda_m,
+    //I2C slave Signals
+    input logic scl_s,
+    inout tri sda_s      
 );
 
 //Signal Declerations - These are used mainly for the initialization of the MMIO controller
@@ -216,13 +219,26 @@ i2c_master_core i2c_master_10
  .wr_data(slot_wr_data[`S10_I2C_M]),
  .rd_data(slot_rd_data[`S10_I2C_M]),
  //I2C Signals
- .scl(scl), .sda(sda)    
+ .scl(scl_m), .sda(sda_m)    
+);
+
+i2c_slave_wrapper i2c_slave_11
+(
+ .clk(clk), .reset(reset),
+ .cs(slot_cs[`S11_I2C_S]),
+ .read(slot_mem_rd[`S11_I2C_S]),
+ .write(slot_mem_wr[`S11_I2C_S]),
+ .reg_addr(slot_mem_addr[`S11_I2C_S]),
+ .wr_data(slot_wr_data[`S11_I2C_S]),
+ .rd_data(slot_rd_data[`S11_I2C_S]),
+ //I2C Signals
+ .i_scl(scl_s), .sda(sda_s)    
 );
 
 //Assign 0's to all unused rd_data slots
 generate
     genvar i;
-    for(i = 11; i <64; i++)
+    for(i = 12; i <64; i++)
         assign slot_rd_data[i] = 32'hffffffff;
     assign slot_rd_data[2] = 32'hffffffff;
     assign slot_rd_data[3] = 32'hffffffff;

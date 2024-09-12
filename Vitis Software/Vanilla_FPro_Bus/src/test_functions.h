@@ -18,6 +18,17 @@
 /* Testing Functions */
 
 /**
+ * @brief This function utilizes the i2c slave and master to communicate with one another
+ * @note the i2c master starts by reading all the values from the i2c slave register file
+ * @note the master then increments each value and transmits it back to the i2c slave
+ * @note the i2c slave then reads each value and prints to the console
+ * @param i2c_master - the i2c master module
+ * @param i2c_slave - The i2c slave module
+ * @param uart - Used to print to the console
+ */
+void i2c_master_slave_test(i2c_handle_t* i2c_master, i2c_handle_t* i2c_slave, uart_handle_t* uart);
+
+/**
  * @brief Utilizes the i2c master to communicate with the external adxl345 accelerometer
  * @note Values from the accelerometer are printed out using UART
  */

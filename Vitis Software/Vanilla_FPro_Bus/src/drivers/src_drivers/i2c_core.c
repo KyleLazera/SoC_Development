@@ -58,7 +58,7 @@ static int i2c_write_byte(i2c_handle_t* self, uint8_t data)
 	io_write(self->base_addr, WR_REG, acc_data);
 	//Once again wait for a ready flag
 	while(!i2c_ready(self));
-	//Return the ack bit to determine tis this was succesfull
+	//Return the ack bit to determine if this this was successful
 	return ((io_read(self->base_addr, RD_REG) >> 9) & 0x01);
 }
 
@@ -87,6 +87,8 @@ static int i2c_read_byte(i2c_handle_t* self, uint8_t data)
 void i2c_set_freq(i2c_handle_t* self, int i2c_freq)
 {
 	uint32_t dvsr;
+	//Ensure the instance of I2C handle is set to master
+	ASSERT_MODE(self->i2c_mode, MASTER_MODE);
 	//Calculate the dvsr based off desired freq
 	dvsr = (uint32_t)((SYS_CLK_FREQ*1000000)/(i2c_freq * 4));
 	//Write dvsr value
@@ -94,16 +96,21 @@ void i2c_set_freq(i2c_handle_t* self, int i2c_freq)
 }
 
 
-void i2c_init(i2c_handle_t* self, uint32_t core_addr)
+void i2c_init(i2c_handle_t* self, uint32_t core_addr, uint32_t mode)
 {
 	self->base_addr = core_addr;
-	//Init freq to 100KHz
-	i2c_set_freq(self, 100000);
+	self->i2c_mode = mode;
+	if(mode == MASTER_MODE){
+		//Init freq to 100KHz if mode is master
+		i2c_set_freq(self, 100000);
+	}
 }
 
 int i2c_read_transaction(i2c_handle_t* self, uint8_t addr, uint8_t *bytes, int num, int rstart)
 {
 	int ack;
+	//Ensure the instance of I2C handle is set to master
+	ASSERT_MODE(self->i2c_mode, MASTER_MODE);
 
 	//Initialize start condition & wait for ready flag
 	i2c_start(self);
@@ -127,13 +134,15 @@ int i2c_read_transaction(i2c_handle_t* self, uint8_t addr, uint8_t *bytes, int n
 	else
 		i2c_stop(self);
 
-	//Return the ack of the initial transfer
+	//Return the ack of the initial transfer (slave address)
 	return ack;
 }
 
 int i2c_write_transaction(i2c_handle_t* self, uint8_t addr, uint8_t *bytes, int num, int rstart)
 {
 	int ack1, ack;
+	//Ensure the instance of I2C handle is set to master
+	ASSERT_MODE(self->i2c_mode, MASTER_MODE);
 
 	//Initialize start condition & wait for ready flag
 	i2c_start(self);
@@ -156,6 +165,21 @@ int i2c_write_transaction(i2c_handle_t* self, uint8_t addr, uint8_t *bytes, int 
 
 	//Return sum of all acks
 	return ack;
+}
+
+uint8_t i2c_slave_read(i2c_handle_t* self, uint8_t reg)
+{
+	//Ensure the instance of I2C handle is set to slave
+	ASSERT_MODE(self->i2c_mode, SLAVE_MODE);
+	return (uint8_t)(io_read(self->base_addr, reg));
+}
+
+void i2c_slave_write(i2c_handle_t* self, uint8_t reg, uint8_t data)
+{
+	//Ensure the instance of I2C handle is set to slave
+	ASSERT_MODE(self->i2c_mode, SLAVE_MODE);
+	//Write into the desired register file addr
+	io_write(self->base_addr, reg, (uint32_t)data);
 }
 
 

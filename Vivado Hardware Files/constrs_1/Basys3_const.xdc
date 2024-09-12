@@ -203,10 +203,20 @@ set_property PACKAGE_PIN L17 [get_ports spi_cs_s_n]
 	
 ##I2C Master
 ##Sch name = JC8
-set_property PACKAGE_PIN M19 [get_ports scl]					
-	set_property IOSTANDARD LVCMOS33 [get_ports scl]
-	set_property PULLUP TRUE [get_ports scl]
+set_property PACKAGE_PIN M19 [get_ports scl_m]					
+	set_property IOSTANDARD LVCMOS33 [get_ports scl_m]
+	set_property PULLUP TRUE [get_ports scl_m]
 ##Sch name = JC9
-set_property PACKAGE_PIN P17 [get_ports sda]					
-	set_property IOSTANDARD LVCMOS33 [get_ports sda]	
-    set_property PULLUP TRUE [get_ports sda]
+set_property PACKAGE_PIN P17 [get_ports sda_m]					
+	set_property IOSTANDARD LVCMOS33 [get_ports sda_m]	
+    set_property PULLUP TRUE [get_ports sda_m]
+    
+##I2C Slave
+##Sch name = JB8
+set_property PACKAGE_PIN A17 [get_ports scl_s]					
+	set_property IOSTANDARD LVCMOS33 [get_ports scl_s]
+	set_property PULLUP TRUE [get_ports scl_s]
+##Sch name = JB9
+set_property PACKAGE_PIN C15 [get_ports sda_s]					
+	set_property IOSTANDARD LVCMOS33 [get_ports sda_s]
+	set_property PULLUP TRUE [get_ports sda_s]

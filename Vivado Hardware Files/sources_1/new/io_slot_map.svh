@@ -20,5 +20,6 @@
 `define S8_SPI              8
 `define S9_SPI_S            9
 `define S10_I2C_M           10
+`define S11_I2C_S           11
 
 `endif

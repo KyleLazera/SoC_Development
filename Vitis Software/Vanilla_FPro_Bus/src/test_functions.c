@@ -1,5 +1,49 @@
 #include "test_functions.h"
 
+void i2c_master_slave_test(i2c_handle_t* i2c_master, i2c_handle_t* i2c_slave, uart_handle_t* uart)
+{
+	uint8_t ack;
+	uint8_t slave_addr = 0x08;
+	uint8_t init_addr = 0x00;
+	uint8_t new_data[32];
+	uint8_t rd_data[16];
+	//Begin by reading the values from the register file with a burst read
+	i2c_read_transaction(i2c_master, slave_addr, rd_data, 16, 1);
+
+	//Display the register file from the i2c Master (this should match initial file printed to console)
+	disp_str(uart, "Register file from the i2c master: \n\r");
+	for(int i = 0; i < 16; i++){
+		disp_num(uart, rd_data[i], 16);
+		disp_str(uart, "\n\r");
+		//Increment the data by 1
+		rd_data[i]++;
+	}
+
+	//Create a new array holding the data to send - this will also include the
+	//address of where to write the new data in the slave reg file
+	for(int i = 0, j = 0; i < 16; i++, j += 2)
+	{
+		//Set the reg file address every second index
+		new_data[j] = i;
+		//Set the data for the address
+		new_data[j+1] = rd_data[i];
+	}
+
+	//Transmit the new data into the register file
+	i2c_write_transaction(i2c_master, slave_addr, new_data, 32, 1);
+	//Transmit 1 final byte to reset the register file address to 0 for the next read
+	i2c_write_transaction(i2c_master, slave_addr, &init_addr, 1, 0);
+
+
+	//Print out the new i2c values - they should all be incremented by 1
+	disp_str(uart, "New Register File (incremented by 1): \n\r");
+	for(int i = 0; i < 16; i++){
+		disp_num(uart, i2c_slave_read(i2c_slave, i), 16);
+		disp_str(uart, "\n\r");
+	}
+
+}
+
 void spi_master_slave_test(spi_handle_t* spi_master, spi_handle_t* spi_slave, uart_handle_t* uart, uint8_t reg_addr)
 {
 	uint8_t read_data;
