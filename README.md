@@ -44,7 +44,7 @@ The UART Core is one of the communication cores used in this project. It facilit
 The UART module was verified by instantiating two DUTs connected via TX and RX lines. Each DUT had its own interface with generators, drivers, and monitors. The UART DUTs communicated in full duplex mode, and a self-checking testbench compared data from one UART module with data received by the second UART module to ensure they matched.
 
 ### SPI Core
-The SPI Core includes both master and slave modules for data transmission and reception. The SPI master interacts with external devices, while the SPI slave features a register file that allows an external SPI master to interact with data from the MicroBlaze. The SPI Core includes: SPI Master:
+The SPI Core includes both master and slave modules for data transmission and reception. The SPI master interacts with external devices, while the SPI slave features a register file that allows an external SPI master to interact with data from the MicroBlaze. The SPI Core includes:
 SPI Master:
   1) Configurable clock polarity.
   2) Configurable clock phase.
