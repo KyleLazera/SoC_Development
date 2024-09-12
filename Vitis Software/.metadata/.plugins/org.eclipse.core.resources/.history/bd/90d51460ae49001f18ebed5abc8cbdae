@@ -1,5 +1,0 @@
-#include "io_rw.h"
-#include "io_map.h"
-#include "timer.h"
-
-#define TIMER_SLOT		S0_SYS_TIMER

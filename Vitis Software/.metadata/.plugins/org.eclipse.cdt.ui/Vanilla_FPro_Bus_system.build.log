@@ -1,6 +1,0 @@
-19:15:39 **** Incremental Build of configuration Debug for project Vanilla_FPro_Bus_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
-
-19:15:39 Build Finished (took 173ms)
-

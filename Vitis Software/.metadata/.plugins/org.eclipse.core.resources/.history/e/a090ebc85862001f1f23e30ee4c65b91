@@ -1,6 +1,0 @@
-#include "spi_core.h"
-
-void spi_init(spi_handle_t* self, uint32_t core_addr)
-{
-
-}

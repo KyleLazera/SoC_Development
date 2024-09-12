@@ -1,6 +1,0 @@
-07:59:59 **** Incremental Build of project mcs_top_vanilla ****
-buildplatform.bat 56996 mcs_top_vanilla no_domain_build 
-XSDB Server Channel: tcfchan#5
-08:00:02 **** Incremental Build of configuration Debug for project microblaze_test ****
-make all 
-make: Nothing to be done for 'all'.
