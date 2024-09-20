@@ -44,7 +44,7 @@ The UART Core is one of the communication cores used in this project. It facilit
 The UART module was verified by instantiating two DUTs connected via TX and RX lines. Each DUT had its own interface with generators, drivers, and monitors. The UART DUTs communicated in full duplex mode, and a self-checking testbench compared data from one UART module with data received by the second UART module to ensure they matched.
 
 ### SPI Core
-The SPI Core includes both master and slave modules for data transmission and reception. The SPI master interacts with external devices, while the SPI slave features a register file that allows an external SPI master to interact with data from the MicroBlaze. The SPI Core includes: SPI Master:
+The SPI Core includes both master and slave modules for data transmission and reception. The SPI master interacts with external devices, while the SPI slave features a register file that allows an external SPI master to interact with data from the MicroBlaze. The SPI Core includes:
 SPI Master:
   1) Configurable clock polarity.
   2) Configurable clock phase.
@@ -56,6 +56,14 @@ SPI Slave:
 
 #### Verification
 Similar to the UART module, the SPI core was tested by interfacing SPI master and slave modules in the testbench. The testbench included a register file that tracked transmitted data. The monitor wrote data into the register file on detected writes and compared read values from the SPI Slave with the register file. For onboard verification, the SPI Master interfaced with an external ADXL345 accelerometer and displayed the data via UART. Additionally, SPI Master ports were directly connected to the SPI slave ports on the Basys3 board, with signals analyzed using a logic analyzer to verify correct operation.
+
+Below are samples gathered from a logic analyzer of my SPI modules communication:
+![Screenshot 2024-09-20 165234](https://github.com/user-attachments/assets/9c8abce6-5dbd-4148-b76c-a8ecd7c773f8)
+![Screenshot 2024-09-20 165220](https://github.com/user-attachments/assets/dbe12ce7-b5e0-4f3d-bfd8-e27471ad8e27)
+
+Additionally, the image below is the serial console which displays teh functionality of one of teh test programs. In this program, the SPI Master reads data from a pre-populated SPI Slave register file. It then increments each value by 1 on each loop of the program.
+![Screenshot 2024-09-20 165319](https://github.com/user-attachments/assets/65844dfe-042c-4e5d-b3cb-c38b092b9e13)
+
 
 ### I2C Core
 The I2C Core contains both an I2C Master and an I2C Slave. The I2C Slave includes a register file accessible via software drivers. The I2C Master is controlled by software commands for actions such as generating start conditions, transmitting and reading data, and sending stop or restart conditions. Features include:
