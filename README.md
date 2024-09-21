@@ -39,18 +39,28 @@ The UART Core is one of the communication cores used in this project. It facilit
        i) Frame Errors.
        ii) Parity Errors.
        iii) Overflow Errors.
-
+     
 #### Verification
 The UART module was verified by instantiating two DUTs connected via TX and RX lines. Each DUT had its own interface with generators, drivers, and monitors. The UART DUTs communicated in full duplex mode, and a self-checking testbench compared data from one UART module with data received by the second UART module to ensure they matched.
 
+For the on-chip verification, a simple program was developed that would transmit and recieve UART data from the FPGA to the serial comm port (PuTTY was used). The UART would have a counter initialized to 0 that would print "Hello from UART #x" where x is the value of the counter. This counter would increment with each iteration. The user could also write to the UART by typing in a value and the UART would echo this value. If the user did not input a value it would display a -1. Below are two images of teh serial com port and their associated settings as well as the input and output values of these tests.
+
+##### Test 1: 9600, 8 Bits, 1 Stop Bits, Even Parity
+![Screenshot 2024-09-21 075106](https://github.com/user-attachments/assets/e31af6c8-8f4d-4e58-a657-c5af6f87a0d8)
+![Screenshot 2024-09-21 075413](https://github.com/user-attachments/assets/aac1f228-0749-4a45-8b06-df665a4daf99)
+##### Test 2: 115200, 7 Bits, 2 Stop Bits, Odd Parity
+![Screenshot 2024-09-21 075622](https://github.com/user-attachments/assets/c57b7587-b318-49b5-b2a3-c7e01a14353f)
+![Screenshot 2024-09-21 080151](https://github.com/user-attachments/assets/9e5fd958-fd65-48f5-994f-d6f8c6765615)
+
+
 ### SPI Core
 The SPI Core includes both master and slave modules for data transmission and reception. The SPI master interacts with external devices, while the SPI slave features a register file that allows an external SPI master to interact with data from the MicroBlaze. The SPI Core includes:
-SPI Master:
+##### SPI Master:
   1) Configurable clock polarity.
   2) Configurable clock phase.
   3) Configurable divisor to control SPI clock speed.
   4) Supports multi-slave configuration.
-SPI Slave:
+##### SPI Slave:
   1) Supports clock phase/polarity of 0.
   2) Supports both read and write operations from the SPI master into the register file.
 
@@ -67,10 +77,10 @@ Additionally, the image below is the serial console which displays teh functiona
 
 ### I2C Core
 The I2C Core contains both an I2C Master and an I2C Slave. The I2C Slave includes a register file accessible via software drivers. The I2C Master is controlled by software commands for actions such as generating start conditions, transmitting and reading data, and sending stop or restart conditions. Features include:
-I2C Master:
+##### I2C Master:
   1) Configurable clock speed
   2) Does not support arbitration or clock stretching
-I2C Slave:
+##### I2C Slave:
   1) Does not support clock stretching
   2) Read and write operations from the i2c slave into the register file.
 
