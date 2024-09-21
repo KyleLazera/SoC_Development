@@ -27,7 +27,7 @@ The PWM Core allows users to control PWM outputs on multiple channels. It featur
   3) Independent duty cycle settings for each channel.
 
 ### XADC Core
-The XADC Core wraps the built-in XADC IP, enabling users to select ADC channels for reading. In this project, it is connected to the onboard temperature and voltage ADC channels.
+The XADC Core wraps the built-in XADC IP, enabling users to select ADC channels for reading. In this project, it is connected to the onboard temperature and voltage ADC channels. To test this, the temperature is continously printed to the UART port, which can be seen in the SPI verification console.
 
 ### UART Core
 The UART Core is one of the communication cores used in this project. It facilitates debugging and direct communication between the MicroBlaze processor and a serial port. The core includes a baud rate generator, transmit (TX) and receive (RX) controllers, and FIFOs for buffering. Key features include:
